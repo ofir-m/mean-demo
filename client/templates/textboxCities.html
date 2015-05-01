@@ -1,0 +1,14 @@
+<div class="field clearfix">
+    <label ng-bind="label" />
+    <div class="editor textbox-container">
+        <div style="position:relative">
+        <input class="real" type="text" ng-keydown="highlightCities($event)"  ng-focus="closeSelectBoxes()" ng-model="value" ng-trim="false" ng-class="{'complete-error': notInList}" />
+        <input class="autocomplete"   ng-model="autocomplete.name" type="text" disabled="disabled" />
+            </div>
+        <ul class="textbox-list" ng-show="showList">
+            <li ng-repeat="item in (filteredItems=(items | startsWith:value))" ng-click="selectCity(item)" ng-class="{ 'hover': $index == $parent.currentIndex}" ng-mouseenter="$parent.currentIndex=$index">
+                <label data-value="{{item}}">{{item.name}}</label>
+            </li>
+        </ul>
+    </div>
+</div>

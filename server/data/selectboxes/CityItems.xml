@@ -1,0 +1,1464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<options>
+  <option name="לא משנה" id="1" countyid="1" />
+  <option name="אביעזר" id="20" countyid="2" />
+  <option name="אבן ספיר" id="24" countyid="2" />
+  <option name="אדרת" id="33" countyid="2" />
+  <option name="אורה" id="47" countyid="2" />
+  <option name="איתנים" id="159" countyid="2" />
+  <option name="אשתאול" id="218" countyid="2" />
+  <option name="בית זית" id="256" countyid="2" />
+  <option name="בית מאיר" id="270" countyid="2" />
+  <option name="בית נקופה" id="273" countyid="2" />
+  <option name="בית שמש" id="284" countyid="2" />
+  <option name="בקוע" id="309" countyid="2" />
+  <option name="בר גיורא" id="313" countyid="2" />
+  <option name="גבעת יערים" id="353" countyid="2" />
+  <option name="גבעת ישעיהו" id="354" countyid="2" />
+  <option name="גבעת שמש" id="359" countyid="2" />
+  <option name="גיזו" id="381" countyid="2" />
+  <option name="גפן" id="423" countyid="2" />
+  <option name="הראל" id="494" countyid="2" />
+  <option name="זכריה" id="511" countyid="2" />
+  <option name="זנוח" id="514" countyid="2" />
+  <option name="טל שחר" id="580" countyid="2" />
+  <option name="יד השמונה" id="595" countyid="2" />
+  <option name="ידידה" id="600" countyid="2" />
+  <option name="ישעי" id="642" countyid="2" />
+  <option name="כסלון" id="670" countyid="2" />
+  <option name="כפר אוריה" id="675" countyid="2" />
+  <option name="לוזית" id="768" countyid="2" />
+  <option name="מבוא ביתר" id="779" countyid="2" />
+  <option name="מבשרת ציון" id="788" countyid="2" />
+  <option name="מוצא עילית" id="810" countyid="2" />
+  <option name="מחסיה" id="832" countyid="2" />
+  <option name="מטע" id="834" countyid="2" />
+  <option name="מסילת ציון" id="860" countyid="2" />
+  <option name="מעלה החמישה" id="878" countyid="2" />
+  <option name="נווה אילן" id="965" countyid="2" />
+  <option name="נווה מיכאל" id="976" countyid="2" />
+  <option name="נחושה" id="986" countyid="2" />
+  <option name="נחם" id="993" countyid="2" />
+  <option name="נחשון" id="996" countyid="2" />
+  <option name="נטף" id="1001" countyid="2" />
+  <option name="נס הרים" id="1028" countyid="2" />
+  <option name="נתיב הל&quot;ה" id="1056" countyid="2" />
+  <option name="עגור" id="1081" countyid="2" />
+  <option name="עין כרם-בי&quot;ס חקלאי" id="1125" countyid="2" />
+  <option name="עמינדב" id="1145" countyid="2" />
+  <option name="צובה" id="1211" countyid="2" />
+  <option name="צור הדסה" id="1219" countyid="2" />
+  <option name="צלפון" id="1226" countyid="2" />
+  <option name="צפרירים" id="1229" countyid="2" />
+  <option name="צרעה" id="1232" countyid="2" />
+  <option name="קריית יערים" id="1263" countyid="2" />
+  <option name="קריית יערים (מוסד)" id="1264" countyid="2" />
+  <option name="קריית ענבים" id="1268" countyid="2" />
+  <option name="רמת רזיאל" id="1328" countyid="2" />
+  <option name="רמת רחל" id="1329" countyid="2" />
+  <option name="שדות מיכה" id="1358" countyid="2" />
+  <option name="שואבה" id="1366" countyid="2" />
+  <option name="שורש" id="1373" countyid="2" />
+  <option name="שריגים (לי-און)" id="1412" countyid="2" />
+  <option name="תירוש" id="1423" countyid="2" />
+  <option name="תעוז" id="1443" countyid="2" />
+  <option name="תרום" id="1461" countyid="2" />
+  <option name="אבטליון" id="14" countyid="3" />
+  <option name="אביבים" id="16" countyid="3" />
+  <option name="אביטל" id="19" countyid="3" />
+  <option name="אבירים" id="21" countyid="3" />
+  <option name="אבן מנחם" id="23" countyid="3" />
+  <option name="אבני איתן" id="26" countyid="3" />
+  <option name="אדירים" id="31" countyid="3" />
+  <option name="אדמית" id="32" countyid="3" />
+  <option name="אודם" id="35" countyid="3" />
+  <option name="אומן" id="40" countyid="3" />
+  <option name="אור הגנוז" id="43" countyid="3" />
+  <option name="אורטל" id="50" countyid="3" />
+  <option name="אחוזת ברק" id="142" countyid="3" />
+  <option name="אחיהוד" id="143" countyid="3" />
+  <option name="איילת השחר" id="151" countyid="3" />
+  <option name="אילון" id="152" countyid="3" />
+  <option name="אילנייה" id="155" countyid="3" />
+  <option name="אל -רום" id="164" countyid="3" />
+  <option name="אלומות" id="166" countyid="3" />
+  <option name="אלון הגליל" id="167" countyid="3" />
+  <option name="אלוני אבא" id="170" countyid="3" />
+  <option name="אלוני הבשן" id="171" countyid="3" />
+  <option name="אלונים" id="173" countyid="3" />
+  <option name="אלי-עד" id="175" countyid="3" />
+  <option name="אליפלט" id="177" countyid="3" />
+  <option name="אליקים" id="178" countyid="3" />
+  <option name="אלמגור" id="181" countyid="3" />
+  <option name="אלקוש" id="186" countyid="3" />
+  <option name="אמירים" id="189" countyid="3" />
+  <option name="אמנון" id="190" countyid="3" />
+  <option name="אניעם" id="192" countyid="3" />
+  <option name="אפיק" id="198" countyid="3" />
+  <option name="אפיקים" id="199" countyid="3" />
+  <option name="אפק" id="200" countyid="3" />
+  <option name="ארבל" id="202" countyid="3" />
+  <option name="אשבל" id="208" countyid="3" />
+  <option name="אשדות יעקב (איחוד)" id="210" countyid="3" />
+  <option name="אשדות יעקב (מאוחד)" id="211" countyid="3" />
+  <option name="אשחר" id="212" countyid="3" />
+  <option name="אשרת" id="217" countyid="3" />
+  <option name="בוסתן הגליל" id="228" countyid="3" />
+  <option name="בירייה" id="238" countyid="3" />
+  <option name="בית אלפא" id="242" countyid="3" />
+  <option name="בית הלל" id="251" countyid="3" />
+  <option name="בית העמק" id="252" countyid="3" />
+  <option name="בית השיטה" id="254" countyid="3" />
+  <option name="בית זיד" id="255" countyid="3" />
+  <option name="בית זרע" id="257" countyid="3" />
+  <option name="בית יוסף" id="266" countyid="3" />
+  <option name="בית לחם הגלילית" id="269" countyid="3" />
+  <option name="בית קשת" id="280" countyid="3" />
+  <option name="בית רימון" id="282" countyid="3" />
+  <option name="בית שאן" id="283" countyid="3" />
+  <option name="בית שערים" id="285" countyid="3" />
+  <option name="בלפוריה" id="289" countyid="3" />
+  <option name="בן עמי" id="291" countyid="3" />
+  <option name="בני יהודה" id="297" countyid="3" />
+  <option name="בצת" id="308" countyid="3" />
+  <option name="בר יוחאי" id="314" countyid="3" />
+  <option name="ברעם" id="319" countyid="3" />
+  <option name="ברק" id="320" countyid="3" />
+  <option name="גבע" id="337" countyid="3" />
+  <option name="גבעת אבני" id="343" countyid="3" />
+  <option name="גבעת אלה" id="344" countyid="3" />
+  <option name="גבעת יואב" id="352" countyid="3" />
+  <option name="גבעת עוז" id="357" countyid="3" />
+  <option name="גבת" id="364" countyid="3" />
+  <option name="גדות" id="365" countyid="3" />
+  <option name="גדיש" id="367" countyid="3" />
+  <option name="גדעונה" id="368" countyid="3" />
+  <option name="גונן" id="374" countyid="3" />
+  <option name="גורן" id="375" countyid="3" />
+  <option name="גורנות הגליל" id="376" countyid="3" />
+  <option name="גזית" id="377" countyid="3" />
+  <option name="גילון" id="382" countyid="3" />
+  <option name="גינוסר" id="384" countyid="3" />
+  <option name="גיניגר" id="385" countyid="3" />
+  <option name="גיתה" id="387" countyid="3" />
+  <option name="גלעד (אבן יצחק)" id="401" countyid="3" />
+  <option name="גן נר" id="409" countyid="3" />
+  <option name="געתון" id="422" countyid="3" />
+  <option name="גשור" id="426" countyid="3" />
+  <option name="גשר" id="427" countyid="3" />
+  <option name="גשר הזיו" id="428" countyid="3" />
+  <option name="דבורה" id="432" countyid="3" />
+  <option name="דברת" id="435" countyid="3" />
+  <option name="דגניה א'" id="436" countyid="3" />
+  <option name="דגניה ב'" id="437" countyid="3" />
+  <option name="דוב&quot;ב" id="438" countyid="3" />
+  <option name="דישון" id="447" countyid="3" />
+  <option name="דלייה" id="448" countyid="3" />
+  <option name="דלתון" id="449" countyid="3" />
+  <option name="דן" id="451" countyid="3" />
+  <option name="דפנה" id="452" countyid="3" />
+  <option name="האון" id="459" countyid="3" />
+  <option name="הגושרים" id="461" countyid="3" />
+  <option name="הודיות" id="464" countyid="3" />
+  <option name="הושעיה" id="468" countyid="3" />
+  <option name="הזורע" id="469" countyid="3" />
+  <option name="הזורעים" id="470" countyid="3" />
+  <option name="היוגב" id="472" countyid="3" />
+  <option name="הילה" id="473" countyid="3" />
+  <option name="הסוללים" id="476" countyid="3" />
+  <option name="הרדוף" id="495" countyid="3" />
+  <option name="הררית" id="501" countyid="3" />
+  <option name="חבר" id="519" countyid="3" />
+  <option name="חד-נס" id="524" countyid="3" />
+  <option name="חולתה" id="532" countyid="3" />
+  <option name="חוסן" id="533" countyid="3" />
+  <option name="חוקוק" id="537" countyid="3" />
+  <option name="חזון" id="541" countyid="3" />
+  <option name="חלוץ" id="546" countyid="3" />
+  <option name="חמדיה" id="551" countyid="3" />
+  <option name="חניתה" id="555" countyid="3" />
+  <option name="חנתון" id="556" countyid="3" />
+  <option name="חספין" id="557" countyid="3" />
+  <option name="חפצי-בה" id="559" countyid="3" />
+  <option name="חצור הגלילית" id="562" countyid="3" />
+  <option name="חרשים" id="569" countyid="3" />
+  <option name="טבריה" id="571" countyid="3" />
+  <option name="טירת צבי" id="579" countyid="3" />
+  <option name="טל-אל" id="581" countyid="3" />
+  <option name="טפחות" id="587" countyid="3" />
+  <option name="יבנאל" id="590" countyid="3" />
+  <option name="יובל" id="603" countyid="3" />
+  <option name="יובלים" id="604" countyid="3" />
+  <option name="יודפת" id="605" countyid="3" />
+  <option name="יונתן" id="606" countyid="3" />
+  <option name="יזרעאל" id="608" countyid="3" />
+  <option name="יחיעם" id="609" countyid="3" />
+  <option name="יסוד המעלה" id="616" countyid="3" />
+  <option name="יסעור" id="618" countyid="3" />
+  <option name="יעד" id="619" countyid="3" />
+  <option name="יערה" id="622" countyid="3" />
+  <option name="יפעת" id="626" countyid="3" />
+  <option name="יפתח" id="627" countyid="3" />
+  <option name="יקנעם (מושבה)" id="632" countyid="3" />
+  <option name="יקנעם עילית" id="633" countyid="3" />
+  <option name="יראון" id="634" countyid="3" />
+  <option name="ירדנה" id="635" countyid="3" />
+  <option name="כברי" id="647" countyid="3" />
+  <option name="כדורי" id="648" countyid="3" />
+  <option name="כורזים" id="654" countyid="3" />
+  <option name="כחל" id="655" countyid="3" />
+  <option name="כישור" id="658" countyid="3" />
+  <option name="כליל" id="659" countyid="3" />
+  <option name="כלנית" id="660" countyid="3" />
+  <option name="כמון" id="663" countyid="3" />
+  <option name="כנף" id="665" countyid="3" />
+  <option name="כנרת (מושבה)" id="667" countyid="3" />
+  <option name="כנרת (קבוצה)" id="668" countyid="3" />
+  <option name="כפר בלום" id="679" countyid="3" />
+  <option name="כפר ברוך" id="682" countyid="3" />
+  <option name="כפר גדעון" id="683" countyid="3" />
+  <option name="כפר גלעדי" id="686" countyid="3" />
+  <option name="כפר החורש" id="689" countyid="3" />
+  <option name="כפר הנשיא" id="693" countyid="3" />
+  <option name="כפר ורדים" id="699" countyid="3" />
+  <option name="כפר זיתים" id="701" countyid="3" />
+  <option name="כפר חושן" id="703" countyid="3" />
+  <option name="כפר חיטים" id="704" countyid="3" />
+  <option name="כפר חנניה" id="706" countyid="3" />
+  <option name="כפר חרוב" id="709" countyid="3" />
+  <option name="כפר יהושע" id="713" countyid="3" />
+  <option name="כפר יחזקאל" id="715" countyid="3" />
+  <option name="כפר מסריק" id="724" countyid="3" />
+  <option name="כפר סאלד" id="728" countyid="3" />
+  <option name="כפר קיש" id="737" countyid="3" />
+  <option name="כפר ראש הנקרה" id="739" countyid="3" />
+  <option name="כפר רוזנואלד (זרעית)" id="740" countyid="3" />
+  <option name="כפר רופין" id="741" countyid="3" />
+  <option name="כפר שמאי" id="743" countyid="3" />
+  <option name="כפר תבור" id="746" countyid="3" />
+  <option name="כרכום" id="748" countyid="3" />
+  <option name="כרם בן זמרה" id="749" countyid="3" />
+  <option name="כרמיאל" id="756" countyid="3" />
+  <option name="לבון" id="760" countyid="3" />
+  <option name="לביא" id="761" countyid="3" />
+  <option name="לבנים" id="762" countyid="3" />
+  <option name="להבות הבשן" id="764" countyid="3" />
+  <option name="לוחמי הגיטאות" id="769" countyid="3" />
+  <option name="לוטם" id="770" countyid="3" />
+  <option name="לימן" id="772" countyid="3" />
+  <option name="לפידות" id="775" countyid="3" />
+  <option name="מבוא חמה" id="782" countyid="3" />
+  <option name="מגדל" id="792" countyid="3" />
+  <option name="מגדל העמק" id="793" countyid="3" />
+  <option name="מגידו" id="798" countyid="3" />
+  <option name="מגן שאול" id="801" countyid="3" />
+  <option name="מדרך עוז" id="803" countyid="3" />
+  <option name="מולדת" id="809" countyid="3" />
+  <option name="מורן" id="812" countyid="3" />
+  <option name="מורשת" id="813" countyid="3" />
+  <option name="מזרע" id="818" countyid="3" />
+  <option name="מחניים" id="831" countyid="3" />
+  <option name="מטולה" id="833" countyid="3" />
+  <option name="מיטב" id="836" countyid="3" />
+  <option name="מיצר" id="838" countyid="3" />
+  <option name="מירב" id="839" countyid="3" />
+  <option name="מירון" id="840" countyid="3" />
+  <option name="מכמנים" id="846" countyid="3" />
+  <option name="מלאה" id="847" countyid="3" />
+  <option name="מלכייה" id="849" countyid="3" />
+  <option name="מלכישוע" id="850" countyid="3" />
+  <option name="מנוף" id="852" countyid="3" />
+  <option name="מנות" id="853" countyid="3" />
+  <option name="מנחמיה" id="854" countyid="3" />
+  <option name="מנרה" id="855" countyid="3" />
+  <option name="מסד" id="857" countyid="3" />
+  <option name="מסדה" id="858" countyid="3" />
+  <option name="מסילות" id="859" countyid="3" />
+  <option name="מעגן" id="866" countyid="3" />
+  <option name="מעוז חיים" id="868" countyid="3" />
+  <option name="מעונה" id="870" countyid="3" />
+  <option name="מעיין ברוך" id="871" countyid="3" />
+  <option name="מעלה גלבוע" id="876" countyid="3" />
+  <option name="מעלה גמלא" id="877" countyid="3" />
+  <option name="מצובה" id="906" countyid="3" />
+  <option name="מצפה" id="908" countyid="3" />
+  <option name="מצפה אבי&quot;ב" id="909" countyid="3" />
+  <option name="מצפה נטופה" id="912" countyid="3" />
+  <option name="מרגליות" id="917" countyid="3" />
+  <option name="מרום גולן" id="918" countyid="3" />
+  <option name="מרחביה (מושב)" id="920" countyid="3" />
+  <option name="מרחביה (קיבוץ)" id="921" countyid="3" />
+  <option name="משגב עם" id="931" countyid="3" />
+  <option name="משמר הירדן" id="938" countyid="3" />
+  <option name="משמר העמק" id="940" countyid="3" />
+  <option name="מתת" id="947" countyid="3" />
+  <option name="נאות גולן" id="949" countyid="3" />
+  <option name="נאות מרדכי" id="951" countyid="3" />
+  <option name="נהלל" id="958" countyid="3" />
+  <option name="נהרייה" id="959" countyid="3" />
+  <option name="נוב" id="960" countyid="3" />
+  <option name="נווה אור" id="963" countyid="3" />
+  <option name="נווה אטי&quot;ב" id="964" countyid="3" />
+  <option name="נווה איתן" id="967" countyid="3" />
+  <option name="נווה זיו" id="970" countyid="3" />
+  <option name="נטועה" id="998" countyid="3" />
+  <option name="נטור" id="999" countyid="3" />
+  <option name="ניר דוד (תל עמל)" id="1013" countyid="3" />
+  <option name="ניר יפה" id="1015" countyid="3" />
+  <option name="נתיב השיירה" id="1058" countyid="3" />
+  <option name="סאסא" id="1062" countyid="3" />
+  <option name="סער" id="1076" countyid="3" />
+  <option name="עבדון" id="1079" countyid="3" />
+  <option name="עברון" id="1080" countyid="3" />
+  <option name="עדי" id="1084" countyid="3" />
+  <option name="עין גב" id="1106" countyid="3" />
+  <option name="עין דור" id="1108" countyid="3" />
+  <option name="עין המפרץ" id="1112" countyid="3" />
+  <option name="עין הנצי&quot;ב" id="1113" countyid="3" />
+  <option name="עין העמק" id="1114" countyid="3" />
+  <option name="עין השופט" id="1115" countyid="3" />
+  <option name="עין זיוון" id="1118" countyid="3" />
+  <option name="עין חרוד (איחוד)" id="1121" countyid="3" />
+  <option name="עין חרוד (מאוחד)" id="1122" countyid="3" />
+  <option name="עין יעקב" id="1124" countyid="3" />
+  <option name="עלמה" id="1142" countyid="3" />
+  <option name="עמוקה" id="1144" countyid="3" />
+  <option name="עמיעד" id="1146" countyid="3" />
+  <option name="עמיר" id="1149" countyid="3" />
+  <option name="עמקה" id="1162" countyid="3" />
+  <option name="עפולה" id="1165" countyid="3" />
+  <option name="עצמון שגב" id="1168" countyid="3" />
+  <option name="פורייה - כפר עבודה" id="1187" countyid="3" />
+  <option name="פורייה - נווה עובד" id="1188" countyid="3" />
+  <option name="פורייה עילית" id="1189" countyid="3" />
+  <option name="פקיעין חדשה" id="1200" countyid="3" />
+  <option name="פרוד" id="1203" countyid="3" />
+  <option name="פרזון" id="1204" countyid="3" />
+  <option name="צביה" id="1209" countyid="3" />
+  <option name="צבעון" id="1210" countyid="3" />
+  <option name="צוריאל" id="1223" countyid="3" />
+  <option name="צורית" id="1224" countyid="3" />
+  <option name="ציפורי" id="1225" countyid="3" />
+  <option name="צפת" id="1230" countyid="3" />
+  <option name="קדמת צבי" id="1238" countyid="3" />
+  <option name="קדרים" id="1241" countyid="3" />
+  <option name="קורנית" id="1245" countyid="3" />
+  <option name="קלע" id="1251" countyid="3" />
+  <option name="קצרין" id="1254" countyid="3" />
+  <option name="קריית שמונה" id="1271" countyid="3" />
+  <option name="קשת" id="1275" countyid="3" />
+  <option name="ראש פינה" id="1280" countyid="3" />
+  <option name="רביד" id="1286" countyid="3" />
+  <option name="רגבה" id="1287" countyid="3" />
+  <option name="רוויה" id="1291" countyid="3" />
+  <option name="רחוב" id="1297" countyid="3" />
+  <option name="רם-און" id="1305" countyid="3" />
+  <option name="רמות" id="1306" countyid="3" />
+  <option name="רמות מנשה" id="1309" countyid="3" />
+  <option name="רמות נפתלי" id="1310" countyid="3" />
+  <option name="רמת דוד" id="1313" countyid="3" />
+  <option name="רמת השופט" id="1315" countyid="3" />
+  <option name="רמת ישי" id="1319" countyid="3" />
+  <option name="רמת מגשימים" id="1324" countyid="3" />
+  <option name="רמת צבי" id="1327" countyid="3" />
+  <option name="רקפת" id="1333" countyid="3" />
+  <option name="רשפים" id="1335" countyid="3" />
+  <option name="שאר ישוב" id="1337" countyid="3" />
+  <option name="שבי ציון" id="1338" countyid="3" />
+  <option name="שדה אילן" id="1342" countyid="3" />
+  <option name="שדה אליהו" id="1343" countyid="3" />
+  <option name="שדה אליעזר" id="1344" countyid="3" />
+  <option name="שדה יעקב" id="1349" countyid="3" />
+  <option name="שדה נחום" id="1352" countyid="3" />
+  <option name="שדה נחמיה" id="1353" countyid="3" />
+  <option name="שדי תרומות" id="1361" countyid="3" />
+  <option name="שדמות דבורה" id="1363" countyid="3" />
+  <option name="שומרה" id="1370" countyid="3" />
+  <option name="שורשים" id="1374" countyid="3" />
+  <option name="שזור" id="1376" countyid="3" />
+  <option name="שכניה" id="1384" countyid="3" />
+  <option name="שלוחות" id="1386" countyid="3" />
+  <option name="שלומי" id="1387" countyid="3" />
+  <option name="שמיר" id="1389" countyid="3" />
+  <option name="שמרת" id="1391" countyid="3" />
+  <option name="שמשית" id="1392" countyid="3" />
+  <option name="שניר" id="1394" countyid="3" />
+  <option name="שעל" id="1396" countyid="3" />
+  <option name="שער הגולן" id="1399" countyid="3" />
+  <option name="שפר" id="1407" countyid="3" />
+  <option name="שרונה" id="1411" countyid="3" />
+  <option name="שריד" id="1413" countyid="3" />
+  <option name="שתולה" id="1415" countyid="3" />
+  <option name="תובל" id="1419" countyid="3" />
+  <option name="תל יוסף" id="1425" countyid="3" />
+  <option name="תל עדשים" id="1428" countyid="3" />
+  <option name="תל קציר" id="1429" countyid="3" />
+  <option name="תל תאומים" id="1431" countyid="3" />
+  <option name="תמרת" id="1441" countyid="3" />
+  <option name="אביאל" id="15" countyid="4" />
+  <option name="אור עקיבא" id="46" countyid="4" />
+  <option name="אורנים" id="52" countyid="4" />
+  <option name="אושה" id="54" countyid="4" />
+  <option name="אלוני יצחק" id="172" countyid="4" />
+  <option name="בית אורן" id="239" countyid="4" />
+  <option name="בית חנניה" id="263" countyid="4" />
+  <option name="בית צבי" id="278" countyid="4" />
+  <option name="בנימינה-גבעת עדה*" id="303" countyid="4" />
+  <option name="ברקאי" id="321" countyid="4" />
+  <option name="בת שלמה" id="329" countyid="4" />
+  <option name="גבע כרמל" id="339" countyid="4" />
+  <option name="גבעת ניל&quot;י" id="356" countyid="4" />
+  <option name="גן השומרון" id="405" countyid="4" />
+  <option name="גן שמואל" id="412" countyid="4" />
+  <option name="דור" id="440" countyid="4" />
+  <option name="הבונים" id="460" countyid="4" />
+  <option name="החותרים" id="471" countyid="4" />
+  <option name="זכרון יעקב" id="510" countyid="4" />
+  <option name="חדרה" id="525" countyid="4" />
+  <option name="טירת כרמל" id="578" countyid="4" />
+  <option name="יגור" id="592" countyid="4" />
+  <option name="כפר ביאליק" id="677" countyid="4" />
+  <option name="כפר גלים" id="684" countyid="4" />
+  <option name="כפר גליקסון" id="685" countyid="4" />
+  <option name="כפר המכבי" id="690" countyid="4" />
+  <option name="כפר הנוער הדתי" id="692" countyid="4" />
+  <option name="כפר חסידים א'" id="707" countyid="4" />
+  <option name="כפר חסידים ב'" id="708" countyid="4" />
+  <option name="כפר פינס" id="735" countyid="4" />
+  <option name="כרם מהר&quot;ל" id="752" countyid="4" />
+  <option name="להבות חביבה" id="765" countyid="4" />
+  <option name="מאור" id="777" countyid="4" />
+  <option name="מאיר שפיה" id="778" countyid="4" />
+  <option name="מגדים" id="791" countyid="4" />
+  <option name="מגל" id="799" countyid="4" />
+  <option name="מי עמי" id="835" countyid="4" />
+  <option name="מעגן מיכאל" id="867" countyid="4" />
+  <option name="מעיין צבי" id="872" countyid="4" />
+  <option name="מענית" id="885" countyid="4" />
+  <option name="מצר" id="915" countyid="4" />
+  <option name="משמרות" id="943" countyid="4" />
+  <option name="נווה אבות" id="962" countyid="4" />
+  <option name="נווה ים" id="972" countyid="4" />
+  <option name="נופית" id="981" countyid="4" />
+  <option name="נחשולים" id="995" countyid="4" />
+  <option name="ניר עציון" id="1021" countyid="4" />
+  <option name="נשר" id="1054" countyid="4" />
+  <option name="עופר" id="1090" countyid="4" />
+  <option name="עין איילה" id="1104" countyid="4" />
+  <option name="עין הוד" id="1110" countyid="4" />
+  <option name="עין כרמל" id="1126" countyid="4" />
+  <option name="עין עירון" id="1129" countyid="4" />
+  <option name="עין שמר" id="1133" countyid="4" />
+  <option name="עמיקם" id="1148" countyid="4" />
+  <option name="עתלית" id="1177" countyid="4" />
+  <option name="פרדס חנה-כרכור" id="1201" countyid="4" />
+  <option name="צרופה" id="1231" countyid="4" />
+  <option name="קיסריה" id="1247" countyid="4" />
+  <option name="קציר-חריש" id="1252" countyid="4" />
+  <option name="קריית אתא" id="1257" countyid="4" />
+  <option name="קריית ביאליק" id="1258" countyid="4" />
+  <option name="קריית טבעון" id="1261" countyid="4" />
+  <option name="קריית ים" id="1262" countyid="4" />
+  <option name="קריית מוצקין" id="1265" countyid="4" />
+  <option name="רגבים" id="1288" countyid="4" />
+  <option name="רכסים" id="1304" countyid="4" />
+  <option name="רמת יוחנן" id="1318" countyid="4" />
+  <option name="שדה יצחק" id="1350" countyid="4" />
+  <option name="שדות ים" id="1357" countyid="4" />
+  <option name="שער העמקים" id="1400" countyid="4" />
+  <option name="שער מנשה" id="1401" countyid="4" />
+  <option name="תלמי אלעזר" id="1435" countyid="4" />
+  <option name="אביחיל" id="18" countyid="5" />
+  <option name="אבן יהודה" id="22" countyid="5" />
+  <option name="אודים" id="34" countyid="5" />
+  <option name="אומץ" id="41" countyid="5" />
+  <option name="אחיטוב" id="144" countyid="5" />
+  <option name="אחיסמך" id="145" countyid="5" />
+  <option name="אחיעזר" id="146" countyid="5" />
+  <option name="אייל" id="150" countyid="5" />
+  <option name="אליכין" id="174" countyid="5" />
+  <option name="אלישיב" id="179" countyid="5" />
+  <option name="אלישמע" id="180" countyid="5" />
+  <option name="אלעד" id="183" countyid="5" />
+  <option name="ארסוף" id="206" countyid="5" />
+  <option name="באר יעקב" id="222" countyid="5" />
+  <option name="בארות יצחק" id="225" countyid="5" />
+  <option name="בארותיים" id="226" countyid="5" />
+  <option name="בורגתה" id="231" countyid="5" />
+  <option name="בחן" id="232" countyid="5" />
+  <option name="בית אלעזרי" id="241" countyid="5" />
+  <option name="בית ברל" id="244" countyid="5" />
+  <option name="בית גמליאל" id="246" countyid="5" />
+  <option name="בית דגן" id="248" countyid="5" />
+  <option name="בית הלוי" id="250" countyid="5" />
+  <option name="בית חירות" id="260" countyid="5" />
+  <option name="בית חלקיה" id="261" countyid="5" />
+  <option name="בית חנן" id="262" countyid="5" />
+  <option name="בית חשמונאי" id="264" countyid="5" />
+  <option name="בית יהושע" id="265" countyid="5" />
+  <option name="בית ינאי" id="267" countyid="5" />
+  <option name="בית יצחק-שער חפר" id="268" countyid="5" />
+  <option name="בית נחמיה" id="271" countyid="5" />
+  <option name="בית עובד" id="274" countyid="5" />
+  <option name="בית עוזיאל" id="275" countyid="5" />
+  <option name="בית עריף" id="277" countyid="5" />
+  <option name="בית רבן" id="281" countyid="5" />
+  <option name="ביתן אהרן" id="287" countyid="5" />
+  <option name="בן זכאי" id="290" countyid="5" />
+  <option name="בן שמן (כפר נוער)" id="292" countyid="5" />
+  <option name="בן שמן (מושב)" id="293" countyid="5" />
+  <option name="בני דרום" id="295" countyid="5" />
+  <option name="בני דרור" id="296" countyid="5" />
+  <option name="בני עטרות" id="298" countyid="5" />
+  <option name="בני עי&quot;ש" id="299" countyid="5" />
+  <option name="בני ציון" id="300" countyid="5" />
+  <option name="בני ראם" id="301" countyid="5" />
+  <option name="בניה" id="302" countyid="5" />
+  <option name="בצרה" id="307" countyid="5" />
+  <option name="ברקת" id="323" countyid="5" />
+  <option name="בת חן" id="325" countyid="5" />
+  <option name="בת חפר" id="326" countyid="5" />
+  <option name="גאולי תימן" id="331" countyid="5" />
+  <option name="גאולים" id="332" countyid="5" />
+  <option name="גאליה" id="334" countyid="5" />
+  <option name="גבעת ברנר" id="345" countyid="5" />
+  <option name="גבעת השלושה" id="346" countyid="5" />
+  <option name="גבעת ח&quot;ן" id="348" countyid="5" />
+  <option name="גבעת חיים (איחוד)" id="350" countyid="5" />
+  <option name="גבעת חיים (מאוחד)" id="351" countyid="5" />
+  <option name="גבעת כ&quot;ח" id="355" countyid="5" />
+  <option name="גבעת שמואל" id="358" countyid="5" />
+  <option name="גבעת שפירא" id="360" countyid="5" />
+  <option name="גדרה" id="369" countyid="5" />
+  <option name="גזר" id="378" countyid="5" />
+  <option name="גיבתון" id="380" countyid="5" />
+  <option name="גינתון" id="386" countyid="5" />
+  <option name="גמזו" id="403" countyid="5" />
+  <option name="גן הדרום" id="404" countyid="5" />
+  <option name="גן חיים" id="406" countyid="5" />
+  <option name="גן יאשיה" id="407" countyid="5" />
+  <option name="גן יבנה" id="408" countyid="5" />
+  <option name="גן שורק" id="410" countyid="5" />
+  <option name="גן שלמה" id="411" countyid="5" />
+  <option name="גנות" id="414" countyid="5" />
+  <option name="גנות הדר" id="415" countyid="5" />
+  <option name="גני הדר" id="416" countyid="5" />
+  <option name="גני יוחנן" id="417" countyid="5" />
+  <option name="גני עם" id="418" countyid="5" />
+  <option name="גני תקווה" id="419" countyid="5" />
+  <option name="געש" id="421" countyid="5" />
+  <option name="גת רימון" id="430" countyid="5" />
+  <option name="הדר עם" id="462" countyid="5" />
+  <option name="הוד השרון" id="463" countyid="5" />
+  <option name="המעפיל" id="474" countyid="5" />
+  <option name="העוגן" id="477" countyid="5" />
+  <option name="זיתן" id="509" countyid="5" />
+  <option name="חבצלת השרון" id="518" countyid="5" />
+  <option name="חגור" id="520" countyid="5" />
+  <option name="חגלה" id="522" countyid="5" />
+  <option name="חדיד" id="523" countyid="5" />
+  <option name="חולדה" id="529" countyid="5" />
+  <option name="חופית" id="536" countyid="5" />
+  <option name="חורשים" id="540" countyid="5" />
+  <option name="חיבת ציון" id="542" countyid="5" />
+  <option name="חירות" id="545" countyid="5" />
+  <option name="חמד" id="550" countyid="5" />
+  <option name="חניאל" id="554" countyid="5" />
+  <option name="חפץ חיים" id="558" countyid="5" />
+  <option name="חרב לאת" id="565" countyid="5" />
+  <option name="חרוצים" id="566" countyid="5" />
+  <option name="טירת יהודה" id="577" countyid="5" />
+  <option name="יבנה" id="591" countyid="5" />
+  <option name="יגל" id="593" countyid="5" />
+  <option name="יד בנימין" id="594" countyid="5" />
+  <option name="יד חנה" id="596" countyid="5" />
+  <option name="יד רמב&quot;ם" id="599" countyid="5" />
+  <option name="יהוד" id="601" countyid="5" />
+  <option name="ינוב" id="614" countyid="5" />
+  <option name="יסודות" id="617" countyid="5" />
+  <option name="יעף" id="621" countyid="5" />
+  <option name="יציץ" id="629" countyid="5" />
+  <option name="יקום" id="630" countyid="5" />
+  <option name="ירחיב" id="638" countyid="5" />
+  <option name="ירקונה" id="640" countyid="5" />
+  <option name="ישרש" id="643" countyid="5" />
+  <option name="כוכב יאיר" id="651" countyid="5" />
+  <option name="כפר אביב" id="673" countyid="5" />
+  <option name="כפר ביל&quot;ו" id="678" countyid="5" />
+  <option name="כפר בן נון" id="680" countyid="5" />
+  <option name="כפר דניאל" id="687" countyid="5" />
+  <option name="כפר הנגיד" id="691" countyid="5" />
+  <option name="כפר הס" id="694" countyid="5" />
+  <option name="כפר הרא&quot;ה" id="695" countyid="5" />
+  <option name="כפר ויתקין" id="697" countyid="5" />
+  <option name="כפר חב&quot;ד" id="702" countyid="5" />
+  <option name="כפר חיים" id="705" countyid="5" />
+  <option name="כפר טרומן" id="710" countyid="5" />
+  <option name="כפר ידידיה" id="712" countyid="5" />
+  <option name="כפר יונה" id="714" countyid="5" />
+  <option name="כפר יעבץ" id="716" countyid="5" />
+  <option name="כפר מונש" id="719" countyid="5" />
+  <option name="כפר מל&quot;ל" id="721" countyid="5" />
+  <option name="כפר מרדכי" id="726" countyid="5" />
+  <option name="כפר נטר" id="727" countyid="5" />
+  <option name="כפר סבא" id="729" countyid="5" />
+  <option name="כפר סירקין" id="731" countyid="5" />
+  <option name="כפר עבודה" id="732" countyid="5" />
+  <option name="כפר רות" id="742" countyid="5" />
+  <option name="כפר שמואל" id="744" countyid="5" />
+  <option name="כרם בן שמן" id="750" countyid="5" />
+  <option name="כרם יבנה (ישיבה)" id="751" countyid="5" />
+  <option name="כרמי יוסף" id="754" countyid="5" />
+  <option name="לפיד" id="774" countyid="5" />
+  <option name="מבוא מודיעים" id="783" countyid="5" />
+  <option name="מבואות ים" id="784" countyid="5" />
+  <option name="מגשימים" id="802" countyid="5" />
+  <option name="מדרשת רופין" id="805" countyid="5" />
+  <option name="מודיעין-מכבים-רעות*" id="807" countyid="5" />
+  <option name="מזור" id="814" countyid="5" />
+  <option name="מזכרת בתיה" id="815" countyid="5" />
+  <option name="מישר" id="841" countyid="5" />
+  <option name="מכמורת" id="845" countyid="5" />
+  <option name="מעברות" id="864" countyid="5" />
+  <option name="מעש" id="889" countyid="5" />
+  <option name="מצליח" id="907" countyid="5" />
+  <option name="משגב דב" id="930" countyid="5" />
+  <option name="משמר איילון" id="936" countyid="5" />
+  <option name="משמר דוד" id="937" countyid="5" />
+  <option name="משמר השבעה" id="941" countyid="5" />
+  <option name="משמר השרון" id="942" countyid="5" />
+  <option name="משמרת" id="944" countyid="5" />
+  <option name="מתן" id="946" countyid="5" />
+  <option name="נווה ימין" id="973" countyid="5" />
+  <option name="נווה ירק" id="974" countyid="5" />
+  <option name="נוף איילון" id="979" countyid="5" />
+  <option name="נופך" id="982" countyid="5" />
+  <option name="נורדייה" id="984" countyid="5" />
+  <option name="נחלים" id="992" countyid="5" />
+  <option name="נחשונים" id="997" countyid="5" />
+  <option name="נטעים" id="1000" countyid="5" />
+  <option name="ניצני עוז" id="1008" countyid="5" />
+  <option name="ניר אליהו" id="1010" countyid="5" />
+  <option name="ניר גלים" id="1012" countyid="5" />
+  <option name="ניר צבי" id="1023" countyid="5" />
+  <option name="נירית" id="1025" countyid="5" />
+  <option name="נס ציונה" id="1030" countyid="5" />
+  <option name="נעורים" id="1031" countyid="5" />
+  <option name="נען" id="1034" countyid="5" />
+  <option name="נצר סרני" id="1051" countyid="5" />
+  <option name="נתניה" id="1060" countyid="5" />
+  <option name="סביון*" id="1063" countyid="5" />
+  <option name="סתרייה" id="1078" countyid="5" />
+  <option name="עדנים" id="1085" countyid="5" />
+  <option name="עולש" id="1088" countyid="5" />
+  <option name="עזריאל" id="1095" countyid="5" />
+  <option name="עזריה" id="1096" countyid="5" />
+  <option name="עיינות" id="1102" countyid="5" />
+  <option name="עין החורש" id="1111" countyid="5" />
+  <option name="עין ורד" id="1117" countyid="5" />
+  <option name="עין שריד" id="1134" countyid="5" />
+  <option name="עינת" id="1136" countyid="5" />
+  <option name="עשרת" id="1176" countyid="5" />
+  <option name="פדיה" id="1185" countyid="5" />
+  <option name="פורת" id="1190" countyid="5" />
+  <option name="פלמחים" id="1193" countyid="5" />
+  <option name="פרדסייה" id="1202" countyid="5" />
+  <option name="פתח תקווה" id="1206" countyid="5" />
+  <option name="פתחיה" id="1207" countyid="5" />
+  <option name="צופית" id="1215" countyid="5" />
+  <option name="צוקי ים" id="1217" countyid="5" />
+  <option name="צור יצחק" id="1220" countyid="5" />
+  <option name="צור משה" id="1221" countyid="5" />
+  <option name="צור נתן" id="1222" countyid="5" />
+  <option name="צפרייה" id="1228" countyid="5" />
+  <option name="קבוצת יבנה" id="1234" countyid="5" />
+  <option name="קדימה-צורן" id="1236" countyid="5" />
+  <option name="קדרון" id="1240" countyid="5" />
+  <option name="קריית עקרון" id="1269" countyid="5" />
+  <option name="ראש העין" id="1279" countyid="5" />
+  <option name="ראשון לציון" id="1282" countyid="5" />
+  <option name="רחובות" id="1298" countyid="5" />
+  <option name="רינתיה" id="1303" countyid="5" />
+  <option name="רמות השבים" id="1307" countyid="5" />
+  <option name="רמות מאיר" id="1308" countyid="5" />
+  <option name="רמת הכובש" id="1314" countyid="5" />
+  <option name="רעננה" id="1332" countyid="5" />
+  <option name="רשפון" id="1334" countyid="5" />
+  <option name="שדה ורבורג" id="1347" countyid="5" />
+  <option name="שדי חמד" id="1360" countyid="5" />
+  <option name="שדמה" id="1362" countyid="5" />
+  <option name="שוהם" id="1369" countyid="5" />
+  <option name="שושנת העמקים" id="1375" countyid="5" />
+  <option name="שילת" id="1383" countyid="5" />
+  <option name="שעלבים" id="1397" countyid="5" />
+  <option name="שער אפרים" id="1398" countyid="5" />
+  <option name="שפיים" id="1403" countyid="5" />
+  <option name="תל יצחק" id="1426" countyid="5" />
+  <option name="תל מונד" id="1427" countyid="5" />
+  <option name="תנובות" id="1442" countyid="5" />
+  <option name="אור יהודה" id="45" countyid="6" />
+  <option name="אזור" id="55" countyid="6" />
+  <option name="בני ברק" id="294" countyid="6" />
+  <option name="בת ים" id="327" countyid="6" />
+  <option name="גבעתיים" id="362" countyid="6" />
+  <option name="גליל ים" id="392" countyid="6" />
+  <option name="הרצלייה" id="500" countyid="6" />
+  <option name="חולון" id="530" countyid="6" />
+  <option name="כפר שמריהו" id="745" countyid="6" />
+  <option name="מקווה ישראל" id="916" countyid="6" />
+  <option name="קריית אונו" id="1255" countyid="6" />
+  <option name="רמת גן" id="1312" countyid="6" />
+  <option name="רמת השרון" id="1316" countyid="6" />
+  <option name="אביגדור" id="17" countyid="7" />
+  <option name="אבן שמואל" id="25" countyid="7" />
+  <option name="אבשלום" id="29" countyid="7" />
+  <option name="אוהד" id="36" countyid="7" />
+  <option name="אופקים" id="42" countyid="7" />
+  <option name="אור הנר" id="44" countyid="7" />
+  <option name="אורות" id="49" countyid="7" />
+  <option name="אורים" id="51" countyid="7" />
+  <option name="אחווה" id="140" countyid="7" />
+  <option name="אחוזם" id="141" countyid="7" />
+  <option name="איבים" id="148" countyid="7" />
+  <option name="אילות" id="154" countyid="7" />
+  <option name="אילת" id="156" countyid="7" />
+  <option name="איתן" id="158" countyid="7" />
+  <option name="אלומה" id="165" countyid="7" />
+  <option name="אליפז" id="176" countyid="7" />
+  <option name="אמונים" id="188" countyid="7" />
+  <option name="אמציה" id="191" countyid="7" />
+  <option name="ארז" id="204" countyid="7" />
+  <option name="אשבול" id="207" countyid="7" />
+  <option name="אשדוד" id="209" countyid="7" />
+  <option name="אשל הנשיא" id="214" countyid="7" />
+  <option name="אשלים" id="215" countyid="7" />
+  <option name="אשקלון" id="216" countyid="7" />
+  <option name="באר אורה" id="220" countyid="7" />
+  <option name="באר טוביה" id="221" countyid="7" />
+  <option name="באר שבע" id="224" countyid="7" />
+  <option name="בארי" id="227" countyid="7" />
+  <option name="בטחה" id="233" countyid="7" />
+  <option name="ביצרון" id="235" countyid="7" />
+  <option name="בית גוברין" id="245" countyid="7" />
+  <option name="בית הגדי" id="249" countyid="7" />
+  <option name="בית ניר" id="272" countyid="7" />
+  <option name="בית עזרא" id="276" countyid="7" />
+  <option name="בית קמה" id="279" countyid="7" />
+  <option name="בית שקמה" id="286" countyid="7" />
+  <option name="ברור חיל" id="315" countyid="7" />
+  <option name="ברוש" id="316" countyid="7" />
+  <option name="ברכיה" id="318" countyid="7" />
+  <option name="בת הדר" id="324" countyid="7" />
+  <option name="גבולות" id="335" countyid="7" />
+  <option name="גבים" id="336" countyid="7" />
+  <option name="גבעולים" id="340" countyid="7" />
+  <option name="גבעות בר" id="342" countyid="7" />
+  <option name="גבעתי" id="361" countyid="7" />
+  <option name="גברעם" id="363" countyid="7" />
+  <option name="גיאה" id="379" countyid="7" />
+  <option name="גילת" id="383" countyid="7" />
+  <option name="גלאון" id="389" countyid="7" />
+  <option name="גרופית" id="424" countyid="7" />
+  <option name="גת (קיבוץ)" id="429" countyid="7" />
+  <option name="דבירה" id="434" countyid="7" />
+  <option name="דורות" id="441" countyid="7" />
+  <option name="דימונה" id="446" countyid="7" />
+  <option name="דקל" id="453" countyid="7" />
+  <option name="הודייה" id="465" countyid="7" />
+  <option name="ורדון" id="504" countyid="7" />
+  <option name="זבדיאל" id="506" countyid="7" />
+  <option name="זוהר" id="507" countyid="7" />
+  <option name="זיקים" id="508" countyid="7" />
+  <option name="זמרת" id="513" countyid="7" />
+  <option name="זרועה" id="515" countyid="7" />
+  <option name="זרחיה" id="517" countyid="7" />
+  <option name="חולית" id="531" countyid="7" />
+  <option name="חלץ" id="548" countyid="7" />
+  <option name="חצב" id="560" countyid="7" />
+  <option name="חצבה" id="561" countyid="7" />
+  <option name="חצור-אשדוד" id="563" countyid="7" />
+  <option name="חצרים" id="564" countyid="7" />
+  <option name="טללים" id="582" countyid="7" />
+  <option name="יבול" id="589" countyid="7" />
+  <option name="יד מרדכי" id="597" countyid="7" />
+  <option name="יד נתן" id="598" countyid="7" />
+  <option name="יהל" id="602" countyid="7" />
+  <option name="יושיביה" id="607" countyid="7" />
+  <option name="יטבתה" id="610" countyid="7" />
+  <option name="יכיני" id="612" countyid="7" />
+  <option name="ינון" id="615" countyid="7" />
+  <option name="ירוחם" id="636" countyid="7" />
+  <option name="ישע" id="641" countyid="7" />
+  <option name="יתד" id="644" countyid="7" />
+  <option name="כוכב מיכאל" id="653" countyid="7" />
+  <option name="כיסופים" id="657" countyid="7" />
+  <option name="כמהין" id="662" countyid="7" />
+  <option name="כנות" id="664" countyid="7" />
+  <option name="כפר אחים" id="676" countyid="7" />
+  <option name="כפר הרי&quot;ף" id="696" countyid="7" />
+  <option name="כפר ורבורג" id="698" countyid="7" />
+  <option name="כפר מימון" id="720" countyid="7" />
+  <option name="כפר מנחם" id="723" countyid="7" />
+  <option name="כפר סילבר" id="730" countyid="7" />
+  <option name="כפר עזה" id="733" countyid="7" />
+  <option name="כרם שלום" id="753" countyid="7" />
+  <option name="כרמייה" id="757" countyid="7" />
+  <option name="כרמים" id="758" countyid="7" />
+  <option name="להב" id="763" countyid="7" />
+  <option name="להבים" id="766" countyid="7" />
+  <option name="לוטן" id="771" countyid="7" />
+  <option name="לכיש" id="773" countyid="7" />
+  <option name="מבועים" id="785" countyid="7" />
+  <option name="מבטחים" id="786" countyid="7" />
+  <option name="מבקיעים" id="787" countyid="7" />
+  <option name="מגן" id="800" countyid="7" />
+  <option name="מדרשת בן גוריון" id="804" countyid="7" />
+  <option name="מיתר" id="842" countyid="7" />
+  <option name="מלילות" id="848" countyid="7" />
+  <option name="מנוחה" id="851" countyid="7" />
+  <option name="מסלול" id="861" countyid="7" />
+  <option name="מעגלים" id="865" countyid="7" />
+  <option name="מפלסים" id="890" countyid="7" />
+  <option name="מצפה רמון" id="913" countyid="7" />
+  <option name="מרחב עם" id="919" countyid="7" />
+  <option name="מרכז שפירא" id="928" countyid="7" />
+  <option name="משאבי שדה" id="929" countyid="7" />
+  <option name="משואות יצחק" id="934" countyid="7" />
+  <option name="משמר הנגב" id="939" countyid="7" />
+  <option name="משען" id="945" countyid="7" />
+  <option name="נאות הכיכר" id="950" countyid="7" />
+  <option name="נאות סמדר" id="952" countyid="7" />
+  <option name="נבטים" id="954" countyid="7" />
+  <option name="נגבה" id="955" countyid="7" />
+  <option name="נהורה" id="957" countyid="7" />
+  <option name="נוגה" id="961" countyid="7" />
+  <option name="נווה זוהר" id="969" countyid="7" />
+  <option name="נווה חריף" id="971" countyid="7" />
+  <option name="נווה מבטח" id="975" countyid="7" />
+  <option name="נועם" id="978" countyid="7" />
+  <option name="נחל עוז" id="988" countyid="7" />
+  <option name="נחלה" id="990" countyid="7" />
+  <option name="ניצן" id="1004" countyid="7" />
+  <option name="ניצן ב'" id="1005" countyid="7" />
+  <option name="ניצנה (קהילת חינוך)" id="1006" countyid="7" />
+  <option name="ניצני סיני" id="1007" countyid="7" />
+  <option name="ניצנים" id="1009" countyid="7" />
+  <option name="ניר בנים" id="1011" countyid="7" />
+  <option name="ניר ח&quot;ן" id="1014" countyid="7" />
+  <option name="ניר יצחק" id="1016" countyid="7" />
+  <option name="ניר ישראל" id="1017" countyid="7" />
+  <option name="ניר משה" id="1018" countyid="7" />
+  <option name="ניר עוז" id="1019" countyid="7" />
+  <option name="ניר עם" id="1020" countyid="7" />
+  <option name="ניר עקיבא" id="1022" countyid="7" />
+  <option name="נירים" id="1024" countyid="7" />
+  <option name="נתיב העשרה" id="1057" countyid="7" />
+  <option name="נתיבות" id="1059" countyid="7" />
+  <option name="סגולה" id="1064" countyid="7" />
+  <option name="סופה" id="1069" countyid="7" />
+  <option name="סמר" id="1074" countyid="7" />
+  <option name="סעד" id="1075" countyid="7" />
+  <option name="ספיר" id="1077" countyid="7" />
+  <option name="עוזה" id="1086" countyid="7" />
+  <option name="עומר" id="1089" countyid="7" />
+  <option name="עוצם" id="1091" countyid="7" />
+  <option name="עזוז" id="1093" countyid="7" />
+  <option name="עזר" id="1094" countyid="7" />
+  <option name="עזריקם" id="1097" countyid="7" />
+  <option name="עידן" id="1100" countyid="7" />
+  <option name="עין גדי" id="1107" countyid="7" />
+  <option name="עין הבשור" id="1109" countyid="7" />
+  <option name="עין השלושה" id="1116" countyid="7" />
+  <option name="עין חצבה" id="1120" countyid="7" />
+  <option name="עין יהב" id="1123" countyid="7" />
+  <option name="עין צורים" id="1130" countyid="7" />
+  <option name="עין תמר" id="1135" countyid="7" />
+  <option name="עלומים" id="1139" countyid="7" />
+  <option name="עמיעוז" id="1147" countyid="7" />
+  <option name="ערד" id="1172" countyid="7" />
+  <option name="ערוגות" id="1173" countyid="7" />
+  <option name="פארן" id="1179" countyid="7" />
+  <option name="פדויים" id="1184" countyid="7" />
+  <option name="פטיש" id="1191" countyid="7" />
+  <option name="פעמי תש&quot;ז" id="1197" countyid="7" />
+  <option name="פרי גן" id="1205" countyid="7" />
+  <option name="צאלים" id="1208" countyid="7" />
+  <option name="צוחר" id="1212" countyid="7" />
+  <option name="צופר" id="1216" countyid="7" />
+  <option name="צוקים" id="1218" countyid="7" />
+  <option name="קדמה" id="1237" countyid="7" />
+  <option name="קוממיות" id="1244" countyid="7" />
+  <option name="קטורה" id="1246" countyid="7" />
+  <option name="קלחים" id="1248" countyid="7" />
+  <option name="קריית גת" id="1259" countyid="7" />
+  <option name="קריית מלאכי" id="1266" countyid="7" />
+  <option name="רבדים" id="1284" countyid="7" />
+  <option name="רביבים" id="1285" countyid="7" />
+  <option name="רווחה" id="1290" countyid="7" />
+  <option name="רוחמה" id="1292" countyid="7" />
+  <option name="רנן" id="1330" countyid="7" />
+  <option name="רעים" id="1331" countyid="7" />
+  <option name="רתמים" id="1336" countyid="7" />
+  <option name="שדה בוקר" id="1345" countyid="7" />
+  <option name="שדה דוד" id="1346" countyid="7" />
+  <option name="שדה יואב" id="1348" countyid="7" />
+  <option name="שדה משה" id="1351" countyid="7" />
+  <option name="שדה ניצן" id="1354" countyid="7" />
+  <option name="שדה עוזיהו" id="1355" countyid="7" />
+  <option name="שדה צבי" id="1356" countyid="7" />
+  <option name="שדי אברהם" id="1359" countyid="7" />
+  <option name="שדרות" id="1365" countyid="7" />
+  <option name="שובה" id="1367" countyid="7" />
+  <option name="שובל" id="1368" countyid="7" />
+  <option name="שומרייה" id="1371" countyid="7" />
+  <option name="שוקדה" id="1372" countyid="7" />
+  <option name="שחר" id="1377" countyid="7" />
+  <option name="שחרות" id="1378" countyid="7" />
+  <option name="שיבולים" id="1379" countyid="7" />
+  <option name="שלווה" id="1385" countyid="7" />
+  <option name="שני" id="1393" countyid="7" />
+  <option name="שפיר" id="1404" countyid="7" />
+  <option name="שקף" id="1410" countyid="7" />
+  <option name="שרשרת" id="1414" countyid="7" />
+  <option name="שתולים" id="1416" countyid="7" />
+  <option name="תאשור" id="1417" countyid="7" />
+  <option name="תדהר" id="1418" countyid="7" />
+  <option name="תושייה" id="1421" countyid="7" />
+  <option name="תימורים" id="1422" countyid="7" />
+  <option name="תלמי אליהו" id="1434" countyid="7" />
+  <option name="תלמי ביל&quot;ו" id="1436" countyid="7" />
+  <option name="תלמי יוסף" id="1437" countyid="7" />
+  <option name="תלמי יחיאל" id="1438" countyid="7" />
+  <option name="תלמי יפה" id="1439" countyid="7" />
+  <option name="תלמים" id="1440" countyid="7" />
+  <option name="תפרח" id="1456" countyid="7" />
+  <option name="תקומה" id="1457" countyid="7" />
+  <option name="אבני חפץ" id="27" countyid="8" />
+  <option name="אבנת" id="28" countyid="8" />
+  <option name="אדורה" id="30" countyid="8" />
+  <option name="אורנית" id="53" countyid="8" />
+  <option name="איתמר" id="157" countyid="8" />
+  <option name="אלון מורה" id="168" countyid="8" />
+  <option name="אלון שבות" id="169" countyid="8" />
+  <option name="אלמוג" id="182" countyid="8" />
+  <option name="אלעזר" id="184" countyid="8" />
+  <option name="אלפי מנשה" id="185" countyid="8" />
+  <option name="אלקנה" id="187" countyid="8" />
+  <option name="אספר" id="194" countyid="8" />
+  <option name="אפרתה" id="201" countyid="8" />
+  <option name="ארגמן" id="203" countyid="8" />
+  <option name="אריאל" id="205" countyid="8" />
+  <option name="אשכולות" id="213" countyid="8" />
+  <option name="בית אל" id="240" countyid="8" />
+  <option name="בית אריה" id="243" countyid="8" />
+  <option name="בית הערבה" id="253" countyid="8" />
+  <option name="בית חורון" id="259" countyid="8" />
+  <option name="ביתר עילית" id="288" countyid="8" />
+  <option name="בקעות" id="310" countyid="8" />
+  <option name="ברכה" id="317" countyid="8" />
+  <option name="ברקן" id="322" countyid="8" />
+  <option name="בת עין" id="328" countyid="8" />
+  <option name="גבע בנימין" id="338" countyid="8" />
+  <option name="גבעון החדשה" id="341" countyid="8" />
+  <option name="גבעת זאב" id="347" countyid="8" />
+  <option name="גיתית" id="388" countyid="8" />
+  <option name="גלגל" id="391" countyid="8" />
+  <option name="דולב" id="439" countyid="8" />
+  <option name="הר אדר" id="481" countyid="8" />
+  <option name="הר גילה" id="485" countyid="8" />
+  <option name="ורד יריחו" id="503" countyid="8" />
+  <option name="חגי" id="521" countyid="8" />
+  <option name="חיננית" id="543" countyid="8" />
+  <option name="חלמיש" id="547" countyid="8" />
+  <option name="חמדת" id="552" countyid="8" />
+  <option name="חמרה" id="553" countyid="8" />
+  <option name="חרמש" id="568" countyid="8" />
+  <option name="חשמונאים" id="570" countyid="8" />
+  <option name="טלמון" id="583" countyid="8" />
+  <option name="טנא" id="586" countyid="8" />
+  <option name="ייט&quot;ב" id="611" countyid="8" />
+  <option name="יפית" id="625" countyid="8" />
+  <option name="יצהר" id="628" countyid="8" />
+  <option name="יקיר" id="631" countyid="8" />
+  <option name="כוכב השחר" id="650" countyid="8" />
+  <option name="כוכב יעקב" id="652" countyid="8" />
+  <option name="כפר אדומים" id="674" countyid="8" />
+  <option name="כפר האורנים" id="688" countyid="8" />
+  <option name="כפר עציון" id="734" countyid="8" />
+  <option name="כפר תפוח" id="747" countyid="8" />
+  <option name="כרמי צור" id="755" countyid="8" />
+  <option name="כרמל" id="759" countyid="8" />
+  <option name="מבוא דותן" id="780" countyid="8" />
+  <option name="מבוא חורון" id="781" countyid="8" />
+  <option name="מגדל עוז" id="794" countyid="8" />
+  <option name="מגדלים" id="797" countyid="8" />
+  <option name="מודיעין עילית" id="806" countyid="8" />
+  <option name="מחולה" id="820" countyid="8" />
+  <option name="מכורה" id="843" countyid="8" />
+  <option name="מעון" id="869" countyid="8" />
+  <option name="מעלה אדומים" id="874" countyid="8" />
+  <option name="מעלה אפרים" id="875" countyid="8" />
+  <option name="מעלה לבונה" id="879" countyid="8" />
+  <option name="מעלה מכמש" id="880" countyid="8" />
+  <option name="מעלה עמוס" id="882" countyid="8" />
+  <option name="מעלה שומרון" id="883" countyid="8" />
+  <option name="מצדות יהודה" id="905" countyid="8" />
+  <option name="מצפה יריחו" id="911" countyid="8" />
+  <option name="מצפה שלם" id="914" countyid="8" />
+  <option name="משואה" id="933" countyid="8" />
+  <option name="מתתיהו" id="948" countyid="8" />
+  <option name="נגוהות" id="956" countyid="8" />
+  <option name="נווה דניאל" id="968" countyid="8" />
+  <option name="נופים" id="980" countyid="8" />
+  <option name="נוקדים" id="983" countyid="8" />
+  <option name="נחליאל" id="991" countyid="8" />
+  <option name="ניל&quot;י" id="1003" countyid="8" />
+  <option name="נירן" id="1026" countyid="8" />
+  <option name="נעלה" id="1032" countyid="8" />
+  <option name="נעמ&quot;ה" id="1033" countyid="8" />
+  <option name="נתיב הגדוד" id="1055" countyid="8" />
+  <option name="סוסיה" id="1068" countyid="8" />
+  <option name="סלעית" id="1073" countyid="8" />
+  <option name="עטרת" id="1099" countyid="8" />
+  <option name="עלי" id="1140" countyid="8" />
+  <option name="עלי זהב" id="1141" countyid="8" />
+  <option name="עלמון" id="1143" countyid="8" />
+  <option name="עמנואל" id="1150" countyid="8" />
+  <option name="ענב" id="1163" countyid="8" />
+  <option name="עפרה" id="1166" countyid="8" />
+  <option name="עץ אפרים" id="1167" countyid="8" />
+  <option name="עתניאל" id="1178" countyid="8" />
+  <option name="פדואל" id="1183" countyid="8" />
+  <option name="פני חבר" id="1194" countyid="8" />
+  <option name="פסגות" id="1195" countyid="8" />
+  <option name="פצאל" id="1198" countyid="8" />
+  <option name="צופים" id="1214" countyid="8" />
+  <option name="קדומים" id="1235" countyid="8" />
+  <option name="קדר" id="1239" countyid="8" />
+  <option name="קליה" id="1249" countyid="8" />
+  <option name="קריית ארבע" id="1256" countyid="8" />
+  <option name="קריית נטפים" id="1267" countyid="8" />
+  <option name="קרני שומרון" id="1274" countyid="8" />
+  <option name="ראש צורים" id="1281" countyid="8" />
+  <option name="רבבה" id="1283" countyid="8" />
+  <option name="רועי" id="1295" countyid="8" />
+  <option name="ריחן" id="1300" countyid="8" />
+  <option name="רימונים" id="1302" countyid="8" />
+  <option name="שבי שומרון" id="1339" countyid="8" />
+  <option name="שדמות מחולה" id="1364" countyid="8" />
+  <option name="שילה" id="1382" countyid="8" />
+  <option name="שמעה" id="1390" countyid="8" />
+  <option name="שערי תקווה" id="1402" countyid="8" />
+  <option name="שקד" id="1409" countyid="8" />
+  <option name="תומר" id="1420" countyid="8" />
+  <option name="תלם" id="1433" countyid="8" />
+  <option name="תקוע" id="1458" countyid="8" />
+  <option name="אבו גוש" id="3" countyid="2" />
+  <option name="דייר ראפאת" id="445" countyid="2" />
+  <option name="עין נקובא" id="1128" countyid="2" />
+  <option name="עין ראפה" id="1132" countyid="2" />
+  <option name="אבו סנאן" id="4" countyid="3" />
+  <option name="אכסאל" id="160" countyid="3" />
+  <option name="אעבלין" id="195" countyid="3" />
+  <option name="בועיינה-נוג'ידאת" id="229" countyid="3" />
+  <option name="בוקעאתא" id="230" countyid="3" />
+  <option name="ביר אל-מכסור" id="236" countyid="3" />
+  <option name="בית ג'ן" id="247" countyid="3" />
+  <option name="בסמת טבעון" id="305" countyid="3" />
+  <option name="בענה" id="306" countyid="3" />
+  <option name="ג'דיידה-מכר" id="366" countyid="3" />
+  <option name="ג'ולס" id="373" countyid="3" />
+  <option name="ג'ש (גוש חלב)" id="425" countyid="3" />
+  <option name="דבורייה" id="433" countyid="3" />
+  <option name="דחי" id="442" countyid="3" />
+  <option name="דייר אל-אסד" id="443" countyid="3" />
+  <option name="דייר חנא" id="444" countyid="3" />
+  <option name="דמיידה" id="450" countyid="3" />
+  <option name="זרזיר" id="516" countyid="3" />
+  <option name="חוסנייה" id="534" countyid="3" />
+  <option name="חורפיש" id="539" countyid="3" />
+  <option name="חמאם" id="549" countyid="3" />
+  <option name="טובא-זנגרייה" id="572" countyid="3" />
+  <option name="טורעאן" id="573" countyid="3" />
+  <option name="טייבה (בעמק)" id="575" countyid="3" />
+  <option name="טמרה" id="584" countyid="3" />
+  <option name="טמרה (יזרעאל)" id="585" countyid="3" />
+  <option name="יאנוח-ג'ת" id="588" countyid="3" />
+  <option name="יפיע" id="624" countyid="3" />
+  <option name="ירכא" id="639" countyid="3" />
+  <option name="כאבול" id="645" countyid="3" />
+  <option name="כאוכב אבו אל-היג'א" id="646" countyid="3" />
+  <option name="כמאנה" id="661" countyid="3" />
+  <option name="כסרא-סמיע" id="671" countyid="3" />
+  <option name="כעביה-טבאש-חג'אג'רה" id="672" countyid="3" />
+  <option name="כפר יאסיף" id="711" countyid="3" />
+  <option name="כפר כמא" id="717" countyid="3" />
+  <option name="כפר כנא" id="718" countyid="3" />
+  <option name="כפר מנדא" id="722" countyid="3" />
+  <option name="כפר מצר" id="725" countyid="3" />
+  <option name="מג'ד אל-כרום" id="790" countyid="3" />
+  <option name="מג'דל שמס" id="795" countyid="3" />
+  <option name="מגאר" id="789" countyid="3" />
+  <option name="מוקייבלה" id="811" countyid="3" />
+  <option name="מזרעה" id="819" countyid="3" />
+  <option name="מנשית זבדה" id="856" countyid="3" />
+  <option name="מסעדה" id="862" countyid="3" />
+  <option name="מעיליא" id="873" countyid="3" />
+  <option name="משהד" id="932" countyid="3" />
+  <option name="נאעורה" id="953" countyid="3" />
+  <option name="נחף" id="994" countyid="3" />
+  <option name="ניין" id="1002" countyid="3" />
+  <option name="נס עמים" id="1029" countyid="3" />
+  <option name="נצרת" id="1052" countyid="3" />
+  <option name="סאג'ור" id="1061" countyid="3" />
+  <option name="סואעד (חמרייה)*" id="1065" countyid="3" />
+  <option name="סולם" id="1067" countyid="3" />
+  <option name="סח'נין" id="1070" countyid="3" />
+  <option name="סלמה" id="1072" countyid="3" />
+  <option name="ע'ג'ר" id="1082" countyid="3" />
+  <option name="עוזייר" id="1087" countyid="3" />
+  <option name="עיילבון" id="1101" countyid="3" />
+  <option name="עילוט" id="1103" countyid="3" />
+  <option name="עין אל-אסד" id="1105" countyid="3" />
+  <option name="עין מאהל" id="1127" countyid="3" />
+  <option name="עין קנייא" id="1131" countyid="3" />
+  <option name="עראבה" id="1169" countyid="3" />
+  <option name="עראמשה*" id="1170" countyid="3" />
+  <option name="ערב אל נעים" id="1171" countyid="3" />
+  <option name="פסוטה" id="1196" countyid="3" />
+  <option name="פקיעין (בוקייעה)" id="1199" countyid="3" />
+  <option name="צנדלה" id="1227" countyid="3" />
+  <option name="ראמה" id="1276" countyid="3" />
+  <option name="ראס אל-עין" id="1277" countyid="3" />
+  <option name="רומאנה" id="1293" countyid="3" />
+  <option name="רומת הייב" id="1294" countyid="3" />
+  <option name="ריחאנייה" id="1299" countyid="3" />
+  <option name="ריינה" id="1301" countyid="3" />
+  <option name="שבלי - אום אל-גנם" id="1340" countyid="3" />
+  <option name="שייח' דנון" id="1381" countyid="3" />
+  <option name="שעב" id="1395" countyid="3" />
+  <option name="שפרעם" id="1408" countyid="3" />
+  <option name="אבטין" id="13" countyid="4" />
+  <option name="אום אל-פחם" id="37" countyid="4" />
+  <option name="אום אל-קוטוף" id="38" countyid="4" />
+  <option name="אל -עריאן" id="163" countyid="4" />
+  <option name="באקה-ג'ת*" id="219" countyid="4" />
+  <option name="בסמ&quot;ה" id="304" countyid="4" />
+  <option name="ג'סר א-זרקא" id="420" countyid="4" />
+  <option name="דאלית אל-כרמל" id="431" countyid="4" />
+  <option name="ח'ואלד" id="526" countyid="4" />
+  <option name="כפר קרע" id="738" countyid="4" />
+  <option name="מייסר" id="837" countyid="4" />
+  <option name="מעלה עירון" id="881" countyid="4" />
+  <option name="עין חוד" id="1119" countyid="4" />
+  <option name="עספיא" id="1164" countyid="4" />
+  <option name="ערערה" id="1174" countyid="4" />
+  <option name="פוריידיס" id="1186" countyid="4" />
+  <option name="ראס עלי" id="1278" countyid="4" />
+  <option name="ג'לג'וליה" id="390" countyid="5" />
+  <option name="זמר" id="512" countyid="5" />
+  <option name="טייבה" id="574" countyid="5" />
+  <option name="טירה" id="576" countyid="5" />
+  <option name="כפר ברא" id="681" countyid="5" />
+  <option name="כפר קאסם" id="736" countyid="5" />
+  <option name="קלנסווה" id="1250" countyid="5" />
+  <option name="אבו קורינאת (יישוב)" id="9" countyid="7" />
+  <option name="אום בטין" id="39" countyid="7" />
+  <option name="אל -עזי" id="162" countyid="7" />
+  <option name="אל סייד" id="161" countyid="7" />
+  <option name="ביר הדאג'" id="237" countyid="7" />
+  <option name="דריג'את" id="458" countyid="7" />
+  <option name="חורה" id="538" countyid="7" />
+  <option name="כסיפה" id="669" countyid="7" />
+  <option name="לקיה" id="776" countyid="7" />
+  <option name="מולדה*" id="808" countyid="7" />
+  <option name="ערערה-בנגב" id="1175" countyid="7" />
+  <option name="קצר א-סר" id="1253" countyid="7" />
+  <option name="רהט" id="1289" countyid="7" />
+  <option name="שגב-שלום" id="1341" countyid="7" />
+  <option name="תל שבע" id="1430" countyid="7" />
+  <option name="תרבין א-צאנע (יישוב)*" id="1460" countyid="7" />
+  <option name="ח'ואלד (שבט)" id="527" countyid="3" />
+  <option name="חוג'ייראת (ד'הרה) (שבט)" id="528" countyid="3" />
+  <option name="סואעד (כמאנה) (שבט)" id="1066" countyid="3" />
+  <option name="אבו ג'ווייעד (שבט)" id="2" countyid="7" />
+  <option name="אבו סריחאן (שבט)" id="5" countyid="7" />
+  <option name="אבו עבדון (שבט)" id="6" countyid="7" />
+  <option name="אבו עמאר (שבט)" id="7" countyid="7" />
+  <option name="אבו עמרה (שבט)" id="8" countyid="7" />
+  <option name="אבו קורינאת (שבט)" id="10" countyid="7" />
+  <option name="אבו רובייעה (שבט)" id="11" countyid="7" />
+  <option name="אבו רוקייק (שבט)" id="12" countyid="7" />
+  <option name="אטרש (שבט)" id="147" countyid="7" />
+  <option name="אסד (שבט)" id="193" countyid="7" />
+  <option name="אעצם (שבט)" id="196" countyid="7" />
+  <option name="אפיניש (שבט)" id="197" countyid="7" />
+  <option name="ג'נאביב (שבט)" id="413" countyid="7" />
+  <option name="הוואשלה (שבט)" id="466" countyid="7" />
+  <option name="הוזייל (שבט)" id="467" countyid="7" />
+  <option name="זבארגה (שבט)" id="505" countyid="7" />
+  <option name="מסעודין אל-עזאזמה (שבט)" id="863" countyid="7" />
+  <option name="נצאצרה (שבט)" id="1050" countyid="7" />
+  <option name="סייד (שבט)" id="1071" countyid="7" />
+  <option name="עוקבי (בנו עוקבה) (שבט)" id="1092" countyid="7" />
+  <option name="עטאוונה (שבט)" id="1098" countyid="7" />
+  <option name="קבועה (שבט)" id="1233" countyid="7" />
+  <option name="קודייראת א-צאנע (שבט)" id="1242" countyid="7" />
+  <option name="קוואעין (שבט)" id="1243" countyid="7" />
+  <option name="תראבין א-צאנע (שבט)" id="1459" countyid="7" />
+  <option name="ירושלים" id="637" countyid="2" />
+  <option name="נווה שלום" id="977" countyid="2" />
+  <option name="מעלות-תרשיחא" id="884" countyid="3" />
+  <option name="נצרת עילית" id="1053" countyid="3" />
+  <option name="עכו" id="1138" countyid="3" />
+  <option name="חיפה" id="544" countyid="4" />
+  <option name="לוד" id="767" countyid="5" />
+  <option name="רמלה" id="1311" countyid="5" />
+  <option name="תל אביב -יפו" id="1424" countyid="6" />
+  <option name="הרי יהודה מ&quot;א 26" id="496" countyid="2" />
+  <option name="הרי יהודה של&quot;ש" id="497" countyid="2" />
+  <option name="כפר זוהרים" id="700" countyid="2" />
+  <option name="מפעלי הר טוב*" id="895" countyid="2" />
+  <option name="נווה אילן*" id="966" countyid="2" />
+  <option name="שפלת יהודה מ&quot;א 26" id="1405" countyid="2" />
+  <option name="שפלת יהודה של&quot;ש" id="1406" countyid="2" />
+  <option name="אזור אילון מ&quot;א 4" id="56" countyid="3" />
+  <option name="אזור אילון מ&quot;א 52" id="57" countyid="3" />
+  <option name="אזור אילון של&quot;ש" id="58" countyid="3" />
+  <option name="אזור חצור מ&quot;א 1" id="83" countyid="3" />
+  <option name="אזור חצור מ&quot;א 55" id="84" countyid="3" />
+  <option name="אזור חצור של&quot;ש" id="85" countyid="3" />
+  <option name="אזור יחיעם מ&quot;א 2" id="86" countyid="3" />
+  <option name="אזור יחיעם מ&quot;א 4" id="87" countyid="3" />
+  <option name="אזור יחיעם מ&quot;א 52" id="88" countyid="3" />
+  <option name="אזור יחיעם מ&quot;א 56" id="89" countyid="3" />
+  <option name="אזור יחיעם של&quot;ש" id="90" countyid="3" />
+  <option name="אזור יקנעם מ&quot;א 13" id="92" countyid="3" />
+  <option name="אזור יקנעם מ&quot;א 9" id="93" countyid="3" />
+  <option name="אזור כינרות מ&quot;א 3" id="94" countyid="3" />
+  <option name="אזור כנרות מ&quot;א 6" id="95" countyid="3" />
+  <option name="אזור כנרות של&quot;ש" id="96" countyid="3" />
+  <option name="אזור כרמיאל מ&quot;א 2" id="97" countyid="3" />
+  <option name="אזור כרמיאל מ&quot;א 56" id="98" countyid="3" />
+  <option name="אזור כרמיאל של&quot;ש" id="99" countyid="3" />
+  <option name="אזור נהריה של&quot;ש" id="111" countyid="3" />
+  <option name="אזור נהרייה מ&quot;א 4" id="112" countyid="3" />
+  <option name="אזור עכו מ&quot;א 4" id="113" countyid="3" />
+  <option name="אזור עכו מ&quot;א 56" id="114" countyid="3" />
+  <option name="אזור עכו של&quot;ש" id="115" countyid="3" />
+  <option name="אזור שפרעם מ&quot;א 56" id="132" countyid="3" />
+  <option name="אזור שפרעם מ&quot;א 9" id="133" countyid="3" />
+  <option name="אזור תעסוקה משגב" id="136" countyid="3" />
+  <option name="אזור תעשיה אכסאל מ&quot;א 9" id="137" countyid="3" />
+  <option name="אזור תעשייה אכזיב (מילואות)" id="138" countyid="3" />
+  <option name="אזור תעשייה נעמן (מילואות)" id="139" countyid="3" />
+  <option name="איזור שפרעם של&quot;ש" id="149" countyid="3" />
+  <option name="אילון תבור*" id="153" countyid="3" />
+  <option name="בי&quot;ס אזורי מקיף (אשר)" id="234" countyid="3" />
+  <option name="בית חולים פוריה" id="258" countyid="3" />
+  <option name="בקעת נטופה מ&quot;א 56" id="311" countyid="3" />
+  <option name="בקעת תירען מ&quot;א 3" id="312" countyid="3" />
+  <option name="גאון הירדן מ&quot;א 3" id="333" countyid="3" />
+  <option name="גולן דרומי מ&quot;א 71" id="370" countyid="3" />
+  <option name="גולן צפוני מ&quot;א 71" id="371" countyid="3" />
+  <option name="גולן תיכון מ&quot;א 71" id="372" countyid="3" />
+  <option name="גליל עליון מז מ&quot;א 1" id="393" countyid="3" />
+  <option name="גליל עליון מז מ&quot;א 2" id="394" countyid="3" />
+  <option name="גליל עליון מז מ&quot;א 55" id="395" countyid="3" />
+  <option name="גליל עליון מז של&quot;ש" id="396" countyid="3" />
+  <option name="גליל תחתון מז מ&quot;א 2" id="397" countyid="3" />
+  <option name="גליל תחתון מז מ&quot;א 3" id="398" countyid="3" />
+  <option name="גליל תחתון מז מ&quot;א 6" id="399" countyid="3" />
+  <option name="גליל תחתון מז של&quot;ש" id="400" countyid="3" />
+  <option name="הרי נצרת-תירען מ&quot;א 9" id="499" countyid="3" />
+  <option name="הרי נצרת תירען" id="498" countyid="3" />
+  <option name="חרמון מ&quot;א 71" id="567" countyid="3" />
+  <option name="יעל" id="620" countyid="3" />
+  <option name="יערות גבעת המורה מ&quot;א 9" id="623" countyid="3" />
+  <option name="כדיתה" id="649" countyid="3" />
+  <option name="כנרות של&quot;ש" id="666" countyid="3" />
+  <option name="מגדל תפן" id="796" countyid="3" />
+  <option name="מחנה יבור" id="823" countyid="3" />
+  <option name="מחנה יהודית*" id="824" countyid="3" />
+  <option name="מפעלי גליל עליון" id="893" countyid="3" />
+  <option name="מפעלי יזרעאל* (העמק)" id="896" countyid="3" />
+  <option name="מפעלי צמח" id="902" countyid="3" />
+  <option name="מפעלי שאן*" id="904" countyid="3" />
+  <option name="מרכז אזורי כדורי" id="922" countyid="3" />
+  <option name="מרכז אזורי מרום הגליל" id="923" countyid="3" />
+  <option name="מרכז אזורי משגב" id="924" countyid="3" />
+  <option name="מרכז כ&quot;ח" id="925" countyid="3" />
+  <option name="נורית" id="985" countyid="3" />
+  <option name="נחל יפתחאל מ&quot;א 3" id="987" countyid="3" />
+  <option name="נחל תבור מ&quot;א 8" id="989" countyid="3" />
+  <option name="עמק בית שאן מ&quot;א 7" id="1151" countyid="3" />
+  <option name="עמק בית שאן של&quot;ש" id="1152" countyid="3" />
+  <option name="עמק חולה מ&quot;א 1" id="1153" countyid="3" />
+  <option name="עמק חולה מ&quot;א 55" id="1154" countyid="3" />
+  <option name="עמק חולה של&quot;ש" id="1155" countyid="3" />
+  <option name="עמק חרוד מ&quot;א 8" id="1157" countyid="3" />
+  <option name="עמק חרוד של&quot;ש" id="1158" countyid="3" />
+  <option name="עמק יזרעאל מ&quot;א 13" id="1159" countyid="3" />
+  <option name="עמק יזרעאל מ&quot;א 8" id="1160" countyid="3" />
+  <option name="עמק יזרעאל מ&quot;א 9" id="1161" countyid="3" />
+  <option name="פארק הירדן מ&quot;א 6" id="1180" countyid="3" />
+  <option name="פלך" id="1192" countyid="3" />
+  <option name="רמת כוכב מ&quot;א 7" id="1320" countyid="3" />
+  <option name="רמת כוכב מ&quot;א 8" id="1321" countyid="3" />
+  <option name="רמת כוכב מ&quot;א 9" id="1322" countyid="3" />
+  <option name="רמת כוכב של&quot;ש" id="1323" countyid="3" />
+  <option name="רמת מנשה מ&quot;א 13" id="1325" countyid="3" />
+  <option name="רמת מנשה של&quot;ש" id="1326" countyid="3" />
+  <option name="תל-חי" id="1432" countyid="3" />
+  <option name="תעשיון בר-לב" id="1445" countyid="3" />
+  <option name="תעשיון גליל תחתון" id="1446" countyid="3" />
+  <option name="תעשיון דלתון" id="1447" countyid="3" />
+  <option name="אזור ז יעקב של&quot;ש" id="74" countyid="4" />
+  <option name="אזור זכרון יעקב מ&quot;א 15" id="75" countyid="4" />
+  <option name="אזור חדרה מ&quot;א 14" id="76" countyid="4" />
+  <option name="אזור חדרה מ&quot;א 15" id="77" countyid="4" />
+  <option name="אזור חדרה מ&quot;א 45" id="78" countyid="4" />
+  <option name="אזור חדרה של&quot;ש" id="79" countyid="4" />
+  <option name="אזור חיפה מ&quot;א 12" id="81" countyid="4" />
+  <option name="אזור חיפה של&quot;ש" id="82" countyid="4" />
+  <option name="בתי זיקוק - קישון*" id="330" countyid="4" />
+  <option name="גבעת חביבה" id="349" countyid="4" />
+  <option name="הר אלכסנדר מ&quot;א 14" id="482" countyid="4" />
+  <option name="הר אלכסנדר מ&quot;א 45" id="483" countyid="4" />
+  <option name="הר אלכסנדר של&quot;ש" id="484" countyid="4" />
+  <option name="חוף הכרמל מ&quot;א 15" id="535" countyid="4" />
+  <option name="מפעלי גרנות" id="894" countyid="4" />
+  <option name="מצפה אילן" id="910" countyid="4" />
+  <option name="מרכז מיר&quot;ב*" id="926" countyid="4" />
+  <option name="אזור מודיעין מ&quot;א 25" id="104" countyid="5" />
+  <option name="אזור מודיעין מ&quot;א 30" id="105" countyid="5" />
+  <option name="אזור מודיעין של&quot;ש" id="106" countyid="5" />
+  <option name="אזור פתח תקוה של&quot;ש" id="116" countyid="5" />
+  <option name="אזור פתח תקווה מ&quot;א 20" id="117" countyid="5" />
+  <option name="אזור פתח תקווה מ&quot;א 25" id="118" countyid="5" />
+  <option name="אזור ראשל&quot;צ מ&quot;א 27" id="119" countyid="5" />
+  <option name="אזור ראשל&quot;צ של&quot;ש" id="120" countyid="5" />
+  <option name="אזור רחובות מ&quot;א 28" id="121" countyid="5" />
+  <option name="אזור רחובות מ&quot;א 29" id="122" countyid="5" />
+  <option name="אזור רחובות מ&quot;א 30" id="123" countyid="5" />
+  <option name="אזור רחובות מ&quot;א 31" id="124" countyid="5" />
+  <option name="אזור רחובות מ&quot;א 32" id="125" countyid="5" />
+  <option name="אזור רחובות של&quot;ש" id="126" countyid="5" />
+  <option name="אזור רמלה מ&quot;א 25" id="127" countyid="5" />
+  <option name="אזור רמלה מ&quot;א 30" id="128" countyid="5" />
+  <option name="אזור רמלה מ&quot;א 40" id="129" countyid="5" />
+  <option name="אזור רמלה של&quot;ש" id="130" countyid="5" />
+  <option name="דרום השרון מ&quot;א 18" id="454" countyid="5" />
+  <option name="דרום השרון מ&quot;א 20" id="455" countyid="5" />
+  <option name="דרום השרון של&quot;ש" id="456" countyid="5" />
+  <option name="המרכז למחקר-נחל שורק" id="475" countyid="5" />
+  <option name="מזרח השרון מ&quot;א 16" id="816" countyid="5" />
+  <option name="מזרח השרון מ&quot;א 18" id="817" countyid="5" />
+  <option name="מחנה הילה*" id="821" countyid="5" />
+  <option name="מחנה תל נוף*" id="830" countyid="5" />
+  <option name="מערב השרון מ&quot;א 16" id="886" countyid="5" />
+  <option name="מערב השרון מ&quot;א 18" id="887" countyid="5" />
+  <option name="מערב השרון מ&quot;א 19" id="888" countyid="5" />
+  <option name="מרכז שוהם" id="927" countyid="5" />
+  <option name="נמל תעופה בן-גוריון" id="1027" countyid="5" />
+  <option name="עמק חפר מזרח מ&quot;א 16" id="1156" countyid="5" />
+  <option name="פארק תעשיה חבל מודיעים" id="1181" countyid="5" />
+  <option name="פארק תעשיות עמק חפר" id="1182" countyid="5" />
+  <option name="צופייה" id="1213" countyid="5" />
+  <option name="קריית שלמה" id="1270" countyid="5" />
+  <option name="קרית תעופה" id="1273" countyid="5" />
+  <option name="תעשיון בינימין*" id="1444" countyid="5" />
+  <option name="תעשיון השרון" id="1448" countyid="5" />
+  <option name="תעשיון חוף יבנה" id="1449" countyid="5" />
+  <option name="תעשיון חצב*" id="1450" countyid="5" />
+  <option name="תעשיון צריפין" id="1452" countyid="5" />
+  <option name="אזור גלילות מ&quot;א 19" id="70" countyid="6" />
+  <option name="אזור חולון של&quot;ש" id="80" countyid="6" />
+  <option name="אזור רמת גן של&quot;ש" id="131" countyid="6" />
+  <option name="אזור תל אביב של&quot;ש" id="134" countyid="6" />
+  <option name="אורון" id="48" countyid="7" />
+  <option name="אזור אשדוד מ&quot;א 29" id="59" countyid="7" />
+  <option name="אזור אשדוד מ&quot;א 33" id="60" countyid="7" />
+  <option name="אזור אשדוד של&quot;ש" id="61" countyid="7" />
+  <option name="אזור אשקלון מ&quot;א 36" id="62" countyid="7" />
+  <option name="אזור אשקלון מ&quot;א 37" id="63" countyid="7" />
+  <option name="אזור באר שבע מ&quot;א 41" id="64" countyid="7" />
+  <option name="אזור באר שבע מ&quot;א 51" id="65" countyid="7" />
+  <option name="אזור באר שבע של&quot;ש" id="66" countyid="7" />
+  <option name="אזור בשור מ&quot;א 38" id="67" countyid="7" />
+  <option name="אזור בשור מ&quot;א 39" id="68" countyid="7" />
+  <option name="אזור בשור מ&quot;א 42" id="69" countyid="7" />
+  <option name="אזור גרר מ&quot;א 39" id="71" countyid="7" />
+  <option name="אזור גרר מ&quot;א 41" id="72" countyid="7" />
+  <option name="אזור גרר מ&quot;א 42" id="73" countyid="7" />
+  <option name="אזור ים המלח מ&quot;א 51" id="91" countyid="7" />
+  <option name="אזור לכיש מ&quot;א 34" id="100" countyid="7" />
+  <option name="אזור לכיש מ&quot;א 35" id="101" countyid="7" />
+  <option name="אזור לכיש מ&quot;א 41" id="102" countyid="7" />
+  <option name="אזור לכיש מ&quot;א 50" id="103" countyid="7" />
+  <option name="אזור מלאכי מ&quot;א 33" id="107" countyid="7" />
+  <option name="אזור מלאכי מ&quot;א 34" id="108" countyid="7" />
+  <option name="אזור מלאכי מ&quot;א 35" id="109" countyid="7" />
+  <option name="אזור מלאכי מ&quot;א 50" id="110" countyid="7" />
+  <option name="באר מילכה" id="223" countyid="7" />
+  <option name="גמ&quot;ל מחוז דרום" id="402" countyid="7" />
+  <option name="הערבה מ&quot;א 51" id="478" countyid="7" />
+  <option name="הערבה מ&quot;א 53" id="479" countyid="7" />
+  <option name="הערבה מ&quot;א 54" id="480" countyid="7" />
+  <option name="הר הגב הדרומי מ&quot;א 54" id="486" countyid="7" />
+  <option name="הר הנגב הדרומי מ&quot;א 48" id="487" countyid="7" />
+  <option name="הר הנגב הדרומי מ&quot;א 53" id="488" countyid="7" />
+  <option name="הר הנגב הצפוני מ&quot;א 48" id="489" countyid="7" />
+  <option name="הר הנגב הצפוני מ&quot;א 51" id="490" countyid="7" />
+  <option name="הר הנגב הצפוני מ&quot;א 53" id="491" countyid="7" />
+  <option name="הר הנגב הצפוני מ&quot;א 54" id="492" countyid="7" />
+  <option name="הר עמשא" id="493" countyid="7" />
+  <option name="ים המלח - בתי מלון" id="613" countyid="7" />
+  <option name="כחלה" id="656" countyid="7" />
+  <option name="מחנה טלי*" id="822" countyid="7" />
+  <option name="מחנה יוכבד*" id="825" countyid="7" />
+  <option name="מחנה יפה*" id="826" countyid="7" />
+  <option name="מחנה יתיר" id="827" countyid="7" />
+  <option name="מחנה מרים*" id="828" countyid="7" />
+  <option name="מחנה עדי*" id="829" countyid="7" />
+  <option name="מכחול" id="844" countyid="7" />
+  <option name="מפעלי אבשלום" id="891" countyid="7" />
+  <option name="מפעלי ים המלח(סדום)" id="897" countyid="7" />
+  <option name="מפעלי כנות" id="898" countyid="7" />
+  <option name="מפעלי מעון*" id="899" countyid="7" />
+  <option name="מפעלי צומת מלאכי*" id="900" countyid="7" />
+  <option name="מפעלי צין - ערבה" id="901" countyid="7" />
+  <option name="מפעלי רותם" id="903" countyid="7" />
+  <option name="עד הלום" id="1083" countyid="7" />
+  <option name="עיר אובות" id="1137" countyid="7" />
+  <option name="קריית חינוך מרחבים" id="1260" countyid="7" />
+  <option name="קרית חינוך עזתה" id="1272" countyid="7" />
+  <option name="רמת חובב" id="1317" countyid="7" />
+  <option name="שיטים" id="1380" countyid="7" />
+  <option name="תעשיון מבצע*" id="1451" countyid="7" />
+  <option name="תעשיון ראם*" id="1453" countyid="7" />
+  <option name="תעשיות ספירים" id="1455" countyid="7" />
+  <option name="אזור תעסוקה מיתרים*" id="135" countyid="8" />
+  <option name="דרום יהודה" id="457" countyid="8" />
+  <option name="השומרון" id="502" countyid="8" />
+  <option name="מפעלי ברקן*" id="892" countyid="8" />
+  <option name="משכיות" id="935" countyid="8" />
+  <option name="נפת בית לחם" id="1035" countyid="8" />
+  <option name="נפת בית לחם מ&quot;א 76" id="1036" countyid="8" />
+  <option name="נפת ג'נין" id="1037" countyid="8" />
+  <option name="נפת ג'נין  מ&quot;א 72" id="1038" countyid="8" />
+  <option name="נפת חברון" id="1039" countyid="8" />
+  <option name="נפת חברון מ&quot;א 78" id="1040" countyid="8" />
+  <option name="נפת טול כרם" id="1041" countyid="8" />
+  <option name="נפת טול כרם  מ&quot;א 72" id="1042" countyid="8" />
+  <option name="נפת ירדן" id="1043" countyid="8" />
+  <option name="נפת ירדן מ&quot;א 74" id="1044" countyid="8" />
+  <option name="נפת ירדן מ&quot;א 75" id="1045" countyid="8" />
+  <option name="נפת ראמאללה" id="1046" countyid="8" />
+  <option name="נפת ראמאללה מ&quot;א  73" id="1047" countyid="8" />
+  <option name="נפת שכם" id="1048" countyid="8" />
+  <option name="נפת שכם מ&quot;א 72" id="1049" countyid="8" />
+  <option name="רותם" id="1296" countyid="8" />
+  <option name="שלומציון" id="1388" countyid="8" />
+  <option name="תעשיון שח&quot;ק" id="1454" countyid="8" />
+</options>

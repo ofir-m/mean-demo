@@ -1,0 +1,19 @@
+<div class="field clearfix">
+    <label ng-bind="label" />
+    <div class="editor multiselectbox-container">
+        <div class="multiselectbox-header clearfix" ng-click="toggleList()">
+            <div class="value-container" ng-class="{'default-text': value=='בחר...'}">
+                <span class="value" >{{value}}</span>
+            </div>
+            <div class="arrow-container">
+                <img src="images/arrow-down.png">
+            </div>
+        </div>
+        <ul class="multiselectbox-list" ng-show="showList">
+            <li on-last-repeat ng-repeat="item in items" ng-click="toggleItem(item)" ng-class="{'selected': item.selected}" ng-show="!($first&&hideFirstItem)">
+                <input ng-checked="item.selected" type="checkbox" class="css-checkbox sme" />
+                <label data-value="{{item.id}}" class="css-label sme depressed">{{item.name}}</label>
+            </li>
+        </ul>
+    </div>
+</div>

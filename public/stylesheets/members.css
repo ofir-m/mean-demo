@@ -1,0 +1,24 @@
+.members-list {
+  list-style: none;
+  /*background-color: greenyellow;*/
+  border: 1px solid #f4f4f4;
+  min-height: 500px; }
+
+.members-list-item {
+  float: right;
+  margin: 10px; }
+
+.clearfix:after {
+  content: " ";
+  /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+
+.members-container {
+  margin: 0 auto; }
+
+.members-pager-container {
+  margin: 0 auto;
+  width: 300px; }

@@ -1,0 +1,18 @@
+<div class="field clearfix">
+    <label ng-bind="label" />
+    <div class="editor selectbox-container">
+        <div class="selectbox-header clearfix" ng-click="toggleList()">
+            <div class="caption-container" ng-class="{'default-text': caption=='בחר...'}">
+                <span class="caption" ng-bind="caption"></span>
+            </div>
+            <div class="arrow-container">
+                <img src="images/arrow-down.png">
+            </div>
+        </div>
+        <ul class="selectbox-list" ng-show="showList">
+            <li on-last-repeat ng-repeat="item in items" ng-click="selectItem(item)" ng-class="{'selected': item.selected == true}">
+                <label data-value="{{item.id}}">{{item.name}}</label>
+            </li>
+        </ul>
+    </div>
+</div>

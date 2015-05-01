@@ -1,0 +1,10 @@
+<div class="field clearfix">
+    <label ng-bind="label" />
+    <div style="float:right">
+    <div class="editor textbox-container">
+        <input type="text" ng-model="value" ng-trim="false" ng-focus="closeSelectBoxes()" ng-change="validate($event)" placeholder= "{{defaultText}}" />
+
+    </div>
+        <div class="" ng-include src="'./templates/validationError.html'" ng-show="showValidationError"></div>
+    </div>
+</div>

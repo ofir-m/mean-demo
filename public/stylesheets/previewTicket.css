@@ -1,0 +1,7 @@
+.preview-ticket {
+  height: 120px;
+  width: 250px;
+  /* background-color: #f4f4f4; */
+  border: 1px solid;
+  border-radius: 50px;
+  padding: 30px; }

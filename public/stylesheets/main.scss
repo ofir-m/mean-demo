@@ -1,0 +1,82 @@
+@import "base";
+.clearfix:after {
+    content: " ";
+    /* Older browser do not support empty content */
+    
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.view {
+    /*background-color: #f4f4f4;*/
+    
+    width: 1200px;
+    min-height: 500px;
+    margin: 0 auto;
+    border: 1px solid #f4f4f4;
+}
+
+a:active {
+    color: black;
+}
+
+body {
+    font-family: arial;
+    overflow-x: hidden;
+    font-size: 12px;
+}
+.default-text
+{
+    color:grey ;
+}
+.error
+{
+    color:red ;
+}
+.complete-error
+{
+    color:red ;
+}
+.field {
+    width: 400px;
+    height:70px;
+    //background-color: greenyellow;
+    //margin-bottom:20px;
+    > label {
+        float: right;
+        width: 120px;
+        height: 30px;
+        line-height: 30px;
+    }
+}
+
+.editor {
+    float: right;
+    box-shadow: $editor-shadow;
+    height:30px;
+}
+
+*:focus {
+    outline: 0;
+}
+
+.ui-widget {
+    font-family: Arial;
+    font-size: 13px;
+}
+
+button{
+    background-color: $button-color;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    color: $button-text-color;
+    border: 1px solid #ffffff;
+    //float: right;
+}
+
+

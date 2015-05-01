@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<options>
+  <option id="1" name="לא משנה" />
+  <option id="2" name="בעל/ת ביטחון עצמי" />
+  <option id="3" name="ביקורתי/ת" />
+  <option id="4" name="כריזמטי/ת" />
+  <option id="5" name="רוחני/ת" />
+  <option id="6" name="מעשי/ת" />
+  <option id="7" name="מתחשב/ת" />
+  <option id="8" name="רגיש/ה" />
+  <option id="9" name="הומוריסטי/ת" />
+  <option id="10" name="אנרגטי/ת" />
+  <option id="11" name="שאפתן/ית" />
+  <option id="12" name="חברותי/ת" />
+  <option id="13" name="מסודר/ת" />
+  <option id="14" name="טבעי/ת" />
+  <option id="15" name="אופטימי/ת" />
+  <option id="16" name="רגוע/ה" />
+  <option id="17" name="שנון/ה" />
+  <option id="18" name="עקשן/ית" />
+  <option id="19" name="אחראי/ת" />
+  <option id="20" name="רציני/ת" />
+  <option id="21" name="רומנטי/ת" />
+  <option id="22" name="מפונק/ת" />
+  <option id="23" name="בליין/ית" />
+  <option id="24" name="בעל/ת דרישות נמוכות" />
+  <option id="25" name="בעל/ת דרישות גבוהות" />
+  <option id="26" name="אכפתי/ת" />
+  <option id="27" name="אוהב/ת לפנק" />
+  <option id="28" name="בעל/ת ראש פתוח" />
+  <option id="29" name="שמרני/ת" />
+  <option id="30" name="יצירתי/ת" />
+  <option id="31" name="ספונטני/ת" />
+</options>

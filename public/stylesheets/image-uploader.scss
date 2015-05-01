@@ -1,0 +1,45 @@
+@import "base";
+.img-uploader-container {
+    background-color: $selectbox-background-color;
+    cursor: pointer;
+    width: 300px;
+    box-shadow: $editor-shadow;
+    font-size: $editor-font-size;
+    height: 300px;
+    .header{
+        height:15%;
+        background-color:$selectbox-selected-background-color;
+        position:relative;
+    }
+}
+.image-frame
+{
+    height:85%;
+    position:relative;
+}
+.btn-choose,
+.btn-delete {
+
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.buttons-container
+{
+
+}
+
+img.uploaded-image,
+img.preloader {
+    //  height: 200px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+

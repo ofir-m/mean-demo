@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<options>
+  <option name="לא משנה" id="1" />
+  <option name="חסר אמצעים" id="2" />
+  <option name="מתחת לממוצע" id="3" />
+  <option name="ממוצע" id="4" />
+  <option name="מעל לממוצע" id="5" />
+  <option name="מבוסס" id="6" />
+  <option name="אמיד" id="7" />
+</options>

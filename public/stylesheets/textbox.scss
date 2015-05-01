@@ -1,0 +1,61 @@
+@import "base";
+
+.textbox-container {
+  background-color: $selectbox-background-color;
+  cursor: pointer;
+  width: $editor-width;
+  //box-shadow: $editor-shadow;
+  font-size: $editor-font-size;
+  margin-bottom: 10px;
+  position: relative;
+  input {
+    width: $editor-width;
+    height: $editor-height;
+    padding-right: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    background: transparent;
+    border:none;
+  }
+
+}
+
+.age {
+  position: absolute;
+  left: 82px;
+  /* top: 9px; */
+  display: block;
+  line-height: 30px;
+  color: grey;
+}
+
+.autocomplete {
+  position: absolute;
+
+  z-index: 10 !important;
+
+}
+
+.textbox-list {
+  list-style: none;
+  background-color: #ffffff;
+  width: 200px;
+  top: 30px;
+  position: absolute;
+  box-shadow: $editor-shadow;
+  max-height:200px;
+  overflow-y:auto;
+  li {
+    padding: 5px;
+    padding: 5px 20px;
+    // &:hover {
+    //     background-color: $selectbox-hover-background-color;
+    // }
+  }
+  li.hover {
+    background-color: $selectbox-hover-background-color;
+  }
+}
+

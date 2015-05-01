@@ -1,0 +1,22 @@
+.view
+{
+	/*background-color: #f4f4f4;*/
+	width:1200px;
+	min-height: 500px;
+	margin:0 auto;
+	border:1px solid #f4f4f4;
+}
+a:active {
+    color: black;
+}
+body
+{
+	font-family: arial;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+<ul class="pager-list clearfix">
+      <li  class="pager-list-item" ng-repeat="i in range track by $index">
+         <a ng-class={'selected':selectedIndex==($index+1)} ui-sref="members.page({pageId:{{$index+1}}})" ng-click="click($index+1)">{{$index+1}}</a>
+      </li>
+   </ul>

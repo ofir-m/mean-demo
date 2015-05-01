@@ -1,0 +1,38 @@
+// $selectbox-background-color: #f9f9f9;
+$main-color:#ff6600;
+$selectbox-background-color: #ffffff;
+$selectbox-button-color: #d3d3d3;
+$selectbox-selected-background-color: #f4f4f4 !important;
+$selectbox-hover-background-color:rgb(227, 229, 224);
+$editor-shadow:1px 1px 2px grey;
+// $editor-inner-shadow:inset 0px 0px 3px grey;
+$editor-inner-shadow:none;
+$button-color: $main-color;
+$button-text-color:#ffffff;
+//$button-border-color:#ffffff;
+$editor-font-size:12px;
+$editorHeight:30px;
+$editor-height:30px;
+$editor-width:200px;
+.high-zIndex {
+    z-index: 100;
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+    @if $inset {
+        -webkit-box-shadow: inset $top $left $blur $color;
+        -moz-box-shadow: inset $top $left $blur $color;
+        box-shadow: inset $top $left $blur $color;
+    }
+    @else {
+        -webkit-box-shadow: $top $left $blur $color;
+        -moz-box-shadow: $top $left $blur $color;
+        box-shadow: $top $left $blur $color;
+    }
+}
+
+@mixin editor-shadow() {
+    @include box-shadow(1px, 1px, 3px, grey);
+}
+
+

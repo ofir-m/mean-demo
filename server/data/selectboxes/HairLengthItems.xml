@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<options>
+  <option name="לא משנה" id="1" />
+  <option name="קצוץ" id="2" />
+  <option name="קצר" id="3" />
+  <option name="בינוני" id="4" />
+  <option name="ארוך" id="5" />
+  <option name="מקריח" id="6" />
+</options>

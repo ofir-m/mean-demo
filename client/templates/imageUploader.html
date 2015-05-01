@@ -1,0 +1,19 @@
+<div class="field clearfix">
+    <label ng-bind="label" />
+    <div class="editor img-uploader-container">
+
+        <div class="image-frame" style="">
+            <img class="preloader" src="images/preloader.gif" ng-show="showPreloader">
+            <img class="uploaded-image" ng-src="{{src}}" ng-style="{ 'width' : width, 'height' : height }" />
+        </div>
+        <div class="header" >
+            <!--<div class="buttons-container">-->
+            <button class="btn-choose" ng-click="pressHiddenInput()" ng-show="showBtnChoose">בחר תמונה</button>
+            <button class="btn-delete" ng-click="deleteImage()" ng-show="!showBtnChoose">מחק תמונה</button>
+            <button ng-click="uploadFileToServer()" style="float:right"  ng-show="!showBtnChoose">שמור</button>
+
+            <!--</div>-->
+            <input type="file" file-model="myFile" style="display:none;">
+        </div>
+    </div>
+</div>

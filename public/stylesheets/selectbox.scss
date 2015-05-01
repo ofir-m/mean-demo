@@ -1,0 +1,64 @@
+@import "base";
+.selectbox-container {
+    background-color: $selectbox-background-color;
+    cursor: pointer;
+    width: $editor-width;
+    box-shadow: $editor-shadow;
+    font-size: $editor-font-size;
+}
+
+.selectbox-list {
+    list-style: none;
+    background-color: $selectbox-background-color;
+    width: $editor-width;
+    position: absolute;
+    box-shadow: $editor-shadow;
+}
+
+.selectbox-list li {
+    line-height: $editorHeight;
+    height: $editorHeight;
+    /* margin: 1px;*/
+    
+    padding-right: 10px;
+}
+
+.selectbox-list li:hover {
+    background-color: $selectbox-hover-background-color;
+}
+
+.selectbox-list li.selected {
+    background-color: $selectbox-selected-background-color;
+}
+
+.selectbox-header {
+    // border:1px solid grey;
+    /*cursor:pointer;*/
+}
+
+.selectbox-header img {
+    margin: 6px;
+}
+
+.caption-container {
+    width: 85%;
+    float: right;
+    height: 30px;
+    display: block;
+   // box-shadow: $editor-inner-shadow;
+}
+
+.caption {
+    line-height: 16px;
+    float: right;
+    margin: 8px 10px;
+    /*background-color: greenyellow;*/
+}
+
+div.arrow-container {
+    background-color: $selectbox-selected-background-color;
+    width: 15%;
+    height: 30px;
+    float: left
+}
+

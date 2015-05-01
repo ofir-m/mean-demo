@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<options>
+  <option name="לא משנה" id="1" />
+  <option name="לא עוסק/ת כלל" id="2" />
+  <option name="עוסק/ת לעיתים רחוקות" id="3" />
+  <option name="עוסק/ת לעיתים קרובות" id="4" />
+  <option name="עוסק/ת באופן יומיומי" id="5" />
+</options>

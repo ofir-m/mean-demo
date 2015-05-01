@@ -1,0 +1,12 @@
+<div class="field clearfix">
+    <label ng-bind="label"/>
+
+    <div style="float:right;position:relative">
+        <div class="editor textbox-container">
+            <input type="text" ng-model="item" datepicker ng-click="closeSelectBoxes()" readonly="readonly" style="cursor:text;"/>
+
+        </div>
+        <span class="age">{{'גיל: '+getAge(item)}} </span>
+        <div class="" ng-include src="'./templates/validationError.html'"></div>
+    </div>
+</div>
