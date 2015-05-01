@@ -158,6 +158,7 @@ var removeAllCollections = function(collectionName)
     selectboxesEntities.traverse(function(entity)
     {
         removeCollection(entity);
+        //removeCollection(entity);
 
     })
 }
