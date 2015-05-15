@@ -5,7 +5,7 @@ var express = require('express'),
     mkdirp = require('mkdirp'),
     fs = require("fs"),
     fse = require('fs-extra'),
-    membersController = require('./server/controllers/MembersController.js'),
+    dal = require('./server/dal.js'),
     dbBuilder = require('./server/data/dbBuilder.js'),
     util = require('util'),
     sassMiddleware = require('node-sass-middleware'),
@@ -18,7 +18,7 @@ var connectionString = 'mongodb://localhost:27017/mean-demo';
 mongodb.connect(connectionString, function()
 {
     console.log('Connected to MongoDB.');
-    //dbBuilder.buildMember()
+    dbBuilder.buildMember()
 
 });
 
@@ -138,11 +138,11 @@ app.get('/fileUpload/:email/:image', function(req, res)
 
 })
 
-app.post('/api/member', membersController.create)
-app.put('/api/member/:id', membersController.updateMember)//todo: remove the id parameter because it is in the member obj
-app.get('/api/member/details/:email', membersController.getMemberDetails)
-app.get('/api/members/count', membersController.count)
-app.get('/api/members/page/:pageId', membersController.getMembersByPage)
+app.post('/api/member', dal.create)
+app.put('/api/member/:id', dal.updateMember)//todo: remove the id parameter because it is in the member obj
+app.get('/api/member/details/:email', dal.getMemberDetails)
+app.get('/api/members/count', dal.count)
+app.get('/api/members/page/:pageId', dal.getMembersByPage)
 
 app.delete('/api/images/:id/:index', function(req, res)
 {
@@ -192,7 +192,7 @@ app.delete('/api/images/:id/:index', function(req, res)
 
     res.end()
 })
-app.get('/api/cities/:prefix?', membersController.getCities)
+app.get('/api/cities/:prefix?', dal.getCities)
     //=====================================================================================
 app.get('/*', function(req, res)
 {

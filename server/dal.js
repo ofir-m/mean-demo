@@ -1,5 +1,5 @@
-var mongodb = require('../mongo'),
-    Member = require('../models/Member');
+var mongodb = require('./mongo'),
+    Member = require('./models/Member');
 
 module.exports.create = function (req, res)
 {
@@ -12,8 +12,8 @@ module.exports.updateMember = function (req, res)
     var id = req.params.id;
     var member = req.body;
     console.log(member)
-     member._id = mongodb.getId(member._id);
-      mongodb.db().collection('members').update({}, member, function (err, data)
+    member._id = mongodb.getId(member._id);
+    mongodb.db().collection('members').update({}, member, function (err, data)
     {
         var d = data;
         console.log('member updated successfully');

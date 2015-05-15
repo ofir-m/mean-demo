@@ -7,13 +7,18 @@
   width: 200px;
   font-size: 12px; }
 
-.multiselectbox-list {
+div.multiselectbox-wrapper {
   list-style: none;
   background-color: #ffffff;
-  /*width: 600px;*/
   position: absolute;
   padding: 10px;
   box-shadow: 1px 1px 2px grey; }
+  div.multiselectbox-wrapper button {
+    margin: 0 auto; }
+
+.multiselectbox-list {
+  list-style: none;
+  margin-bottom: 20px; }
 
 .multiselectbox-list li {
   cursor: pointer;

@@ -6,7 +6,9 @@ app.controller('SiteController', function($scope, $resource, Member, MemberDetai
     //});
     MemberDetails.get(
     {
-        'email': 'maorof@gmail.com'
+        //'email': 'maorof@gmail.com'
+      //  name:faker.name.findName(),
+        'email': 'Ava.Skiles@yahoo.com'
     }, function(member)
     {
         //for(var i=0;i<member.cities.length;i++)

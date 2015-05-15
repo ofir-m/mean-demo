@@ -9,11 +9,15 @@
                 <img src="images/arrow-down.png">
             </div>
         </div>
-        <ul class="multiselectbox-list" ng-show="showList">
+        <div class="multiselectbox-wrapper" ng-show="showList">
+        <ul class="multiselectbox-list clearfix" >
             <li on-last-repeat ng-repeat="item in items" ng-click="toggleItem(item)" ng-class="{'selected': item.selected}" ng-show="!($first&&hideFirstItem)">
                 <input ng-checked="item.selected" type="checkbox" class="css-checkbox sme" />
                 <label data-value="{{item.id}}" class="css-label sme depressed">{{item.name}}</label>
             </li>
+
         </ul>
+        <button class="" ng-click="toggleList()" >סגור</button>
+        </div>
     </div>
 </div>

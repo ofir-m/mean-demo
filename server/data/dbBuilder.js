@@ -8,15 +8,23 @@ var xml2js = require('xml2js'),
     mongodb = require('../mongo'),
     async = require("async"),
     chance = require('chance').Chance(),
+    faker=require('faker'),
     random = require("random-js")(),
+    moment = require('moment'),
     parser = new xml2js.Parser();
 
+
+var buildMembers = function()
+{
+
+}
 var buildMember = function()
 {
     var member = new Member();
     member.email = "maorof@gmail.com";
-    member.birthday='19/11/1973'
-
+    member.email =faker.internet.email()
+   // member.birthday=chance.date({string: true, american: false});
+    member.birthday=moment().subtract(random.integer(18, 80), 'years').format('DD/MM/YYYY')
     member.images = [
     {
         index: '1'
@@ -40,7 +48,7 @@ var buildMember = function()
         mongodb.db().collection('members').insert(member)
     });
 
-    // buildAllMemberCollections(member)
+
 
 }
 
@@ -74,7 +82,8 @@ var buildMemberCollection = function(member, collectionName, callback)
                 {
                     var item = nodes[i].$;
 
-                    if (item.id == selectedId &&memberProp=='cities')
+                    //if (item.id == selectedId &&memberProp=='cities')
+                        if (item.id == selectedId)
                     {
                         selected = true;
                         console.log(memberProp + '   ' + item.id + '   ' + item.name)

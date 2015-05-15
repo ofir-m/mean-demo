@@ -1,20 +1,8 @@
 <div style="background-color: gainsboro">
-    <!--<h1>  באתר ישנם {{count}} חברים</h1>-->
-    <!--<form ng-submit="createMember()">-->
-        <!--<div>-->
-            <!--<input type="text" placeholder="name" ng-model="member.name">-->
-        <!--</div>-->
-        <!--<div>-->
-            <!--<input type="text" placeholder="email" ng-model="member.email">-->
-        <!--</div>-->
-        <!--<div>-->
-            <!--<input type="text" placeholder="age" ng-model="member.age">-->
-        <!--</div>-->
-        <!--<button type="submit">Add</button>-->
-    <!--</form>-->
-    <!--<br/>-->
-    <!--<br/>-->
+
     <div my-form style="height:700px;">
+
+        <textbox label="שם" item="member.name" default-text="{{'הזן שם'}}"></textbox>
         <textbox label="אימייל" item="member.email" default-text="{{'הזן אימייל'}}"></textbox>
 
              <datebox label="נולדתי בתאריך:" item="member.birthday" age="member.age"></datebox>

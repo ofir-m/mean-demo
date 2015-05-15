@@ -7,15 +7,28 @@
     //box-shadow: $editor-shadow;
 }
 
-.multiselectbox-list {
+
+div.multiselectbox-wrapper {
     list-style: none;
     background-color: $selectbox-background-color;
-    /*width: 600px;*/
-    
-    // border:1px solid grey;
+
     position: absolute;
     padding: 10px;
     box-shadow: $editor-shadow;
+    button
+    {
+        margin:0 auto;
+    }
+}
+
+.multiselectbox-list {
+    list-style: none;
+  //  background-color: $selectbox-background-color;
+
+  //  position: absolute;
+  //  padding: 10px;
+   // box-shadow: $editor-shadow;
+    margin-bottom:20px;
 }
 
 .multiselectbox-list li {

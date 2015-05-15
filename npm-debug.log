@@ -1,14 +1,10 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node',
-1 verbose cli   '/usr/bin/npm',
-1 verbose cli   'install',
-1 verbose cli   '-g',
-1 verbose cli   'node-inspector' ]
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'moment', '-g' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.33
 4 verbose node symlink /usr/bin/node
-5 verbose cache add [ 'node-inspector', null ]
-6 verbose cache add name=undefined spec="node-inspector" args=["node-inspector",null]
+5 verbose cache add [ 'moment', null ]
+6 verbose cache add name=undefined spec="moment" args=["moment",null]
 7 verbose parsed url { protocol: null,
 7 verbose parsed url   slashes: null,
 7 verbose parsed url   auth: null,
@@ -18,197 +14,169 @@
 7 verbose parsed url   hash: null,
 7 verbose parsed url   search: null,
 7 verbose parsed url   query: null,
-7 verbose parsed url   pathname: 'node-inspector',
-7 verbose parsed url   path: 'node-inspector',
-7 verbose parsed url   href: 'node-inspector' }
-8 silly lockFile 4198ef9e-node-inspector node-inspector
-9 verbose lock node-inspector /home/maorof/.npm/4198ef9e-node-inspector.lock
-10 silly lockFile 4198ef9e-node-inspector node-inspector
-11 silly lockFile 4198ef9e-node-inspector node-inspector
-12 verbose addNamed [ 'node-inspector', '' ]
+7 verbose parsed url   pathname: 'moment',
+7 verbose parsed url   path: 'moment',
+7 verbose parsed url   href: 'moment' }
+8 silly lockFile b56def36-moment moment
+9 verbose lock moment /home/maorof/.npm/b56def36-moment.lock
+10 silly lockFile b56def36-moment moment
+11 silly lockFile b56def36-moment moment
+12 verbose addNamed [ 'moment', '' ]
 13 verbose addNamed [ null, '*' ]
-14 silly lockFile e68b88da-node-inspector node-inspector@
-15 verbose lock node-inspector@ /home/maorof/.npm/e68b88da-node-inspector.lock
-16 silly addNameRange { name: 'node-inspector', range: '*', hasData: false }
-17 verbose request where is /node-inspector
+14 silly lockFile 42aa250a-moment moment@
+15 verbose lock moment@ /home/maorof/.npm/42aa250a-moment.lock
+16 silly addNameRange { name: 'moment', range: '*', hasData: false }
+17 verbose request where is /moment
 18 verbose request registry https://registry.npmjs.org/
-19 verbose request id 036845c8dbb825bb
-20 verbose url raw /node-inspector
-21 verbose url resolving [ 'https://registry.npmjs.org/', './node-inspector' ]
-22 verbose url resolved https://registry.npmjs.org/node-inspector
-23 verbose request where is https://registry.npmjs.org/node-inspector
-24 info trying registry request attempt 1 at 11:36:21
-25 verbose etag "67FNQLRHYZEP1XKLJF939EICN"
-26 http GET https://registry.npmjs.org/node-inspector
-27 http 304 https://registry.npmjs.org/node-inspector
+19 verbose request id f8fe6f2f0daf7151
+20 verbose url raw /moment
+21 verbose url resolving [ 'https://registry.npmjs.org/', './moment' ]
+22 verbose url resolved https://registry.npmjs.org/moment
+23 verbose request where is https://registry.npmjs.org/moment
+24 info trying registry request attempt 1 at 09:13:24
+25 verbose etag "CULIRN1RG2485UQS58CJXXMSB"
+26 http GET https://registry.npmjs.org/moment
+27 http 304 https://registry.npmjs.org/moment
 28 silly registry.get cb [ 304,
-28 silly registry.get   { date: 'Fri, 17 Apr 2015 08:38:07 GMT',
-28 silly registry.get     server: 'Apache',
+28 silly registry.get   { date: 'Fri, 15 May 2015 06:13:29 GMT',
 28 silly registry.get     via: '1.1 varnish',
-28 silly registry.get     'last-modified': 'Fri, 17 Apr 2015 08:38:07 GMT',
 28 silly registry.get     'cache-control': 'max-age=60',
-28 silly registry.get     etag: '"67FNQLRHYZEP1XKLJF939EICN"',
-28 silly registry.get     age: '40',
-28 silly registry.get     'x-served-by': 'cache-fra1231-FRA',
+28 silly registry.get     etag: '"CULIRN1RG2485UQS58CJXXMSB"',
+28 silly registry.get     age: '59',
+28 silly registry.get     connection: 'keep-alive',
+28 silly registry.get     'x-served-by': 'cache-fra1247-FRA',
 28 silly registry.get     'x-cache': 'HIT',
 28 silly registry.get     'x-cache-hits': '1',
-28 silly registry.get     'x-timer': 'S1429259887.668282,VS0,VE0',
-28 silly registry.get     vary: 'Accept',
-28 silly registry.get     'content-length': '0',
-28 silly registry.get     'keep-alive': 'timeout=10, max=50',
-28 silly registry.get     connection: 'Keep-Alive' } ]
-29 verbose etag https://registry.npmjs.org/node-inspector from cache
-30 silly addNameRange number 2 { name: 'node-inspector', range: '*', hasData: true }
-31 silly addNameRange versions [ 'node-inspector',
-31 silly addNameRange   [ '0.0.1',
-31 silly addNameRange     '0.0.2',
-31 silly addNameRange     '0.0.3',
-31 silly addNameRange     '0.0.4',
-31 silly addNameRange     '0.1.0',
-31 silly addNameRange     '0.1.1',
-31 silly addNameRange     '0.1.2',
-31 silly addNameRange     '0.1.3',
-31 silly addNameRange     '0.1.4',
-31 silly addNameRange     '0.1.5',
-31 silly addNameRange     '0.1.6',
-31 silly addNameRange     '0.1.7',
-31 silly addNameRange     '0.1.8',
-31 silly addNameRange     '0.1.9',
-31 silly addNameRange     '0.1.10',
-31 silly addNameRange     '0.3.0',
-31 silly addNameRange     '0.3.1',
-31 silly addNameRange     '0.3.2',
-31 silly addNameRange     '0.3.3',
-31 silly addNameRange     '0.3.4',
-31 silly addNameRange     '0.4.0',
-31 silly addNameRange     '0.5.0',
-31 silly addNameRange     '0.6.0',
-31 silly addNameRange     '0.6.1',
-31 silly addNameRange     '0.6.2',
-31 silly addNameRange     '0.7.0-1',
-31 silly addNameRange     '0.2.0-beta1',
-31 silly addNameRange     '0.2.0-beta2',
-31 silly addNameRange     '0.2.0-beta3',
-31 silly addNameRange     '0.2.0-beta4',
-31 silly addNameRange     '0.3.0-preview1',
-31 silly addNameRange     '0.7.0-2',
-31 silly addNameRange     '0.7.0',
-31 silly addNameRange     '0.7.1',
-31 silly addNameRange     '0.7.2',
-31 silly addNameRange     '0.7.3',
-31 silly addNameRange     '0.7.4',
-31 silly addNameRange     '0.8.0',
-31 silly addNameRange     '0.8.1',
-31 silly addNameRange     '0.8.3',
-31 silly addNameRange     '0.9.0',
-31 silly addNameRange     '0.9.1',
-31 silly addNameRange     '0.9.2' ] ]
-32 verbose addNamed [ 'node-inspector', '0.9.2' ]
-33 verbose addNamed [ '0.9.2', '0.9.2' ]
-34 silly lockFile af3dbc72-node-inspector-0-9-2 node-inspector@0.9.2
-35 verbose lock node-inspector@0.9.2 /home/maorof/.npm/af3dbc72-node-inspector-0-9-2.lock
-36 silly lockFile af3dbc72-node-inspector-0-9-2 node-inspector@0.9.2
-37 silly lockFile af3dbc72-node-inspector-0-9-2 node-inspector@0.9.2
-38 silly lockFile e68b88da-node-inspector node-inspector@
-39 silly lockFile e68b88da-node-inspector node-inspector@
-40 silly resolved [ { name: 'node-inspector',
-40 silly resolved     version: '0.9.2',
-40 silly resolved     description: 'Web Inspector based nodeJS debugger',
-40 silly resolved     homepage: 'http://github.com/node-inspector/node-inspector',
-40 silly resolved     author: { name: 'Danny Coates', email: 'dannycoates@gmail.com' },
-40 silly resolved     keywords: [ 'debug', 'debugger', 'inspector', 'profiler' ],
-40 silly resolved     repository:
-40 silly resolved      { type: 'git',
-40 silly resolved        url: 'http://github.com/node-inspector/node-inspector.git' },
-40 silly resolved     engines: { node: '>=0.8.0' },
-40 silly resolved     bin:
-40 silly resolved      { 'node-inspector': './bin/inspector.js',
-40 silly resolved        'node-debug': './bin/node-debug.js' },
-40 silly resolved     dependencies:
-40 silly resolved      { express: '^4.8.0',
-40 silly resolved        'serve-favicon': '^2.1.1',
-40 silly resolved        async: '~0.9',
-40 silly resolved        glob: '^4.3.5',
-40 silly resolved        rc: '~0.5.0',
-40 silly resolved        'strong-data-uri': '~0.1.0',
-40 silly resolved        debug: '^1.0',
-40 silly resolved        ws: '~0.4.31',
-40 silly resolved        'biased-opener': '~0.2.2',
-40 silly resolved        yargs: '^1.2.1',
-40 silly resolved        which: '^1.0.5',
-40 silly resolved        'v8-debug': '~0.4.2',
-40 silly resolved        'v8-profiler': '~5.2.4',
-40 silly resolved        semver: '^3.0.1' },
+28 silly registry.get     'x-timer': 'S1431670409.639239,VS0,VE0',
+28 silly registry.get     vary: 'Accept' } ]
+29 verbose etag https://registry.npmjs.org/moment from cache
+30 silly addNameRange number 2 { name: 'moment', range: '*', hasData: true }
+31 silly addNameRange versions [ 'moment',
+31 silly addNameRange   [ '1.0.0',
+31 silly addNameRange     '1.0.1',
+31 silly addNameRange     '1.1.0',
+31 silly addNameRange     '1.1.1',
+31 silly addNameRange     '1.2.0',
+31 silly addNameRange     '1.3.0',
+31 silly addNameRange     '1.4.0',
+31 silly addNameRange     '1.5.0',
+31 silly addNameRange     '1.5.1',
+31 silly addNameRange     '1.6.0',
+31 silly addNameRange     '1.6.1',
+31 silly addNameRange     '1.6.2',
+31 silly addNameRange     '1.7.0',
+31 silly addNameRange     '1.7.1',
+31 silly addNameRange     '1.7.2',
+31 silly addNameRange     '2.0.0',
+31 silly addNameRange     '2.1.0',
+31 silly addNameRange     '2.2.1',
+31 silly addNameRange     '2.3.0',
+31 silly addNameRange     '2.3.1',
+31 silly addNameRange     '2.4.0',
+31 silly addNameRange     '2.5.0',
+31 silly addNameRange     '2.5.1',
+31 silly addNameRange     '2.6.0',
+31 silly addNameRange     '2.7.0',
+31 silly addNameRange     '2.8.1',
+31 silly addNameRange     '2.8.2',
+31 silly addNameRange     '2.8.3',
+31 silly addNameRange     '2.8.4',
+31 silly addNameRange     '2.9.0',
+31 silly addNameRange     '2.10.2',
+31 silly addNameRange     '2.10.3' ] ]
+32 verbose addNamed [ 'moment', '2.10.3' ]
+33 verbose addNamed [ '2.10.3', '2.10.3' ]
+34 silly lockFile 46a85a58-moment-2-10-3 moment@2.10.3
+35 verbose lock moment@2.10.3 /home/maorof/.npm/46a85a58-moment-2-10-3.lock
+36 silly lockFile 46a85a58-moment-2-10-3 moment@2.10.3
+37 silly lockFile 46a85a58-moment-2-10-3 moment@2.10.3
+38 silly lockFile 42aa250a-moment moment@
+39 silly lockFile 42aa250a-moment moment@
+40 silly resolved [ { name: 'moment',
+40 silly resolved     version: '2.10.3',
+40 silly resolved     description: 'Parse, validate, manipulate, and display dates',
+40 silly resolved     homepage: 'http://momentjs.com',
+40 silly resolved     author:
+40 silly resolved      { name: 'Iskren Ivov Chernev',
+40 silly resolved        email: 'iskren.chernev@gmail.com',
+40 silly resolved        url: 'https://github.com/ichernev' },
+40 silly resolved     contributors: [ [Object], [Object], [Object], [Object], [Object] ],
+40 silly resolved     keywords:
+40 silly resolved      [ 'moment',
+40 silly resolved        'date',
+40 silly resolved        'time',
+40 silly resolved        'parse',
+40 silly resolved        'format',
+40 silly resolved        'validate',
+40 silly resolved        'i18n',
+40 silly resolved        'l10n',
+40 silly resolved        'ender' ],
+40 silly resolved     main: './moment.js',
+40 silly resolved     engines: { node: '*' },
+40 silly resolved     repository: { type: 'git', url: 'https://github.com/moment/moment.git' },
+40 silly resolved     bugs: { url: 'https://github.com/moment/moment/issues' },
+40 silly resolved     licenses: [ [Object] ],
 40 silly resolved     devDependencies:
-40 silly resolved      { mocha: '^1.21',
-40 silly resolved        chai: '^1.9',
-40 silly resolved        jshint: '^2.4.4',
-40 silly resolved        'fs-extra': '~0.8.1' },
-40 silly resolved     preferGlobal: true,
-40 silly resolved     scripts: { pretest: 'jshint .', test: 'mocha' },
-40 silly resolved     contributors:
-40 silly resolved      [ [Object],
-40 silly resolved        [Object],
-40 silly resolved        [Object],
-40 silly resolved        [Object],
-40 silly resolved        [Object],
-40 silly resolved        [Object],
-40 silly resolved        [Object],
-40 silly resolved        [Object],
-40 silly resolved        [Object],
-40 silly resolved        [Object],
-40 silly resolved        [Object],
-40 silly resolved        [Object],
-40 silly resolved        [Object],
-40 silly resolved        [Object],
-40 silly resolved        [Object],
-40 silly resolved        [Object],
-40 silly resolved        [Object],
-40 silly resolved        [Object],
-40 silly resolved        [Object],
-40 silly resolved        [Object],
-40 silly resolved        [Object],
-40 silly resolved        [Object],
-40 silly resolved        [Object],
-40 silly resolved        [Object],
-40 silly resolved        [Object],
-40 silly resolved        [Object],
-40 silly resolved        [Object],
-40 silly resolved        [Object],
-40 silly resolved        [Object],
-40 silly resolved        [Object],
-40 silly resolved        [Object] ],
-40 silly resolved     gitHead: '29edd94ad8a93b794e8710e30f0f20b7ba2e752f',
-40 silly resolved     bugs: { url: 'https://github.com/node-inspector/node-inspector/issues' },
-40 silly resolved     _id: 'node-inspector@0.9.2',
-40 silly resolved     _shasum: 'f25e2be0dbd672f7f09b50af01ef81da3157ae7c',
-40 silly resolved     _from: 'node-inspector@',
-40 silly resolved     _npmVersion: '2.7.0',
-40 silly resolved     _nodeVersion: '1.5.1',
-40 silly resolved     _npmUser: { name: 'bajtos', email: 'miro.bajtos@gmail.com' },
-40 silly resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
+40 silly resolved      { 'uglify-js': 'latest',
+40 silly resolved        'es6-promise': 'latest',
+40 silly resolved        grunt: 'latest',
+40 silly resolved        benchmark: 'latest',
+40 silly resolved        esperanto: 'latest',
+40 silly resolved        'grunt-contrib-clean': 'latest',
+40 silly resolved        'grunt-contrib-concat': 'latest',
+40 silly resolved        'grunt-contrib-copy': 'latest',
+40 silly resolved        'grunt-contrib-jshint': 'latest',
+40 silly resolved        'grunt-contrib-uglify': 'latest',
+40 silly resolved        'grunt-contrib-watch': 'latest',
+40 silly resolved        'grunt-env': 'latest',
+40 silly resolved        'grunt-jscs': 'latest',
+40 silly resolved        'grunt-karma': 'latest',
+40 silly resolved        'grunt-nuget': 'latest',
+40 silly resolved        'grunt-benchmark': 'latest',
+40 silly resolved        'grunt-string-replace': 'latest',
+40 silly resolved        'grunt-exec': 'latest',
+40 silly resolved        'load-grunt-tasks': 'latest',
+40 silly resolved        karma: 'latest',
+40 silly resolved        'karma-chrome-launcher': 'latest',
+40 silly resolved        'karma-firefox-launcher': 'latest',
+40 silly resolved        'karma-qunit': 'latest',
+40 silly resolved        'karma-sauce-launcher': 'latest',
+40 silly resolved        qunit: '^0.7.5',
+40 silly resolved        'qunit-cli': '^0.1.4',
+40 silly resolved        spacejam: 'latest' },
+40 silly resolved     ender: './ender.js',
+40 silly resolved     dojoBuild: 'package.js',
+40 silly resolved     jspm: { files: [Object], map: [Object], buildConfig: [Object] },
+40 silly resolved     scripts: { test: 'grunt test' },
+40 silly resolved     spm: { main: 'moment.js', output: [Object] },
+40 silly resolved     _id: 'moment@2.10.3',
 40 silly resolved     dist:
-40 silly resolved      { shasum: 'f25e2be0dbd672f7f09b50af01ef81da3157ae7c',
-40 silly resolved        tarball: 'http://registry.npmjs.org/node-inspector/-/node-inspector-0.9.2.tgz' },
+40 silly resolved      { shasum: '0abb99f307f65218308c6935efe29c57b1a0a27f',
+40 silly resolved        tarball: 'http://registry.npmjs.org/moment/-/moment-2.10.3.tgz' },
+40 silly resolved     _from: 'moment@',
+40 silly resolved     _npmVersion: '1.4.6',
+40 silly resolved     _npmUser: { name: 'ichernev', email: 'iskren.chernev@gmail.com' },
+40 silly resolved     maintainers: [ [Object], [Object] ],
 40 silly resolved     directories: {},
-40 silly resolved     _resolved: 'https://registry.npmjs.org/node-inspector/-/node-inspector-0.9.2.tgz',
+40 silly resolved     _shasum: '0abb99f307f65218308c6935efe29c57b1a0a27f',
+40 silly resolved     _resolved: 'https://registry.npmjs.org/moment/-/moment-2.10.3.tgz',
 40 silly resolved     readme: 'ERROR: No README data found!' } ]
-41 info install node-inspector@0.9.2 into /usr/lib
-42 info installOne node-inspector@0.9.2
-43 verbose lib/node_modules/node-inspector unbuild
-44 verbose tar unpack /home/maorof/.npm/node-inspector/0.9.2/package.tgz
-45 silly lockFile 41e58605--lib-node-modules-node-inspector tar:///usr/lib/node_modules/node-inspector
-46 verbose lock tar:///usr/lib/node_modules/node-inspector /home/maorof/.npm/41e58605--lib-node-modules-node-inspector.lock
-47 silly lockFile bcb34315-node-inspector-0-9-2-package-tgz tar:///home/maorof/.npm/node-inspector/0.9.2/package.tgz
-48 verbose lock tar:///home/maorof/.npm/node-inspector/0.9.2/package.tgz /home/maorof/.npm/bcb34315-node-inspector-0-9-2-package-tgz.lock
+41 info install moment@2.10.3 into /usr/lib
+42 info installOne moment@2.10.3
+43 verbose lib/node_modules/moment unbuild
+44 verbose tar unpack /home/maorof/.npm/moment/2.10.3/package.tgz
+45 silly lockFile 2ed060ed-tar-usr-lib-node-modules-moment tar:///usr/lib/node_modules/moment
+46 verbose lock tar:///usr/lib/node_modules/moment /home/maorof/.npm/2ed060ed-tar-usr-lib-node-modules-moment.lock
+47 silly lockFile 30eafd83-of-npm-moment-2-10-3-package-tgz tar:///home/maorof/.npm/moment/2.10.3/package.tgz
+48 verbose lock tar:///home/maorof/.npm/moment/2.10.3/package.tgz /home/maorof/.npm/30eafd83-of-npm-moment-2-10-3-package-tgz.lock
 49 silly gunzTarPerm modes [ '755', '644' ]
-50 error Error: EACCES, mkdir '/usr/lib/node_modules/node-inspector'
-50 error  { [Error: EACCES, mkdir '/usr/lib/node_modules/node-inspector']
+50 error Error: EACCES, mkdir '/usr/lib/node_modules/moment'
+50 error  { [Error: EACCES, mkdir '/usr/lib/node_modules/moment']
 50 error   errno: 3,
 50 error   code: 'EACCES',
-50 error   path: '/usr/lib/node_modules/node-inspector',
+50 error   path: '/usr/lib/node_modules/moment',
 50 error   fstream_type: 'Directory',
-50 error   fstream_path: '/usr/lib/node_modules/node-inspector',
+50 error   fstream_path: '/usr/lib/node_modules/moment',
 50 error   fstream_class: 'DirWriter',
 50 error   fstream_stack:
 50 error    [ '/usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
@@ -216,17 +184,17 @@
 50 error      'Object.oncomplete (fs.js:107:15)' ] }
 51 error Please try running this command again as root/Administrator.
 52 error System Linux 3.13.0-24-generic
-53 error command "/usr/bin/node" "/usr/bin/npm" "install" "-g" "node-inspector"
-54 error cwd /home/maorof/Projects/mean-demo
+53 error command "/usr/bin/node" "/usr/bin/npm" "install" "moment" "-g"
+54 error cwd /home/maorof/Desktop/Projects/mean-demo
 55 error node -v v0.10.33
 56 error npm -v 1.4.28
-57 error path /usr/lib/node_modules/node-inspector
-58 error fstream_path /usr/lib/node_modules/node-inspector
+57 error path /usr/lib/node_modules/moment
+58 error fstream_path /usr/lib/node_modules/moment
 59 error fstream_type Directory
 60 error fstream_class DirWriter
 61 error code EACCES
 62 error errno 3
-63 error stack Error: EACCES, mkdir '/usr/lib/node_modules/node-inspector'
+63 error stack Error: EACCES, mkdir '/usr/lib/node_modules/moment'
 64 error fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
 64 error fstream_stack /usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
 64 error fstream_stack Object.oncomplete (fs.js:107:15)

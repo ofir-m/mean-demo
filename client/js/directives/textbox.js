@@ -1,4 +1,4 @@
-app.directive('textbox', function($location, $timeout, $rootScope, Cities)
+app.directive('textbox', function($location, $timeout, $rootScope, Cities,validator)
 {
     return {
         restrict: 'E',
@@ -13,6 +13,7 @@ app.directive('textbox', function($location, $timeout, $rootScope, Cities)
         replace: true,
         controller: function($scope, $element, $attrs, $timeout)
         {
+          //  var validator=new validator()
             $scope.showValidationError=false;
 
             $scope.$watch('item', function(newVal)
@@ -39,29 +40,37 @@ app.directive('textbox', function($location, $timeout, $rootScope, Cities)
                 $rootScope.$broadcast('closeSelectBoxes', $attrs.item);
             }
 
-            function validateEmail(email) {
-                var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-                return re.test(email);
-            }
-            $scope.validate = function($event)
+            $scope.validate = function()
             {
-                if($scope.value=='')
-                {
-                    $scope.showValidationError=true;
-                    $scope.ValidationError="זהו שדה חובה";
-                    //$scope.value=$scope.defaultText;
-                }else
-                if(!validateEmail($scope.value))
-                {
-                    $scope.showValidationError=true;
-                    $scope.ValidationError="האימייל שהזנת אינו תקין";
-                }
-                else{
-                    $scope.showValidationError=false;
-                }
-
+             //   validator.validate();
+              //var obj= validator.validate($scope.value,"email");
+              //  $scope.showValidationError=obj.showValidationError;
+              //        $scope.ValidationError=obj.ValidationError;
 
             }
+            //function validateEmail(email) {
+            //    var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+            //    return re.test(email);
+            //}
+            //$scope.validate = function($event)
+            //{
+            //    if($scope.value=='')
+            //    {
+            //        $scope.showValidationError=true;
+            //        $scope.ValidationError="זהו שדה חובה";
+            //        //$scope.value=$scope.defaultText;
+            //    }else
+            //    if(!validateEmail($scope.value))
+            //    {
+            //        $scope.showValidationError=true;
+            //        $scope.ValidationError="האימייל שהזנת אינו תקין";
+            //    }
+            //    else{
+            //        $scope.showValidationError=false;
+            //    }
+            //
+            //
+            //}
         }
 
     }
