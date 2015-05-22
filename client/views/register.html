@@ -3,11 +3,11 @@
     <div my-form style="height:700px;">
 
         <textbox label="שם" item="member.name" default-text="{{'הזן שם'}}"></textbox>
-        <textbox label="אימייל" item="member.email" default-text="{{'הזן אימייל'}}"></textbox>
+        <textbox label="אימייל" item="member.email" default-text="{{'הזן אימייל'}}" validation-rules="required, email"></textbox>
 
-             <datebox label="נולדתי בתאריך:" item="member.birthday" age="member.age"></datebox>
+             <datebox label="נולדתי בתאריך:" item="member.birthday" age="member.age" ></datebox>
 
-        <textbox-cities label="אני גר ב:" items="member.cities"></textbox-cities>
+        <textbox-cities label="אני גר ב:" items="member.cities" validation-rules="required"></textbox-cities>
 
         <selectbox items="member.genders" label="אני: "></selectbox>
 

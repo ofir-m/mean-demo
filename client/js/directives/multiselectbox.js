@@ -95,7 +95,7 @@ app.directive('multiselectbox', function($location, $timeout, $rootScope) {
 
 
 			}
-			$scope.$on('closeSelectBoxes', function(event, args) {
+			$scope.$on('documentClicked', function(event, args) {
 				if ($attrs.items!=args) {
 					$scope.showList = false;
 				};
@@ -104,7 +104,7 @@ app.directive('multiselectbox', function($location, $timeout, $rootScope) {
 
 			$scope.toggleList = function() {
 				
-				$rootScope.$broadcast('closeSelectBoxes',$attrs.items);
+				$rootScope.$broadcast('documentClicked',$attrs.items);
 				$scope.showList = !$scope.showList;
 			}
 

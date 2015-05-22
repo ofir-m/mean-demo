@@ -1,9 +1,11 @@
 <div class="field clearfix">
     <label ng-bind="label" />
+    <div style="float:right">
     <div class="editor textbox-container">
         <div style="position:relative">
-        <input class="real" type="text" ng-keydown="highlightCities($event)"  ng-focus="closeSelectBoxes()" ng-model="value" ng-trim="false" ng-class="{'complete-error': notInList}" />
+        <input class="real" type="text" ng-keydown="highlightCities($event)"  ng-focus="closeSelectBoxes()" ng-change="validate($event)" ng-model="value" ng-trim="false"  ng-class="{'complete-error': notInList}" />
         <input class="autocomplete"   ng-model="autocomplete.name" type="text" disabled="disabled" />
+
             </div>
         <ul class="textbox-list" ng-show="showList">
             <li ng-repeat="item in (filteredItems=(items | startsWith:value))" ng-click="selectCity(item)" ng-class="{ 'hover': $index == $parent.currentIndex}" ng-mouseenter="$parent.currentIndex=$index">
@@ -11,4 +13,7 @@
             </li>
         </ul>
     </div>
+
+    <div class="" ng-include src="'./templates/validationError.html'" ng-show="!!validationError"></div>
+</div>
 </div>

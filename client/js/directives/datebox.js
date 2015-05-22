@@ -35,7 +35,7 @@ app.directive('datebox', function ($location, $timeout, $rootScope, Cities)
             }
             $scope.closeSelectBoxes = function ()
             {
-                $rootScope.$broadcast('closeSelectBoxes', $attrs.item);
+                $rootScope.$broadcast('documentClicked', $attrs.item);
             }
 
         }

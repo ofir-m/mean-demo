@@ -9,16 +9,26 @@ module.exports.create = function (req, res)
 }
 module.exports.updateMember = function (req, res)
 {
-    var id = req.params.id;
+   // var id = req.params.id;
     var member = req.body;
     console.log(member)
-    member._id = mongodb.getId(member._id);
-    mongodb.db().collection('members').update({}, member, function (err, data)
+    var id = mongodb.getId(member._id);
+    delete member._id;
+    mongodb.db().collection('members').update({_id:id}, member, function (err, data)
     {
         var d = data;
-        console.log('member updated successfully');
+        var message;
+        if (err)
+        {
+            message = 'member updated successfully';
+        }
+        else
+        {
+            message= 'member updated successfully';
+        }
+        res.send(message);
     })
-    res.end();
+
 }
 
 module.exports.getAllMembers = function (req, res)

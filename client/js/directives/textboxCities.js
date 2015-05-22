@@ -1,4 +1,4 @@
-app.directive('textboxCities', function ($location, $timeout, $rootScope, Cities)
+app.directive('textboxCities', function ($location, $timeout, $rootScope, validator)
 {
     return {
         restrict: 'E',
@@ -9,8 +9,9 @@ app.directive('textboxCities', function ($location, $timeout, $rootScope, Cities
         },
         templateUrl: '/templates/textboxCities.html',
         replace: true,
-        controller: function ($scope, $element, $attrs, $timeout)
+        controller: function ($scope, $element, $attrs, $timeout, startsWithFilter)
         {
+            //   var startsWith=$filter('startsWith')
             $scope.filteredItems = [];
             var input = $element.find('input.real')[0];
             $scope.$watch('filteredItems', function (newVal)
@@ -18,8 +19,8 @@ app.directive('textboxCities', function ($location, $timeout, $rootScope, Cities
                 if (newVal)
                 {
                     var appearsInFilteredItems = false;
-                    var filteredItemsLength=$scope.filteredItems.length
-                    for (var i = 0 ; i < filteredItemsLength; i++)
+                    var filteredItemsLength = $scope.filteredItems.length
+                    for (var i = 0; i < filteredItemsLength; i++)
                     {
                         var city = $scope.filteredItems[i];
                         if (city.name == $scope.autocomplete.name)
@@ -32,11 +33,21 @@ app.directive('textboxCities', function ($location, $timeout, $rootScope, Cities
                     {
                         $scope.autocomplete = ""
                     }
-                    var userEnteredFullCityName=filteredItemsLength == 1 && $scope.value == $scope.filteredItems[0].name
+                    var userEnteredFullCityName = filteredItemsLength == 1 && $scope.value == $scope.filteredItems[0].name
                     $scope.showList = userEnteredFullCityName ? false : true;
 
                 }
             }, true);
+
+
+            //$scope.$watch('value', function (newVal)
+            //{
+            //    if (newVal)
+            //    {
+            //
+            //        $scope.validate(newVal);
+            //    }
+            //}, true);
 
             var watch = $scope.$watch('items', function (newVal)
             {
@@ -49,7 +60,7 @@ app.directive('textboxCities', function ($location, $timeout, $rootScope, Cities
             }, true);
             $scope.closeSelectBoxes = function ()
             {
-                $rootScope.$broadcast('closeSelectBoxes', $attrs.items);
+                $rootScope.$broadcast('documentClicked', $attrs.items);
             }
             $scope.notInList = false;
             $scope.currentIndex = -1;
@@ -103,13 +114,51 @@ app.directive('textboxCities', function ($location, $timeout, $rootScope, Cities
                 }
                 else if (event.which === 13)
                 {
+                    var city = $scope.filteredItems[$scope.currentIndex] || getCityFromItems($scope.value);
+                    if (!city)
+                    {
+                        $scope.value = '';
+                        $scope.validate();
+                    }
+                    else
+                    {
+                        $scope.selectCity(city);
+                    }
 
-                    var city = $scope.filteredItems[$scope.currentIndex]
-                    $scope.selectCity(city)
-                    return;
+
                 }
-                ;
             }
+
+            $scope.validate = function ()
+            {
+                $scope.validationError = validator.validate($scope.value, $attrs.validationRules);
+
+            }
+            function getCityFromItems(city)
+            {
+               // var cities =startsWithFilter($scope.items, city);
+              for(var i= 0,length=$scope.items.length;i<length;i++)
+              {
+                  var currentCity=$scope.items[i].name;
+                  if(city===currentCity)
+                  {
+                      return city
+                  }
+              }
+                return  null;
+            }
+
+            $scope.$on('documentClicked', function(event, args)
+            {
+                var city =  getCityFromItems($scope.value);
+                console.log($scope.value)
+                if (!city)
+                {
+                    $scope.value = '';
+                    $scope.validate();
+                }
+
+            });
 
             $scope.selectCity = function (city)
             {
@@ -126,7 +175,8 @@ app.directive('textboxCities', function ($location, $timeout, $rootScope, Cities
                         $scope.items[i].selected = false;
                     }
                 }
-
+                //$scope.currentIndex=-1
+                input.blur();
             }
 
             function getSelectCity(item)
@@ -143,20 +193,7 @@ app.directive('textboxCities', function ($location, $timeout, $rootScope, Cities
 
             }
 
-            //$scope.getCities = function($event)
-            //{
-            //    $scope.currentIndex = -1;
-            //    Cities.query(
-            //    {
-            //        'prefix': $scope.value.name
-            //    }, function(data)
-            //    {
-            //              $scope.listItems = data;
-            //        $scope.notInList = $scope.listItems.length == 0 ? true : false;
-            //
-            //    });
-            //
-            //}
+
         }
 
     }

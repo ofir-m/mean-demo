@@ -25,17 +25,37 @@ app.controller('SiteController', function($scope, $resource, Member, MemberDetai
         console.log(member);
 
     });
-
-    $scope.closeAllSelectBoxes = function($event)
+    $scope.documentClicked = function($event)
     {
         if (!event) return;
         var clickedInField = $(event.target).closest('.editor').length>0;
         if (!clickedInField)
         {
-            $scope.$broadcast('closeSelectBoxes')
+            $scope.$broadcast('documentClicked')
         }
 
+
     }
+    //function closeAllSelectBoxes ($event)
+    //{
+    //    if (!event) return;
+    //    var clickedInField = $(event.target).closest('.editor').length>0;
+    //    if (!clickedInField)
+    //    {
+    //        $scope.$broadcast('closeSelectBoxes')
+    //    }
+    //
+    //}
+    //function textBoxCitiesBlur ($event)
+    //{
+    //    if (!event) return;
+    //    var clickedInCitiesList = $(event.target).closest('.textbox-list').length>0;
+    //    if (!clickedInCitiesList)
+    //    {
+    //        $scope.$broadcast('textBoxCitiesBlur')
+    //    }
+    //
+    //}
     $scope.createMember = function()
     {
         var member = new Member($scope.member)

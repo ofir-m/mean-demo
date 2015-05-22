@@ -1,4 +1,4 @@
-app.directive('selectbox', function($location, $timeout, $rootScope)
+app.directive('selectbox', function($location, $timeout, $rootScope,validator)
 {
     return {
         restrict: 'E',
@@ -12,11 +12,13 @@ app.directive('selectbox', function($location, $timeout, $rootScope)
         replace: true,
         controller: function($scope, $element, $attrs, $timeout)
         {
+
+
             $scope.showList = false;
             $scope.label = $attrs.label;
             $scope.$emit('register', $attrs.items);
 
-            $scope.$on('closeSelectBoxes', function(event, args)
+            $scope.$on('documentClicked', function(event, args)
             {
                 if ($attrs.items != args)
                 {
@@ -24,11 +26,16 @@ app.directive('selectbox', function($location, $timeout, $rootScope)
                 };
 
             });
+            //$scope.validate = function()
+            //{
+            //    $scope.validationError=validator.validate($scope.caption,$attrs.validationRules);
+            //
+            //}
 
             $scope.toggleList = function()
             {
 
-                $rootScope.$broadcast('closeSelectBoxes', $attrs.items);
+                $rootScope.$broadcast('documentClicked', $attrs.items);
                 $scope.showList = !$scope.showList;
             }
             $scope.selectItem = function(item)
@@ -37,6 +44,7 @@ app.directive('selectbox', function($location, $timeout, $rootScope)
                 item.selected = true;
                 // $scope.selectedItemId = item.id
                 $scope.caption = item.name;
+                //$scope.validate
                 $scope.showList = false;
             }
 
