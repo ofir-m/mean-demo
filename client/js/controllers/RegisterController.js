@@ -28,9 +28,9 @@ app.controller('RegisterController', function($scope, $resource, Member,Member1,
     $scope.updateMember = function()
     {
         var member = new Member1($scope.member)
-        member.$update({id:$scope.member._id},function(data)
+        member.$update({id:$scope.member._id},function(response)
         {
-            console.log(data);
+            alert(response.message)
 
         });
 

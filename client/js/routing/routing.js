@@ -36,6 +36,12 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             templateUrl: '/views/myImages.html',
             controller: 'ImagesController'
         })
+        //.state('login',
+        //{
+        //    url: '/login',
+        //    templateUrl: '/views/login.html',
+        //    controller: 'LoginController'
+        //})
         .state('members',
         {
             url: '/members',

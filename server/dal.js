@@ -7,26 +7,28 @@ module.exports.create = function (req, res)
     member.save();
     res.end();
 }
+
 module.exports.updateMember = function (req, res)
 {
-   // var id = req.params.id;
+    // var id = req.params.id;
     var member = req.body;
     console.log(member)
     var id = mongodb.getId(member._id);
     delete member._id;
-    mongodb.db().collection('members').update({_id:id}, member, function (err, data)
+    mongodb.db().collection('members').update({_id: id}, member, function (err, data)
     {
         var d = data;
-        var message;
+        var response;
         if (err)
         {
-            message = 'member updated successfully';
+            response = {'message': 'member update failed'};
         }
         else
         {
-            message= 'member updated successfully';
+
+            response = {'message': 'member updated successfully'};
         }
-        res.send(message);
+        res.send(response);
     })
 
 }
@@ -43,9 +45,9 @@ module.exports.getAllMembers = function (req, res)
 module.exports.getMembersByPage = function (req, res)
 {
     var pageId = req.params.pageId
-    Member.find().skip(6 * (pageId - 1)).limit(6).exec(function (err, result)
+    mongodb.db().collection("members").find({}, {skip: 6 * (pageId - 1), limit: 6}).toArray(function (err, docs)
     {
-        res.send(result);
+        res.send(docs);
     });
 }
 
@@ -184,12 +186,11 @@ module.exports.getMemberDetails = function (req, res)
 
 module.exports.count = function (req, res)
 {
-    Member.count(
-        {}, function (err, result)
+    mongodb.db().collection("members").count({}, function (err, docs)
         {
             res.send(
                 {
-                    'result': result
+                    'result': docs
                 });
         });
 }

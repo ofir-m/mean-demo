@@ -11,6 +11,9 @@ app.factory('Member', function($resource)
         {
             update: { method: 'PUT' }
         });
+}).factory('Login', function($resource)
+{
+    return $resource('/api/login');
 }).factory('MemberDetails', function($resource)
 {
     return $resource('/api/member/details/:email');
