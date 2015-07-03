@@ -3,7 +3,7 @@ var express = require('express'),
     bodyParser = require('body-parser'),
     multer = require('multer'),
     passport = require('passport'),
-    passportLocal = require('passport-local'),
+    passportLocal = require('passport-local').Strategy,
     expressSession = require('express-session'),
     cookieParser = require('cookie-parser'),
     fs = require("fs"),
@@ -28,26 +28,33 @@ mongodb.connect(connectionString, function ()
 
 //=====================================================================================
 app.use(bodyParser.json()); // get information from html forms
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(cookieParser());
 app.use(expressSession({secret: 'mySecretKey'}));
 
 //=====================================================================================
 app.use(passport.initialize());
 app.use(passport.session());
-passport.use(new passportLocal.Strategy(function (username, password, done)
+passport.use(new passportLocal(function (username, password, done)
 {
-    if (username === password)
+    var user = dal.getUser(username, function (user)
     {
-        done(null, {id: username, name: username})
-    }
-    else
-    {
-        done(null, null)
-    }
+        if (!user)
+        {
+            console.log('User Not Found with username ' + username);
+             done(null, false);
+        }
+        //// User exists but wrong password, log the error
+        //if (!isValidPassword(user, password)){
+        //    console.log('Invalid Password');
+        //    return done(null, false,
+        //        req.flash('message', 'Invalid Password'));
+        //}
+        // User and password both match, return user from
+        // done method which will be treated like success
+         done(null, user);
+    });
 
-    //done(null, null)
-    //done(new Error('nonononon'))
 }))
 //=====================================================================================
 
@@ -144,7 +151,19 @@ app.get('/fileUpload/:email/:image', function (req, res)
 
 
 })
+passport.serializeUser(function (user, done)
+{
+    done(null, user._id);
+});
 
+passport.deserializeUser(function (id, done)
+{
+    var user = dal.getUserById(id, function (user)
+    {
+
+         done(null, user);
+    });
+});
 app.post('/api/member', dal.create)
 app.put('/api/member/:id', dal.updateMember)//todo: remove the id parameter because it is in the member obj
 app.get('/api/member/details/:email', dal.getMemberDetails)
@@ -155,13 +174,7 @@ app.get('/login', function (req, res)
     res.sendFile(__dirname + '/client/login.html');
 })
 
-passport.serializeUser(function(user, done) {
-    done(user._id);
-});
 
-passport.deserializeUser(function(id, done) {
-   done( {id: id, name: id})
-});
 
 //app.post('/login', passport.authenticate('local'), function (req, res)
 //{
@@ -174,11 +187,13 @@ app.post('/login',
     })
 );
 
-app.get('/loginFailure', function(req, res, next) {
+app.get('/loginFailure', function (req, res, next)
+{
     res.send('Failed to authenticate');
 });
 
-app.get('/loginSuccess', function(req, res, next) {
+app.get('/loginSuccess', function (req, res, next)
+{
     res.send('Successfully authenticated');
 });
 app.delete('/api/images/:id/:index', function (req, res)

@@ -95,7 +95,60 @@ module.exports.getCities = function (req, res)
         });
 
 }
+module.exports.getUserById = function (id,callback)
+{
+      var id = mongodb.getId(id);
+    var user=null;
+    mongodb.db().collection("members").findOne(
+        {
+            '_id':  id
+        }, function (err, member)
+        {
+            if  (member)
+            {
+                var cities = member.cities
+                for (var i = 0, length = cities.length; i < length; i++)
+                {
+                    var city = cities[i];
+                    if (city.selected)
+                    {
+                        member.city = city;
+                        console.log(city.name)
+                    }
+                }
+                user= member;
+            }
+            callback(user)
+        })
 
+}
+module.exports.getUser = function (email,callback)
+{
+ //  var id = mongodb.getId(id);
+    var user=null;
+    mongodb.db().collection("members").findOne(
+        {
+            'email':  email
+        }, function (err, member)
+        {
+            if  (member)
+            {
+                var cities = member.cities
+                for (var i = 0, length = cities.length; i < length; i++)
+                {
+                    var city = cities[i];
+                    if (city.selected)
+                    {
+                        member.city = city;
+                        console.log(city.name)
+                    }
+                }
+                user= member;
+            }
+            callback(user)
+        })
+
+}
 module.exports.getMemberDetails = function (req, res)
 {
     var email = req.params.email;
