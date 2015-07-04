@@ -149,6 +149,13 @@ module.exports.getUser = function (email,callback)
         })
 
 }
+module.exports.getMemberDetailsFromSession = function (req, res)
+{
+    console.log('asfdasadsf')
+    res.send(req.user);
+
+
+}
 module.exports.getMemberDetails = function (req, res)
 {
     var email = req.params.email;
@@ -170,69 +177,6 @@ module.exports.getMemberDetails = function (req, res)
             res.send(member);
             console.log(email)
         })
-    //mongodb.db().collection("members")
-    //    .aggregate(
-    //    {
-    //        $match:
-    //        {
-    //            email: email
-    //        }
-    //    },
-    //    {
-    //        $unwind: '$cities'
-    //    },
-    //    {
-    //        $match:
-    //        {
-    //            'cities.selected': true
-    //        }
-    //    },
-    //    {
-    //        $group:
-    //        {
-    //            _id: email,
-    //            email:
-    //            {
-    //                $push: '$email'
-    //            },
-    //            birthday:
-    //            {
-    //                $push: '$birthday'
-    //            },
-    //            city:
-    //            {
-    //                $push: '$cities'
-    //            },
-    //            habits:
-    //            {
-    //                $push: '$habits'
-    //            },
-    //            genders:
-    //            {
-    //                $push: '$genders'
-    //            },
-    //            zodiacs:
-    //            {
-    //                $push: '$zodiacs'
-    //            },
-    //            eyeColors:
-    //            {
-    //                $push: '$eyeColors'
-    //            },
-    //            hairColors:
-    //            {
-    //                $push: '$hairColors'
-    //            },
-    //            images:
-    //            {
-    //                $push: '$images'
-    //            }
-    //        }
-    //    }, function(err, item)
-    //    {
-    //        res.send(item);
-    //        console.log(email)
-    //    })
 
 
 }

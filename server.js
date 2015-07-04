@@ -165,6 +165,7 @@ passport.deserializeUser(function (id, done)
     });
 });
 app.post('/api/member', dal.create)
+app.get('/api/loggedInMember', dal.getMemberDetailsFromSession)
 app.put('/api/member/:id', dal.updateMember)//todo: remove the id parameter because it is in the member obj
 app.get('/api/member/details/:email', dal.getMemberDetails)
 app.get('/api/members/count', dal.count)
@@ -176,10 +177,6 @@ app.get('/login', function (req, res)
 
 
 
-//app.post('/login', passport.authenticate('local'), function (req, res)
-//{
-//    res.sendFile(__dirname + '/client/login.html');
-//})
 app.post('/login',
     passport.authenticate('local', {
         successRedirect: '/loginSuccess',
@@ -194,7 +191,9 @@ app.get('/loginFailure', function (req, res, next)
 
 app.get('/loginSuccess', function (req, res, next)
 {
-    res.send('Successfully authenticated');
+   // res.send('Successfully authenticated');
+    res.redirect('/register')
+
 });
 app.delete('/api/images/:id/:index', function (req, res)
 {

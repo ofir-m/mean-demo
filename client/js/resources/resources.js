@@ -11,6 +11,10 @@ app.factory('Member', function($resource)
         {
             update: { method: 'PUT' }
         });
+}).factory('LoggedInMember', function($resource)
+{
+    return $resource('/api/loggedInMember');
+
 }).factory('Login', function($resource)
 {
     return $resource('/api/login');
