@@ -14,6 +14,7 @@ var express = require('express'),
     sassMiddleware = require('node-sass-middleware'),
     inspect = require('eyes').inspector(),
     path = require('path'),
+    socketio   = require('socket.io'),
     chance = require('chance').Chance(),
     mongodb = require('./server/mongo');
 
@@ -142,6 +143,7 @@ app.post('/fileUpload/:email', function (req, res)
     }
     res.end();
 });
+
 app.get('/fileUpload/:email/:image', function (req, res)
 {
     var email = req.params.email;
@@ -164,6 +166,13 @@ passport.deserializeUser(function (id, done)
          done(null, user);
     });
 });
+app.use(function(req, res, next) {
+    if (req.user ||req.originalUrl=='/login') {
+        next();
+    } else {
+        res.redirect('/login');
+    }
+});
 app.post('/api/member', dal.create)
 app.get('/api/loggedInMember', dal.getMemberDetailsFromSession)
 app.put('/api/member/:id', dal.updateMember)//todo: remove the id parameter because it is in the member obj
@@ -175,7 +184,16 @@ app.get('/login', function (req, res)
     res.sendFile(__dirname + '/client/login.html');
 })
 
+app.get('/chat', function (req, res)
+{
+    res.sendFile(__dirname + '/client/chat.html');
+})
 
+app.get('/logout', function (req, res)
+{
+    req.logout();
+    res.redirect('/login')
+})
 
 app.post('/login',
     passport.authenticate('local', {
@@ -244,7 +262,9 @@ app.get('/api/cities/:prefix?', dal.getCities)
 //=====================================================================================
 app.get('/*', function (req, res)
 {
+
     res.sendFile(__dirname + '/client/index.html');
 });
 //=====================================================================================
-app.listen(3000);
+var server= app.listen(3000);
+var io        = require('socket.io').listen(server);

@@ -17,6 +17,7 @@
 </head>
 
 <body ng-app="richrach" style="direction:rtl;margin:100px"  ng-controller="SiteController" ng-click="documentClicked($event)">
+<a href="logout" target="_self">logout</a>
     <header-menu></header-menu>
     <!-- <ng-view></ng-view> -->
     <div class="view" ui-view ></div>
@@ -51,6 +52,7 @@
     <script type="text/javascript" src="/js/controllers/MembersController.js"></script>
     <script type="text/javascript" src="/js/controllers/RegisterController.js"></script>
     <script type="text/javascript" src="/js/controllers/ImagesController.js"></script>
+<script type="text/javascript" src="/socket.io/socket.io.js"></script>
 </body>
 
 </html>
