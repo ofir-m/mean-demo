@@ -268,3 +268,12 @@ app.get('/*', function (req, res)
 //=====================================================================================
 var server= app.listen(3000);
 var io        = require('socket.io').listen(server);
+
+io.sockets.on('connection', function (socket)
+{
+    socket.on('send message', function (data)
+    {
+        io.sockets.emit('new message',data)
+    })
+})
+
