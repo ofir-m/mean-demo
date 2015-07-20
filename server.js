@@ -4,7 +4,8 @@ var express = require('express'),
     multer = require('multer'),
     passport = require('passport'),
     passportLocal = require('passport-local').Strategy,
-    expressSession = require('express-session'),
+    session = require('express-session'),
+    MongoStore  = require('connect-mongo')(session);
     cookieParser = require('cookie-parser'),
     fs = require("fs"),
     fse = require('fs-extra'),
@@ -12,11 +13,9 @@ var express = require('express'),
     dbBuilder = require('./server/data/dbBuilder.js'),
     util = require('util'),
     sassMiddleware = require('node-sass-middleware'),
-    inspect = require('eyes').inspector(),
     path = require('path'),
-    socketio   = require('socket.io'),
-    chance = require('chance').Chance(),
-    mongodb = require('./server/mongo');
+    mongodb = require('./server/mongo'),
+    users={};
 
 var connectionString = 'mongodb://localhost:27017/mean-demo';
 mongodb.connect(connectionString, function ()
@@ -31,19 +30,25 @@ mongodb.connect(connectionString, function ()
 app.use(bodyParser.json()); // get information from html forms
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(cookieParser());
-app.use(expressSession({secret: 'mySecretKey'}));
 
-//=====================================================================================
+//========================================  session  =====================================================
+var sessionMiddleware =session({
+    secret: 'mySecretKey',
+    store   : new MongoStore({ url: 'mongodb://localhost:27017/sessions' })
+})
+    app.use(sessionMiddleware);
+
+//======================================== passport =====================================================
 app.use(passport.initialize());
 app.use(passport.session());
 passport.use(new passportLocal(function (username, password, done)
 {
-    var user = dal.getUser(username, function (user)
+    var user = dal.getUserByEmail(username, function (user)
     {
         if (!user)
         {
             console.log('User Not Found with username ' + username);
-             done(null, false);
+            done(null, false);
         }
         //// User exists but wrong password, log the error
         //if (!isValidPassword(user, password)){
@@ -53,18 +58,30 @@ passport.use(new passportLocal(function (username, password, done)
         //}
         // User and password both match, return user from
         // done method which will be treated like success
-         done(null, user);
+        done(null, user);
     });
 
 }))
+passport.serializeUser(function (user, done)
+{
+    done(null, user._id);
+});
+
+passport.deserializeUser(function (id, done)
+{
+    var user = dal.getUserById(id, function (user)
+    {
+
+        done(null, user);
+    });
+});
 //=====================================================================================
 
 var done = false
 
 /*Configure the multer.*/
 
-app.use(multer(
-    {
+app.use(multer({
         dest: './uploads/',
         rename: function (fieldname, filename)
         {
@@ -97,7 +114,7 @@ app.use(multer(
         }
     }));
 
-//=====================================================================================
+//===================================== sass ================================================
 app.use(sassMiddleware(
     {
         src: __dirname + "/public",
@@ -106,14 +123,15 @@ app.use(sassMiddleware(
         force: true
     }));
 app.use(express.static(path.join(__dirname, 'public')));
-//=====================================================================================
+//================================= folders shortcuts ====================================================
 app.use('/bower_components', express.static(__dirname + '/bower_components'))
 app.use('/templates', express.static(__dirname + '/client/templates'))
 app.use('/js', express.static(__dirname + '/client/js'))
 app.use('/css', express.static(__dirname + '/client/css'))
 app.use('/views', express.static(__dirname + '/client/views'))
 app.use('/images', express.static(__dirname + '/client/images'))
-//=====================================================================================
+
+//======================================== file upload =====================================================
 app.post('/fileUpload/:email', function (req, res)
 {
     if (done == true)
@@ -153,28 +171,20 @@ app.get('/fileUpload/:email/:image', function (req, res)
 
 
 })
-passport.serializeUser(function (user, done)
-{
-    done(null, user._id);
-});
 
-passport.deserializeUser(function (id, done)
+app.use(function (req, res, next)
 {
-    var user = dal.getUserById(id, function (user)
+    if (req.user || req.originalUrl == '/login')
     {
-
-         done(null, user);
-    });
-});
-app.use(function(req, res, next) {
-    if (req.user ||req.originalUrl=='/login') {
         next();
-    } else {
+    } else
+    {
         res.redirect('/login');
     }
 });
+//===========================================================================================================
 app.post('/api/member', dal.create)
-app.get('/api/loggedInMember', dal.getMemberDetailsFromSession)
+app.get('/api/loggedInMember', dal.getMemberFromSession)
 app.put('/api/member/:id', dal.updateMember)//todo: remove the id parameter because it is in the member obj
 app.get('/api/member/details/:email', dal.getMemberDetails)
 app.get('/api/members/count', dal.count)
@@ -209,7 +219,7 @@ app.get('/loginFailure', function (req, res, next)
 
 app.get('/loginSuccess', function (req, res, next)
 {
-   // res.send('Successfully authenticated');
+    // res.send('Successfully authenticated');
     res.redirect('/register')
 
 });
@@ -265,15 +275,50 @@ app.get('/*', function (req, res)
 
     res.sendFile(__dirname + '/client/index.html');
 });
-//=====================================================================================
-var server= app.listen(3000);
-var io        = require('socket.io').listen(server);
-
+//==================================================================================================
+var server = app.listen(3000);
+//===================================  socket.io  ==================================================
+var io = require('socket.io').listen(server);
+io.use(function(socket, next) {
+    sessionMiddleware(socket.request, socket.request.res, next);
+});
 io.sockets.on('connection', function (socket)
 {
+   var session= socket.request.session;
+
+    var socketId=socket.id;
+    if(session.passport &&socketId)
+    {
+        var userId=session.passport.user;
+
+        (function(socketId)
+        {
+            var user = dal.getUserById(userId, function (user)
+            {
+               // console.log(user.email);
+                var email=user.email
+                users[email]=socketId;
+                console.log(users);
+            });
+        }(socketId));
+
+    }
+
     socket.on('send message', function (data)
     {
-        io.sockets.emit('new message',data)
+        //socket.broadcast.to(id).emit('my message', msg);
+        //io.sockets.emit('new message', data)
+        var targetEmail=data.email;
+        var targetSocket=users[targetEmail];
+       var message= data.message;
+        //if (io.sockets.connected[targetSocket]) {
+        //    io.sockets.connected[targetSocket].emit('new message', message);
+        //}
     })
+
+    //socket.on('new user', function (data)
+    //{
+    //   console.log(data)
+    //})
 })
 

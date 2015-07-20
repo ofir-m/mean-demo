@@ -1,4 +1,4 @@
-app.controller('RegisterController', function($scope, $resource, Member,Member1,LoggedInMember, MemberDetails, Count, Habits, Genders, Zodiacs, Cities)
+app.controller('RegisterController', function($rootScope,$scope, $resource, Member,Member1,LoggedInMember, MemberDetails, Count, Habits, Genders, Zodiacs, Cities)
 
 {
     LoggedInMember.get(
@@ -8,7 +8,7 @@ app.controller('RegisterController', function($scope, $resource, Member,Member1,
         }, function (member)
         {
 
-            $scope.member = member;
+            $rootScope.member = member;
             console.log(member);
 
         });

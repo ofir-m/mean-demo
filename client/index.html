@@ -14,13 +14,60 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/textbox.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/datebox.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/image-uploader.css">
+    <style>
+    form {
+    background: #000;
+    padding: 3px;
+    position: fixed;
+    top: 200px;
+    width: 400px;
+    left: 740px;
+    }
+
+    form input {
+    border: 0;
+    padding: 10px;
+    width: 80%;
+    }
+
+    form button {
+    width: 18%;
+    background: rgb(130, 224, 255);
+    border: none;
+    padding: 10px;
+    }
+
+    #messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+
+    #chat {
+    text-align: center;
+    }
+
+    #messages li {
+    padding: 5px 10px;
+    }
+
+    #messages li:nth-child(odd) {
+    background: #eee;
+    }
+    </style>
 </head>
 
 <body ng-app="richrach" style="direction:rtl;margin:100px"  ng-controller="SiteController" ng-click="documentClicked($event)">
+<input id="email" type="hidden" value="{{member.email}}">
 <a href="logout" target="_self">logout</a>
     <header-menu></header-menu>
     <!-- <ng-view></ng-view> -->
     <div class="view" ui-view ></div>
+<div id="chat"></div>
+<form id="send-message" action="">
+    <input id="message" autocomplete="off"/>
+    <button>Send</button>
+</form>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <script type="text/javascript" src="/bower_components/angularjs/angular.js"></script>
@@ -52,7 +99,29 @@
     <script type="text/javascript" src="/js/controllers/MembersController.js"></script>
     <script type="text/javascript" src="/js/controllers/RegisterController.js"></script>
     <script type="text/javascript" src="/js/controllers/ImagesController.js"></script>
-<!--<script type="text/javascript" src="/socket.io/socket.io.js"></script>-->
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+<script>
+    $(document).ready(function ()
+    {
+
+        var socket = io.connect()
+        //socket.emit('new user', $messageBox.val())
+        var $messageForm = $('#send-message');
+        var $messageBox = $('#message');
+        var $chat = $('#chat');
+        $messageForm.submit(function (e)
+        {
+            var email=$('input#email').val();
+            e.preventDefault();
+            socket.emit('send message', {message:$messageBox.val(),email:email});
+            $messageBox.val('');
+        })
+        socket.on('new message', function (data)
+        {
+            $chat.append(data + '</br>')
+        })
+    })
+</script>
 </body>
 
 </html>

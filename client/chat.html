@@ -22,7 +22,6 @@
             left: 740px;
         }
 
-
         form input {
             border: 0;
             padding: 10px;
@@ -41,10 +40,11 @@
             margin: 0;
             padding: 0;
         }
-#chat
-{
-    text-align:center;
-}
+
+        #chat {
+            text-align: center;
+        }
+
         #messages li {
             padding: 5px 10px;
         }
@@ -65,19 +65,21 @@
 <script>
     $(document).ready(function ()
     {
-        var socket=io.connect()
-        var $messageForm=$('#send-message');
-        var $messageBox=$('#message');
-        var $chat=$('#chat');
+       // var socket = io.connect()
+        var socket =io.connect('http://localhost:3000/', { query: "foo=bar" });
+      //  socket.emit('new user', $messageBox.val())
+        var $messageForm = $('#send-message');
+        var $messageBox = $('#message');
+        var $chat = $('#chat');
         $messageForm.submit(function (e)
         {
             e.preventDefault();
-            socket.emit('send message',$messageBox.val())
+            socket.emit('send message', $messageBox.val())
             $messageBox.val('');
         })
         socket.on('new message', function (data)
         {
-            $chat.append(data+'</br>')
+            $chat.append(data + '</br>')
         })
     })
 </script>
