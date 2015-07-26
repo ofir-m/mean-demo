@@ -5,8 +5,8 @@ var express = require('express'),
     passport = require('passport'),
     passportLocal = require('passport-local').Strategy,
     session = require('express-session'),
-    MongoStore  = require('connect-mongo')(session);
-    cookieParser = require('cookie-parser'),
+    MongoStore = require('connect-mongo')(session);
+cookieParser = require('cookie-parser'),
     fs = require("fs"),
     fse = require('fs-extra'),
     dal = require('./server/dal.js'),
@@ -15,7 +15,7 @@ var express = require('express'),
     sassMiddleware = require('node-sass-middleware'),
     path = require('path'),
     mongodb = require('./server/mongo'),
-    users={};
+    users = {};
 
 var connectionString = 'mongodb://localhost:27017/mean-demo';
 mongodb.connect(connectionString, function ()
@@ -32,11 +32,11 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(cookieParser());
 
 //========================================  session  =====================================================
-var sessionMiddleware =session({
+var sessionMiddleware = session({
     secret: 'mySecretKey',
-    store   : new MongoStore({ url: 'mongodb://localhost:27017/sessions' })
+    store: new MongoStore({url: 'mongodb://localhost:27017/sessions'})
 })
-    app.use(sessionMiddleware);
+app.use(sessionMiddleware);
 
 //======================================== passport =====================================================
 app.use(passport.initialize());
@@ -82,37 +82,37 @@ var done = false
 /*Configure the multer.*/
 
 app.use(multer({
-        dest: './uploads/',
-        rename: function (fieldname, filename)
+    dest: './uploads/',
+    rename: function (fieldname, filename)
+    {
+        //return filename + Date.now();
+        return filename;
+    },
+    onFileUploadStart: function (file)
+    {
+        done = false;
+        console.log(file.originalname + ' is starting ...')
+    },
+    onFileUploadComplete: function (file)
+    {
+        console.log(file.fieldname + ' uploaded to  ' + file.path)
+        done = true;
+    },
+    changeDest: function (dest, req, res)
+    {
+        //dest = dest + req.params.email;
+        dest = '.' + req.originalUrl;
+        fse.mkdirs(dest, function (err)
         {
-            //return filename + Date.now();
-            return filename;
-        },
-        onFileUploadStart: function (file)
-        {
-            done = false;
-            console.log(file.originalname + ' is starting ...')
-        },
-        onFileUploadComplete: function (file)
-        {
-            console.log(file.fieldname + ' uploaded to  ' + file.path)
-            done = true;
-        },
-        changeDest: function (dest, req, res)
-        {
-            //dest = dest + req.params.email;
-            dest = '.' + req.originalUrl;
-            fse.mkdirs(dest, function (err)
-            {
-                if (err) return console.error(err);
+            if (err) return console.error(err);
 
-                console.log("success!")
-            });
+            console.log("success!")
+        });
 
-            return dest;
+        return dest;
 
-        }
-    }));
+    }
+}));
 
 //===================================== sass ================================================
 app.use(sassMiddleware(
@@ -279,25 +279,25 @@ app.get('/*', function (req, res)
 var server = app.listen(3000);
 //===================================  socket.io  ==================================================
 var io = require('socket.io').listen(server);
-io.use(function(socket, next) {
+io.use(function (socket, next)
+{
     sessionMiddleware(socket.request, socket.request.res, next);
 });
 io.sockets.on('connection', function (socket)
 {
-   var session= socket.request.session;
+    var session = socket.request.session;
 
-    var socketId=socket.id;
-    if(session.passport &&socketId)
+    var socketId = socket.id;
+    if (session.passport && socketId)
     {
-        var userId=session.passport.user;
+        var userId = session.passport.user;
 
-        (function(socketId)
+        (function (socketId)
         {
             var user = dal.getUserById(userId, function (user)
             {
-               // console.log(user.email);
-                var email=user.email
-                users[email]=socketId;
+                var email = user.email
+                users[email] = socketId;
                 console.log(users);
             });
         }(socketId));
@@ -308,12 +308,13 @@ io.sockets.on('connection', function (socket)
     {
         //socket.broadcast.to(id).emit('my message', msg);
         //io.sockets.emit('new message', data)
-        var targetEmail=data.email;
-        var targetSocket=users[targetEmail];
-       var message= data.message;
-        //if (io.sockets.connected[targetSocket]) {
-        //    io.sockets.connected[targetSocket].emit('new message', message);
-        //}
+        var targetEmail = data.email;
+        var targetSocket = users[targetEmail];
+        var message = data.message;
+        if (io.sockets.connected[targetSocket])
+        {
+            io.sockets.connected[targetSocket].emit('get message', message);
+        }
     })
 
     //socket.on('new user', function (data)

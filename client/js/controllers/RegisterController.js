@@ -1,17 +1,7 @@
 app.controller('RegisterController', function($rootScope,$scope, $resource, Member,Member1,LoggedInMember, MemberDetails, Count, Habits, Genders, Zodiacs, Cities)
 
 {
-    LoggedInMember.get(
-        {
 
-
-        }, function (member)
-        {
-
-            $rootScope.member = member;
-            console.log(member);
-
-        });
 
     $scope.updateMember = function()
     {

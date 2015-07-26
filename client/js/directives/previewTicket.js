@@ -1,4 +1,4 @@
-app.directive('previewTicket', function ()
+app.directive('previewTicket', function ($rootScope,chatManager)
 {
     return {
         restrict: 'E',
@@ -6,6 +6,17 @@ app.directive('previewTicket', function ()
         scope: {
             member: '='
         },
-        templateUrl: '/templates/previewTicket.html'
+        templateUrl: '/templates/previewTicket.html',
+        link: function ($scope, element, attrs)
+        {
+
+            $scope.startChat = function ()
+            {
+
+               // $rootScope.$broadcast('startChat',$scope.member.email);
+                chatManager.addChat($scope,$scope.member.email);
+            }
+
+        }
     }
 });
