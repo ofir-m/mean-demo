@@ -1,3 +1,5 @@
+@import "base";
+
 #taskbar {
   width: 100%;
   bottom: 0;
@@ -7,11 +9,30 @@
   flex-direction: row;
   justify-content: flex-start;
   right: 0;
+
+  div.chat {
+    background-color: #00d4b4;
+    width: 300px;
+    height: 45px;
+    margin-right: 20px;
+    cursor: pointer;
+    header {
+      height: 30px;
+      background-color: #00d4b4;
+      position: relative;
+      .close {
+        left: 10px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+        background-color: grey;
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+  }
+
 }
-#taskbar div.chat {
-  background-color: #00d4b4;
-  width: 300px;
-  height: 45px;
-  margin-right: 20px;
-  cursor: pointer;
-}
+

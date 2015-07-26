@@ -1,4 +1,4 @@
-app.service('chatManager', function ($compile)
+app.service('chatManager', function ($compile,$rootScope)
 {
 
     var self = this;
@@ -6,9 +6,19 @@ app.service('chatManager', function ($compile)
 
     this.addChat = function (scope,receiverEmail)
     {
-        var el = $compile('<chat member="member" receiver-email="'+receiverEmail+'"></chat>')(scope);
-        taskbar.append(el);
+        var chatElement = $compile('<chat member="member" receiver-email="'+receiverEmail+'"></chat>')(scope);
+        taskbar.append(chatElement);
     }
+    this.removeChat = function (scope,receiverEmail)
+    {
+
+    }
+    this.connect = function ($rootScope)
+    {
+       $rootScope.socket=io.connect();
+
+    }
+    
 
 
 });

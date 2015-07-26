@@ -13,7 +13,7 @@ app.controller('SiteController', function ($scope,$rootScope,LoggedInMember, $re
             console.log(member);
 
         });
-
+    chatManager.connect($rootScope);
     $scope.documentClicked = function ($event)
     {
         if (!event) return;

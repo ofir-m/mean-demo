@@ -25,7 +25,7 @@ app.directive('myForm', function() {
 			this.callFromChild = function() {
 				console.log('child is calling')
 			}
-		},
+		}
 
 
 	}

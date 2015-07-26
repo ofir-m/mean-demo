@@ -306,14 +306,13 @@ io.sockets.on('connection', function (socket)
 
     socket.on('send message', function (data)
     {
-        //socket.broadcast.to(id).emit('my message', msg);
-        //io.sockets.emit('new message', data)
-        var targetEmail = data.email;
-        var targetSocket = users[targetEmail];
+        var t=data;
+        var receiverEmail = data.receiverEmail;
+        var receiverSocket = users[receiverEmail];
         var message = data.message;
-        if (io.sockets.connected[targetSocket])
+        if (io.sockets.connected[receiverSocket])
         {
-            io.sockets.connected[targetSocket].emit('get message', message);
+            io.sockets.connected[receiverSocket].emit('get message', message);
         }
     })
 

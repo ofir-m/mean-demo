@@ -1,11 +1,11 @@
-app.directive('chat', function ($rootScope)
+app.directive('chat', function ($rootScope,chatManager)
 {
     return {
         restrict: 'E',
         replace: true,
         scope: {
-            member: '=',
-            me: '='
+            member: '='
+
         },
         link: function ($scope, element, attrs)
         {
@@ -15,8 +15,8 @@ app.directive('chat', function ($rootScope)
             $scope.show = true;
 
             var content = element.find('#content')
-
-            var socket = io.connect();
+            var socket =$rootScope.socket;
+           // var socket = io.connect();
             $scope.message = '';
 
             socket.on('get message', function (data)
@@ -26,7 +26,7 @@ app.directive('chat', function ($rootScope)
                 content.append($rootScope.me.email + ',' + data + '</br>')
 
             })
- 
+
             $scope.sendMessage = function ()
             {
                 socket.emit('send message', {
