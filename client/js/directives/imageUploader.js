@@ -12,8 +12,8 @@ app.directive('imageUploader', function($timeout, Images,$rootScope)
         replace: true,
         controller: function($scope, $element, $attrs, $timeout, fileReader, fileUpload)
         {
-            var folder='/fileUpload/' + $scope.member._id+'/';
-            var images = $scope.member.images;
+            var folder='/fileUpload/' + $scope.me._id+'/';
+            var images = $scope.me.images;
             var image = images[$scope.index];
             var img=$element.find('img.uploaded-image')[0];
             $scope.showPreloader=false;
@@ -87,7 +87,7 @@ app.directive('imageUploader', function($timeout, Images,$rootScope)
                 img.style.height = "100px";
                 $scope.showBtnChoose = true;
                 // var filepath = "/fileUpload/" + $scope.member._id + "/" + $scope.myFile.name;
-                var email = $scope.member._id;
+                var email = $scope.me._id;
                 var index = ($scope.index * 1 + 1).toString();
                 Images.remove(
                 {

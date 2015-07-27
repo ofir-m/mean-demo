@@ -4,17 +4,18 @@ app.directive('chat', function ($rootScope,chatManager)
         restrict: 'E',
         replace: true,
         scope: {
-            member: '='
+            receiverEmail: '@',
+            chats:'='
 
         },
-        link: function ($scope, element, attrs)
+        link: function ($scope, $element, attrs)
         {
-            $scope.me = $rootScope.me;
-            $scope.senderEmail = $scope.me.email;
-            $scope.receiverEmail = $scope.member.email;
+            //$scope.me = $rootScope.me;
+            $scope.senderEmail = $rootScope.me.email;
+           // $scope.receiverEmail = $scope.member.email;
             $scope.show = true;
 
-            var content = element.find('#content')
+            var content = $element.find('#content')
             var socket =$rootScope.socket;
            // var socket = io.connect();
             $scope.message = '';
@@ -36,7 +37,14 @@ app.directive('chat', function ($rootScope,chatManager)
                 });
                 $scope.message = '';
             }
-
+            $scope.remove = function ()
+            {
+                $element.remove();
+                $scope.$destroy()
+            }
+            //$scope.$on('$destroy', function(){
+            //    alert('Put unbind handlers for timers etc. here')
+            //})
 
         },
 

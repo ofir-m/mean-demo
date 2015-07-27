@@ -5,8 +5,8 @@ app.controller('RegisterController', function($rootScope,$scope, $resource, Memb
 
     $scope.updateMember = function()
     {
-        var member = new Member1($scope.member)
-        member.$update({id:$scope.member._id},function(response)
+        var member = new Member1($scope.me)
+        member.$update({id:$scope.me._id},function(response)
         {
             alert(response.message)
 
@@ -17,7 +17,7 @@ app.controller('RegisterController', function($rootScope,$scope, $resource, Memb
     }
     $scope.createMember = function()
     {
-        var member = new Member($scope.member)
+        var member = new Member($scope.me)
         member.$save(function(data)
         {
             console.log(data);

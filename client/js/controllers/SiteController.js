@@ -8,7 +8,7 @@ app.controller('SiteController', function ($scope,$rootScope,LoggedInMember, $re
         }, function (member)
         {
 
-            $rootScope.member = member;
+          //  $rootScope.member = member;
             $rootScope.me = member;
             console.log(member);
 
@@ -28,7 +28,7 @@ app.controller('SiteController', function ($scope,$rootScope,LoggedInMember, $re
 
     $scope.createMember = function ()
     {
-        var member = new Member($scope.member)
+        var member = new Member($scope.me)
         member.$save(function (data)
         {
             console.log(data);

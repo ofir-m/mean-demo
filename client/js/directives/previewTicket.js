@@ -13,8 +13,8 @@ app.directive('previewTicket', function ($rootScope,chatManager)
             $scope.startChat = function ()
             {
 
-               // $rootScope.$broadcast('startChat',$scope.member.email);
-                chatManager.addChat($scope,$scope.member.email);
+                $rootScope.$broadcast('startChat',$scope.member.email);
+               // chatManager.addChat($scope,$scope.member.email);
             }
 
         }
