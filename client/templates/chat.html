@@ -1,12 +1,12 @@
-<div style="background-color: #f4f4f4;height:300px;width:400px;position:fixed;bottom:0;" class="chat" data-receiver-email="{{receiverEmail}}" data-sender-email="{{senderEmail}}" ng-show="show">
+<div  class="chat" data-receiver-email="{{receiverEmail}}" data-sender-email="{{senderEmail}}" ng-show="show">
 
     <header >
         <div class="close" ng-click="remove()">X</div>
          <span ng-bind="receiverEmail"/>
     </header>
-    <div id="content"></div>
-    <div style="position:absolute;bottom:0;left: 0;width: 100%;">
-        <input type="text" ng-model="message" style="float:right;width: 75%;"/>
+    <div class="content"></div>
+    <div style="height:275px;width: 100%;">
+        <input type="text" ng-model="message" />
         <button ng-click="sendMessage()" style="float:right">שלח</button>
     </div>
 </div>

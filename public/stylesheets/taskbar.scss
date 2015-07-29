@@ -5,17 +5,32 @@
   bottom: 0;
   position: fixed;
   background-color: #f4f4f4;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: flex-start; */
   right: 0;
 
   div.chat {
-    background-color: #00d4b4;
+    /* background-color: #00d4b4; */
     width: 300px;
-    height: 45px;
+    height: 300px;
     margin-right: 20px;
     cursor: pointer;
+    border: 1px solid grey;
+    /* float: right; */
+    position: fixed;
+    bottom: 0;
+    .content
+    {
+      height: 200px;
+      width: 100%;
+      background-color: white;
+    }
+    input{
+      float: right;
+      width: 75%;
+      /* display: block; */
+    }
     header {
       height: 30px;
       background-color: #00d4b4;

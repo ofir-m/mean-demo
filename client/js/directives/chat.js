@@ -4,8 +4,8 @@ app.directive('chat', function ($rootScope,chatManager)
         restrict: 'E',
         replace: true,
         scope: {
-            receiverEmail: '@',
-            chats:'='
+            receiverEmail: '@'
+          //  chats:'='
 
         },
         link: function ($scope, $element, attrs)

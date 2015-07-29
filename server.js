@@ -5,8 +5,8 @@ var express = require('express'),
     passport = require('passport'),
     passportLocal = require('passport-local').Strategy,
     session = require('express-session'),
-    MongoStore = require('connect-mongo')(session);
-cookieParser = require('cookie-parser'),
+    MongoStore = require('connect-mongo')(session),
+    cookieParser = require('cookie-parser'),
     fs = require("fs"),
     fse = require('fs-extra'),
     dal = require('./server/dal.js'),
@@ -306,7 +306,7 @@ io.sockets.on('connection', function (socket)
 
     socket.on('send message', function (data)
     {
-        var t=data;
+        var t = data;
         var receiverEmail = data.receiverEmail;
         var receiverSocket = users[receiverEmail];
         var message = data.message;

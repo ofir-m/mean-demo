@@ -23,7 +23,6 @@ var buildMember = function()
     var member = new Member();
     member.email = "maorof@gmail.com";
     member.email =faker.internet.email()
-   // member.birthday=chance.date({string: true, american: false});
     member.birthday=moment().subtract(random.integer(18, 80), 'years').format('DD/MM/YYYY')
     member.images = [
     {
@@ -44,7 +43,6 @@ var buildMember = function()
     }, function(err)
     {
         if (err) return next(err);
-        // console.log(member)
         mongodb.db().collection('members').insert(member)
     });
 
