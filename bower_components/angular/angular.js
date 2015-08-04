@@ -7110,7 +7110,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
      * @param node Node to search.
      * @param directives An array to which the directives are added to. This array is sorted before
      *        the function returns.
-     * @param attrs The shared attrs object which is used to populate the normalized attributes.
+     * @param attrs The shared attrs object which is used to populatefromXml the normalized attributes.
      * @param {number=} maxPriority Max directive priority.
      */
     function collectDirectives(node, directives, attrs, maxPriority, ignoreDirective) {
@@ -8695,7 +8695,7 @@ function $HttpProvider() {
    * - **`defaults.xsrfCookieName`** - {string} - Name of cookie containing the XSRF token.
    * Defaults value is `'XSRF-TOKEN'`.
    *
-   * - **`defaults.xsrfHeaderName`** - {string} - Name of HTTP header to populate with the
+   * - **`defaults.xsrfHeaderName`** - {string} - Name of HTTP header to populatefromXml with the
    * XSRF token. Defaults value is `'X-XSRF-TOKEN'`.
    *
    * - **`defaults.headers`** - {Object} - Default headers for all $http requests.
@@ -9175,7 +9175,7 @@ function $HttpProvider() {
      *    - **headers** – `{Object}` – Map of strings or functions which return strings representing
      *      HTTP headers to send to the server. If the return value of a function is null, the
      *      header will not be sent.
-     *    - **xsrfHeaderName** – `{string}` – Name of HTTP header to populate with the XSRF token.
+     *    - **xsrfHeaderName** – `{string}` – Name of HTTP header to populatefromXml with the XSRF token.
      *    - **xsrfCookieName** – `{string}` – Name of cookie containing the XSRF token.
      *    - **transformRequest** –
      *      `{function(data, headersGetter)|Array.<function(data, headersGetter)>}` –

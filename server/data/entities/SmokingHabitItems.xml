@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<options>
+  <option name="לא משנה" id="1" />
+  <option name="לא מעשנ/ת" id="2" />
+  <option name="מעשנ/ת מידי פעם" id="3" />
+  <option name="מעשנ/ת" id="4" />
+  <option name="מנסה להפסיק לעשן" id="5" />
+</options>

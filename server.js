@@ -10,18 +10,19 @@ var express = require('express'),
     fs = require("fs"),
     fse = require('fs-extra'),
     dal = require('./server/dal.js'),
-    dbBuilder = require('./server/data/dbBuilder.js'),
-    util = require('util'),
+       util = require('util'),
     sassMiddleware = require('node-sass-middleware'),
     path = require('path'),
-    mongodb = require('./server/mongo'),
+    dbManager = require('./server/dbManager'),
+    entitiesManager = require('./server/data/entitiesManager'),
     users = {};
 
 var connectionString = 'mongodb://localhost:27017/mean-demo';
-mongodb.connect(connectionString, function ()
+dbManager.connect(connectionString, function ()
 {
     console.log('Connected to MongoDB.');
-    dbBuilder.buildMember()
+    //dbSeeder.buildMember()
+   // dbSeeder.saveEntities();
 
 });
 
@@ -183,7 +184,7 @@ app.use(function (req, res, next)
     }
 });
 //===========================================================================================================
-app.post('/api/member', dal.create)
+//app.post('/api/member', dal.create)
 app.get('/api/loggedInMember', dal.getMemberFromSession)
 app.put('/api/member/:id', dal.updateMember)//todo: remove the id parameter because it is in the member obj
 app.get('/api/member/details/:email', dal.getMemberDetails)

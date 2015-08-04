@@ -2970,7 +2970,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
      * - `$state.go('.child.grandchild')` - will go to grandchild state
      *
      * @param {object=} params A map of the parameters that will be sent to the state, 
-     * will populate $stateParams. Any parameters that are not specified will be inherited from currently 
+     * will populatefromXml $stateParams. Any parameters that are not specified will be inherited from currently
      * defined parameters. This allows, for example, going to a sibling state that shares parameters
      * specified in a parent state. Parameter inheritance only works between common ancestor states, I.e.
      * transitioning to a sibling will get you the parameters for all parents, transitioning to a child
@@ -3029,7 +3029,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
      *
      * @param {string} to State name.
      * @param {object=} toParams A map of the parameters that will be sent to the state,
-     * will populate $stateParams.
+     * will populatefromXml $stateParams.
      * @param {object=} options Options object. The options are:
      *
      * - **`location`** - {boolean=true|string=} - If `true` will update the url in the location bar, if `false`
@@ -3658,7 +3658,7 @@ angular.module('ui.router.state').provider('$uiViewScroll', $ViewScrollProvider)
  * </pre>
  *
  * You can only have one unnamed view within any template (or root html). If you are only using a 
- * single view and it is unnamed then you can populate it like so:
+ * single view and it is unnamed then you can populatefromXml it like so:
  * <pre>
  * <div ui-view></div> 
  * $stateProvider.state("home", {
