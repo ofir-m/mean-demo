@@ -8,19 +8,19 @@ var xml2js = require('xml2js'),
     random = require("random-js")(),
     moment = require('moment'),
     q = require('q'),
-    entitiesManager = require('./entitiesManager'),
-
+    //entitiesManager = require('./entitiesManager'),
     dal = require('../dal'),
     parser = new xml2js.Parser();
 
-var DbSeeder = function ()
+var MemberFactory = function ()
 {
-    this.populateEntities= function ()
+
+    function getPropertyNameFromEntityName(entityName)
     {
-        var promise= entitiesManager.populatefromXml();
-        return promise;
+        return pluralize(utils.toCamelCase(entityName));
     }
-    this.buildMember = function ()
+
+    this.createMember = function ()
     {
         var member = {};
         member.email = "maorof@gmail.com";
@@ -39,12 +39,14 @@ var DbSeeder = function ()
             {
                 index: '4'
             }];
-
-
+        var entitiesManager = require('./entitiesManager');
+        entitiesManager.traverseEntites(function (name, values)
+        {
+            var property = getPropertyNameFromEntityName(name)
+            member[property]=values;
+        })
+dal.insertMember(member);
     }
-
-
-
 
 
     function createSelectBoxDocument(document, model)
@@ -110,6 +112,5 @@ var DbSeeder = function ()
 }
 
 
-
-module.exports = new DbSeeder();
+module.exports = new MemberFactory();
 

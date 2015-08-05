@@ -21,8 +21,7 @@ var connectionString = 'mongodb://localhost:27017/mean-demo';
 dbManager.connect(connectionString, function ()
 {
     console.log('Connected to MongoDB.');
-    //dbSeeder.buildMember()
-   // dbSeeder.saveEntities();
+
 
 });
 
@@ -284,42 +283,42 @@ io.use(function (socket, next)
 {
     sessionMiddleware(socket.request, socket.request.res, next);
 });
-io.sockets.on('connection', function (socket)
-{
-    var session = socket.request.session;
-
-    var socketId = socket.id;
-    if (session.passport && socketId)
-    {
-        var userId = session.passport.user;
-
-        (function (socketId)
-        {
-            var user = dal.getUserById(userId, function (user)
-            {
-                var email = user.email
-                users[email] = socketId;
-                console.log(users);
-            });
-        }(socketId));
-
-    }
-
-    socket.on('send message', function (data)
-    {
-        var t = data;
-        var receiverEmail = data.receiverEmail;
-        var receiverSocket = users[receiverEmail];
-        var message = data.message;
-        if (io.sockets.connected[receiverSocket])
-        {
-            io.sockets.connected[receiverSocket].emit('get message', message);
-        }
-    })
-
-    //socket.on('new user', function (data)
-    //{
-    //   console.log(data)
-    //})
-})
+//io.sockets.on('connection', function (socket)
+//{
+//    var session = socket.request.session;
+//
+//    var socketId = socket.id;
+//    if (session.passport && socketId)
+//    {
+//        var userId = session.passport.user;
+//
+//        (function (socketId)
+//        {
+//            var user = dal.getUserById(userId, function (user)
+//            {
+//                var email = user.email
+//                users[email] = socketId;
+//                console.log(users);
+//            });
+//        }(socketId));
+//
+//    }
+//
+//    socket.on('send message', function (data)
+//    {
+//        var t = data;
+//        var receiverEmail = data.receiverEmail;
+//        var receiverSocket = users[receiverEmail];
+//        var message = data.message;
+//        if (io.sockets.connected[receiverSocket])
+//        {
+//            io.sockets.connected[receiverSocket].emit('get message', message);
+//        }
+//    })
+//
+//    //socket.on('new user', function (data)
+//    //{
+//    //   console.log(data)
+//    //})
+//})
 

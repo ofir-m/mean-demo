@@ -1,20 +1,15 @@
 var dbManager = require('./dbManager');
-//var dbSeeder = require('./data/dbSeeder');
-//var entitiesManager= require('./data/entitiesManager');
+
 var q = require('q');
 var Dal= function ()
 {
     var self=this;
-    //dbManager.on('db connected', function ()
-    //{
-    //    self.init();
-    //})
 
 
     this.getEntitiesFromDb = function (entities)
     {
         var deferred = q.defer();
-        dbManager.db.collection('entities').findOne(function (err,entities)
+        dbManager.db.collection('entities').findOne({},{ _id:0 },function (err,entities)
         {
             if(err)
             {

@@ -8,6 +8,7 @@ var xml2js = require('xml2js'),
     random = require("random-js")(),
     moment = require('moment'),
     q = require('q'),
+    memberFactory=require('../data/memberFactory'),
     parser = new xml2js.Parser();
 
 var EntitiesManager = function ()
@@ -23,7 +24,15 @@ var EntitiesManager = function ()
         'Children': [],
         'HairColor': []
     }
-    var t = dal;
+
+    this.traverseEntites= function (callback)
+    {
+        for(var name in this.entities)
+        {
+            var values=this.entities[name];
+            callback(name,values);
+        }
+    }
     dbManager.on('db connected', function ()
     {
         dal.getEntitiesFromDb().then(function (dbEntities)
@@ -34,14 +43,15 @@ var EntitiesManager = function ()
 
             } else
             {
-                return self.populatefromXml().then(function (entities)
+                return self.populateEntitesfromXml().then(function (entities)
                 {
                     return dal.insertEntities(entities)
                 });
             }
         }).then(function (dbEntities)
         {
-            self.entities = dbEntities
+            self.entities = dbEntities;
+            memberFactory.createMember();
         });
     })
 
@@ -52,11 +62,9 @@ var EntitiesManager = function ()
         this.name = name;
         this.selected = selected;
     }
-    this.populatefromDB = function ()
-    {
-    }
 
-    this.populatefromXml = function ()
+
+    this.populateEntitesfromXml = function ()
     {
         var deferred = q.defer();
         var promises = [];
@@ -81,10 +89,10 @@ var EntitiesManager = function ()
         )
         return deferred.promise;
     }
-    function adjustEntityName(entity)
-    {
-        return pluralize(utils.toCamelCase(entity));
-    }
+    //function adjustEntityName(entity)
+    //{
+    //    return pluralize(utils.toCamelCase(entity));
+    //}
 
     function getEntityFilePathByName(name)
     {
