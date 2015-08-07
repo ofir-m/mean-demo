@@ -51,7 +51,7 @@ var EntitiesManager = function ()
         }).then(function (dbEntities)
         {
             self.entities = dbEntities;
-            memberFactory.createMember();
+           // memberFactory.create100Members();
         });
     })
 

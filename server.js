@@ -14,8 +14,8 @@ var express = require('express'),
     sassMiddleware = require('node-sass-middleware'),
     path = require('path'),
     dbManager = require('./server/dbManager'),
-    entitiesManager = require('./server/data/entitiesManager'),
-    users = {};
+    entitiesManager = require('./server/data/entitiesManager');
+   // users = {};
 
 var connectionString = 'mongodb://localhost:27017/mean-demo';
 dbManager.connect(connectionString, function ()
@@ -278,11 +278,15 @@ app.get('/*', function (req, res)
 //==================================================================================================
 var server = app.listen(3000);
 //===================================  socket.io  ==================================================
-var io = require('socket.io').listen(server);
-io.use(function (socket, next)
-{
-    sessionMiddleware(socket.request, socket.request.res, next);
-});
+var SocketsManager= require('./server/socketsManager');
+var socketsManager=new SocketsManager(server,sessionMiddleware)
+
+
+//var io = require('socket.io').listen(server);
+//io.use(function (socket, next)
+//{
+//    sessionMiddleware(socket.request, socket.request.res, next);
+//});
 //io.sockets.on('connection', function (socket)
 //{
 //    var session = socket.request.session;
@@ -291,7 +295,6 @@ io.use(function (socket, next)
 //    if (session.passport && socketId)
 //    {
 //        var userId = session.passport.user;
-//
 //        (function (socketId)
 //        {
 //            var user = dal.getUserById(userId, function (user)

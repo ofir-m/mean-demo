@@ -8,7 +8,7 @@ var xml2js = require('xml2js'),
     random = require("random-js")(),
     moment = require('moment'),
     q = require('q'),
-    //entitiesManager = require('./entitiesManager'),
+//entitiesManager = require('./entitiesManager'),
     dal = require('../dal'),
     parser = new xml2js.Parser();
 
@@ -19,12 +19,19 @@ var MemberFactory = function ()
     {
         return pluralize(utils.toCamelCase(entityName));
     }
-
+    this.create100Members= function ()
+    {
+        for(var i=0;i<100;i++)
+        {
+            this.createMember();
+        }
+    }
     this.createMember = function ()
     {
         var member = {};
         member.email = "maorof@gmail.com";
         member.email = faker.internet.email()
+        member.username = member.email.match(/^([^@]*)@/)[1];
         member.birthday = moment().subtract(random.integer(18, 80), 'years').format('DD/MM/YYYY')
         member.images = [
             {
@@ -43,9 +50,9 @@ var MemberFactory = function ()
         entitiesManager.traverseEntites(function (name, values)
         {
             var property = getPropertyNameFromEntityName(name)
-            member[property]=values;
+            member[property] = values;
         })
-dal.insertMember(member);
+        dal.insertMember(member);
     }
 
 

@@ -2,22 +2,22 @@
 
     <div my-form style="height:700px;">
 
-        <textbox label="שם" item="member.name" default-text="{{'הזן שם'}}"></textbox>
-        <textbox label="אימייל" item="member.email" default-text="{{'הזן אימייל'}}" validation-rules="required, email"></textbox>
+        <textbox label="שם" item="me.username" default-text="{{'הזן שם'}}"></textbox>
+        <textbox label="אימייל" item="me.email" default-text="{{'הזן אימייל'}}" validation-rules="required, email"></textbox>
 
-             <datebox label="נולדתי בתאריך:" item="member.birthday" age="member.age" ></datebox>
+             <datebox label="נולדתי בתאריך:" item="me.birthday" age="me.age" ></datebox>
 
-        <textbox-cities label="אני גר ב:" items="member.cities" validation-rules="required"></textbox-cities>
+        <textbox-cities label="אני גר ב:" items="me.cities" validation-rules="required"></textbox-cities>
 
-        <selectbox items="member.genders" label="אני: "></selectbox>
+        <selectbox items="me.genders" label="אני: "></selectbox>
 
-        <multiselectbox columns="3" label="התחביבים שלי: " items="member.habits"></multiselectbox>
+        <multiselectbox columns="3" label="התחביבים שלי: " items="me.habits"></multiselectbox>
 
-        <selectbox items="member.zodiacs" label="המזל שלי: "></selectbox>
+        <selectbox items="me.zodiacs" label="המזל שלי: "></selectbox>
 
-        <selectbox items="member.eyeColors" label="צבע עיניי: "></selectbox>
+        <selectbox items="me.eyeColors" label="צבע עיניי: "></selectbox>
 
-        <selectbox items="member.hairColors" label="צבע שיערי "></selectbox>
+        <selectbox items="me.hairColors" label="צבע שיערי "></selectbox>
         <button class="" ng-click="updateMember()" >שמור</button>
     </div>
 </div>

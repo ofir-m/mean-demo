@@ -16,7 +16,6 @@ app.service('chatManager', function ($compile,$rootScope)
     this.connect = function ($rootScope)
     {
        $rootScope.socket=io.connect();
-
     }
     
 

@@ -1,8 +1,8 @@
 <div  class="chat" data-receiver-email="{{receiverEmail}}" data-sender-email="{{senderEmail}}" ng-show="show">
 
     <header >
-        <div class="close" ng-click="remove()">X</div>
-         <span ng-bind="receiverEmail"/>
+        <div class="close" ng-click="close()">X</div>
+         <span ng-bind="memberUsername" ng-trim="true"/>
     </header>
     <div class="content"></div>
     <div style="height:275px;width: 100%;">

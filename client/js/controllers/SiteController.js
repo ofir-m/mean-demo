@@ -35,10 +35,7 @@ app.controller('SiteController', function ($scope,$rootScope,LoggedInMember, $re
 
         });
 
-        //var count = Count.get({}, function(data) {
-        //	$scope.count = data.result;
 
-        //});
 
     }
 })

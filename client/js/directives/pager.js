@@ -13,7 +13,7 @@ app.directive('pager', ['$location', function (location)
             $scope.$location = location;
             $scope.$watch('sumOfItems', function (newValue, oldValue)
             {
-                if (newValue)
+                if (newValue && !isNaN(newValue))
                 {
                     var sumOfPages = Math.ceil(newValue / $scope.itemsPerPage);
                     $scope.range = new Array(sumOfPages);
